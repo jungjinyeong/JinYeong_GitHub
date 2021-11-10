@@ -1,0 +1,37 @@
+UV_Test
+Texture Coordinates (U)
+정의 : 텍스쳐의 위치 값을 조정할 수 있음
+ - Internal Data
+   * Tiling : x, y 값으로 텍스처를 반복적으로 늘릴 수 있음
+   * Offset : x, y 값으로 텍스처의 위치를 변경할 수 있음
+
+Component Mask (K)
+정의 : 적용하려는 x, y, z, w 값을 나눠줄 수 있으며 미리보기 가능
+ - Parameters
+    * x, y, z, w 선택 가능
+
+Multiply (M)
+정의 : 해당 값을 곱해줌 최대 6개
+
+Float (1,2,3,4)
+정의 : 데이터 값을 조절할 수 있는 영역
+ - ParametersV
+    * Type : Property를 사용
+
+Append (V)
+정의 : 데이터 값을 모아줌
+ - Parameters
+    * Output Type : Vector2, 3, 4 종류 사용
+
+
+Rotator
+정의 : 텍스처를 회전시킴
+UV : Texture Coordinates (U) 사용
+Anchor : 좌표값이 정확하지 않기 때문에 벡터로 0.5 값을 넣어줘야함
+Time : Time을 추가로 사용하여 Float으로 조정해도 됨
+
+회전에 대한 사용 용도[Rotator]
+1. 쉐이더 안에서도 회전을 줄 수 있으나, 잘 사용하지 않음
+2. 텍스처를 동시에 사용해야하고 한 번에 적용할 때 사용함 [Ex) 2개의 마법진이 서로 반대 방향으로 회전할 때]
+3. 회전 시 1개 텍스처 주위에 힐끗 보이는 텍스처가 보이는 경우, Unity 모듈에서 clramp를 사용하면 텍스처가 1개만 생성됨
+4. 또 다른 방법은 좌표 라인 앞에 Saturate를 추가해도 가능
