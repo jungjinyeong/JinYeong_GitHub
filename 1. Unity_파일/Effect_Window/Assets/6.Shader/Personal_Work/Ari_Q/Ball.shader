@@ -4,32 +4,35 @@ Shader "Ball"
 {
 	Properties
 	{
-		_4("4", 2D) = "white" {}
-		_Start_Power("Start_Power", Float) = 0
-		_Color0("Color 0", Color) = (0,0,0,0)
-		[HideInInspector] _texcoord( "", 2D ) = "white" {}
+		_Bias("Bias", Float) = 0
+		_Scale("Scale", Float) = 1
+		_Power("Power", Float) = 5
+		_int("int", Float) = 1
+		_Color0("Color 0", Color) = (1,1,1,0)
+		_Color1("Color 1", Color) = (1,1,1,0)
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
 
 	SubShader
 	{
-		Tags{ "RenderType" = "Transparent"  "Queue" = "Overlay+0" "IsEmissive" = "true"  }
-		Cull Off
-		ZWrite Off
-		Blend One One
+		Tags{ "RenderType" = "Transparent"  "Queue" = "Transparent+0" "IgnoreProjector" = "True" "IsEmissive" = "true"  }
+		Cull Back
 		CGPROGRAM
 		#pragma target 3.0
-		#pragma surface surf Unlit keepalpha noshadow 
+		#pragma surface surf Unlit alpha:fade keepalpha noshadow 
 		struct Input
 		{
-			float2 uv_texcoord;
+			float3 worldPos;
+			float3 worldNormal;
 			float4 vertexColor : COLOR;
 		};
 
-		uniform sampler2D _4;
-		uniform float4 _4_ST;
 		uniform float4 _Color0;
-		uniform float _Start_Power;
+		uniform float4 _Color1;
+		uniform float _Bias;
+		uniform float _Scale;
+		uniform float _Power;
+		uniform float _int;
 
 		inline half4 LightingUnlit( SurfaceOutput s, half3 lightDir, half atten )
 		{
@@ -38,9 +41,14 @@ Shader "Ball"
 
 		void surf( Input i , inout SurfaceOutput o )
 		{
-			float2 uv_4 = i.uv_texcoord * _4_ST.xy + _4_ST.zw;
-			o.Emission = ( ( tex2D( _4, uv_4 ) * _Color0 ) * i.vertexColor * _Start_Power ).rgb;
-			o.Alpha = i.vertexColor.a;
+			float3 ase_worldPos = i.worldPos;
+			float3 ase_worldViewDir = normalize( UnityWorldSpaceViewDir( ase_worldPos ) );
+			float3 ase_worldNormal = i.worldNormal;
+			float fresnelNdotV14 = dot( ase_worldNormal, ase_worldViewDir );
+			float fresnelNode14 = ( _Bias + _Scale * pow( 1.0 - fresnelNdotV14, _Power ) );
+			float4 lerpResult24 = lerp( _Color0 , _Color1 , pow( fresnelNode14 , 0.5 ));
+			o.Emission = ( lerpResult24 * i.vertexColor * i.vertexColor.a * _int ).rgb;
+			o.Alpha = ( lerpResult24 * i.vertexColor.a ).r;
 		}
 
 		ENDCG
@@ -49,20 +57,34 @@ Shader "Ball"
 }
 /*ASEBEGIN
 Version=18900
--1020;388;1017;696;1710.773;364.7982;1.952153;True;False
-Node;AmplifyShaderEditor.SamplerNode;1;-1017.547,-39.44575;Inherit;True;Property;_4;4;1;0;Create;True;0;0;0;False;0;False;-1;aaee582b48c170e428b733f8951dc6f0;61d72a74b8148a248bcb042ec2e938d7;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.ColorNode;5;-987.7673,244.7612;Inherit;False;Property;_Color0;Color 0;3;0;Create;True;0;0;0;False;0;False;0,0,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.VertexColorNode;3;-597.8459,403.5043;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;4;-570.1046,651.6364;Inherit;False;Property;_Start_Power;Start_Power;2;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;13;-607.8069,82.24472;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;2;-344.7124,166.2256;Inherit;True;3;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
-Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;0,0;Float;False;True;-1;2;ASEMaterialInspector;0;0;Unlit;Ball;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Off;2;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Custom;0.5;True;False;0;False;Transparent;;Overlay;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;False;4;1;False;-1;1;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;0;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;15;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
-WireConnection;13;0;1;0
-WireConnection;13;1;5;0
-WireConnection;2;0;13;0
+2559;146;1024;699;1014.016;-31.91975;1.003222;True;False
+Node;AmplifyShaderEditor.RangedFloatNode;15;-1617.831,19.53326;Inherit;False;Property;_Bias;Bias;0;0;Create;True;0;0;0;False;0;False;0;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;19;-1612.831,187.5333;Inherit;False;Property;_Power;Power;2;0;Create;True;0;0;0;False;0;False;5;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;18;-1615.831,105.5333;Inherit;False;Property;_Scale;Scale;1;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.FresnelNode;14;-1435.276,-18.73655;Inherit;True;Standard;WorldNormal;ViewDir;False;False;5;0;FLOAT3;0,0,1;False;4;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;5;False;1;FLOAT;0
+Node;AmplifyShaderEditor.PowerNode;22;-1094.318,-25.78785;Inherit;True;False;2;0;FLOAT;0;False;1;FLOAT;0.5;False;1;FLOAT;0
+Node;AmplifyShaderEditor.ColorNode;26;-1079.087,-244.9069;Inherit;False;Property;_Color1;Color 1;5;0;Create;True;0;0;0;False;0;False;1,1,1,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ColorNode;25;-1065.087,-450.9069;Inherit;False;Property;_Color0;Color 0;4;0;Create;True;0;0;0;False;0;False;1,1,1,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.VertexColorNode;3;-561.446,203.3043;Inherit;False;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.RangedFloatNode;21;-539.2372,418.9683;Inherit;False;Property;_int;int;3;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.LerpOp;24;-709.0867,-103.9069;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;2;-331.7124,159.7256;Inherit;True;4;4;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;COLOR;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;27;-226.5047,430.4841;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0
+Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;0,0;Float;False;True;-1;2;ASEMaterialInspector;0;0;Unlit;Ball;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;False;False;False;False;False;False;Back;2;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Transparent;0.5;True;False;0;True;Transparent;;Transparent;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;False;2;5;False;-1;10;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;0;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;15;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
+WireConnection;14;1;15;0
+WireConnection;14;2;18;0
+WireConnection;14;3;19;0
+WireConnection;22;0;14;0
+WireConnection;24;0;25;0
+WireConnection;24;1;26;0
+WireConnection;24;2;22;0
+WireConnection;2;0;24;0
 WireConnection;2;1;3;0
-WireConnection;2;2;4;0
+WireConnection;2;2;3;4
+WireConnection;2;3;21;0
+WireConnection;27;0;24;0
+WireConnection;27;1;3;4
 WireConnection;0;2;2;0
-WireConnection;0;9;3;4
+WireConnection;0;9;27;0
 ASEEND*/
-//CHKSM=43C0BA224677F23CCB3EB407EABA542E7C924CA3
+//CHKSM=70BF62C3347AE1BC7C0F07F81D0243B53E6FA32A
