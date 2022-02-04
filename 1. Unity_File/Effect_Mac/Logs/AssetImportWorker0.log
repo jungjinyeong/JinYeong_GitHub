@@ -1,0 +1,224 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/jeongjin-yeong/Desktop/JungJinYeong/JinYeong_GitHub/1. Unity_File/Effect_Mac
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59645
+Successfully changed project path to: /Users/jeongjin-yeong/Desktop/JungJinYeong/JinYeong_GitHub/1. Unity_File/Effect_Mac
+/Users/jeongjin-yeong/Desktop/JungJinYeong/JinYeong_GitHub/1. Unity_File/Effect_Mac
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 37.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.13f1 (71691879b7f5)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/jeongjin-yeong/Desktop/JungJinYeong/JinYeong_GitHub/1. Unity_File/Effect_Mac/Assets
+GfxDevice: creating device client; threaded=0
+2022-01-09 00:51:15.112 Unity[43935:4815337] (null) preferred device: Apple M1 (high power)
+2022-01-09 00:51:15.112 Unity[43935:4815337] Metal devices available: 1
+2022-01-09 00:51:15.112 Unity[43935:4815337] 0: Apple M1 (high power)
+2022-01-09 00:51:15.113 Unity[43935:4815337] Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56935
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001884 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 36.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.884 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003723 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.045 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Compilation failed: 
+
+program_source:22:38: error: use of undeclared identifier 'input'
+    output.SV_Target0 = float4(uint4(input.SV_PrimitiveID0));
+                                     ^
+
+
+
+#include <metal_stdlib>
+#include <metal_texture>
+using namespace metal;
+#if !(__HAVE_FMA__)
+#define fma(a,b,c) ((a) * (b) + (c))
+#endif
+#ifndef XLT_REMAP_O
+	#define XLT_REMAP_O {0, 1, 2, 3, 4, 5, 6, 7}
+#endif
+constexpr constant uint xlt_remap_o[] = XLT_REMAP_O;
+struct Mtl_FragmentOut
+{
+    float4 SV_Target0 [[ color(xlt_remap_o[0]) ]];
+};
+fragment Mtl_FragmentOut xlatMtlMain(
+)
+{
+    Mtl_FragmentOut output;
+    output.SV_Target0 = float4(uint4(input.SV_PrimitiveID0));
+    return output;
+}
+Refreshing native plugins compatible for Editor in 0.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2042 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 196.3 MB.
+System memory in use after: 196.4 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2477.
+Total: 1.501959 ms (FindLiveObjects: 0.116042 ms CreateObjectMapping: 0.037208 ms MarkObjects: 1.274084 ms  DeleteObjects: 0.072833 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Animation
+  artifactKey: Guid(b0ab6f89da7c54888b07f61d00c67f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation using Guid(b0ab6f89da7c54888b07f61d00c67f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39761de04d216b5e8009de235e76af03') in 0.006028 seconds 
+  Import took 0.008451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.849602 seconds.
+  path: Assets/Animation/mutant@Jump Attack.fbx
+  artifactKey: Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/mutant@Jump Attack.fbx using Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd872d99bd71d62f9b53b90e4c1206e1d') in 1.521458 seconds 
+  Import took 1.524558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.063742 seconds.
+  path: Assets/Animation/mutant@Jump Attack.fbx
+  artifactKey: Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/mutant@Jump Attack.fbx using Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bbe4b5142aa030cd538c3a2b6ad55a') in 0.028905 seconds 
+  Import took 0.032010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.191758 seconds.
+  path: Assets/Animation/mutant@Jump Attack.fbx
+  artifactKey: Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/mutant@Jump Attack.fbx using Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac11b184a3fc6096529a479d6c98527') in 0.029796 seconds 
+  Import took 0.032752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.000185 seconds.
+  path: Assets/Animation/mutant@Jump Attack.fbx
+  artifactKey: Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/mutant@Jump Attack.fbx using Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aaaa9c06b73874ed446576f9c3c6039') in 0.025877 seconds 
+  Import took 0.028764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.134797 seconds.
+  path: Assets/Animation/mutant@Jump Attack.fbx
+  artifactKey: Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/mutant@Jump Attack.fbx using Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44405dd09a8115e88ecbaaa6baafac0a') in 0.028391 seconds 
+  Import took 0.031364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 303.228304 seconds.
+  path: Assets/Animation/mutant@Jump Attack.fbx
+  artifactKey: Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/mutant@Jump Attack.fbx using Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97bfd31e2e9b9f58bfa6fe3f761ee5f') in 0.046342 seconds 
+  Import took 0.054545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.868514 seconds.
+  path: Assets/Animation/Materials
+  artifactKey: Guid(5f43e17907ecc4c1a9c7b3545e7d02a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Materials using Guid(5f43e17907ecc4c1a9c7b3545e7d02a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124db240029499fdcd35d65c87a9d030') in 0.002188 seconds 
+  Import took 0.006957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.631082 seconds.
+  path: Assets/Animation/mutant@Jump Attack.fbx
+  artifactKey: Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/mutant@Jump Attack.fbx using Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2231a7b5cbdf1f1823343c8ad5d3483') in 0.022072 seconds 
+  Import took 0.024800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 328.958027 seconds.
+  path: Assets/Animation/mutant@Jump Attack.fbx
+  artifactKey: Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/mutant@Jump Attack.fbx using Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce515dba4fb94990795ce97fa9eaddbd') in 0.042332 seconds 
+  Import took 0.050029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.205134 seconds.
+  path: Assets/Animation/mutant@Jump Attack.fbx
+  artifactKey: Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/mutant@Jump Attack.fbx using Guid(6f1dec7d9cc4b4624a49efff8665060f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4756117c896aebea2de75c544d781f39') in 0.034214 seconds 
+  Import took 0.037652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3128.454906 seconds.
+  path: Assets/Animation/Attack_Ani.anim
+  artifactKey: Guid(f28861c3c52374e7e8cac456d0c4065f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Attack_Ani.anim using Guid(f28861c3c52374e7e8cac456d0c4065f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0900ee8d9aaa0ff5ffaa439ffffa74f6') in 0.381510 seconds 
+  Import took 0.392300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 156.231781 seconds.
+  path: Assets/Animation/Attack.controller
+  artifactKey: Guid(bef3d9f958e1b4b2b9743992c74a5b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Attack.controller using Guid(bef3d9f958e1b4b2b9743992c74a5b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6993b85c44f8fd95fb68cc0ec9d45f3') in 0.211531 seconds 
+  Import took 0.215476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.969585 seconds.
+  path: Assets/Animation/mutant@Jump Attack.fbm
+  artifactKey: Guid(cbbb4b0d1c9e648238448bc7ab5efac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/mutant@Jump Attack.fbm using Guid(cbbb4b0d1c9e648238448bc7ab5efac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd64610d2453585d7b4064af6d95389b') in 0.001752 seconds 
+  Import took 0.006780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.530166 seconds.
+  path: Assets/Animation/New Animator Controller.controller
+  artifactKey: Guid(014071a2176ff466abd45d570d4f1d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/New Animator Controller.controller using Guid(014071a2176ff466abd45d570d4f1d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f72021c5cf85fc85705c374ebdc06ea') in 0.004553 seconds 
+  Import took 0.007779 seconds .
+
