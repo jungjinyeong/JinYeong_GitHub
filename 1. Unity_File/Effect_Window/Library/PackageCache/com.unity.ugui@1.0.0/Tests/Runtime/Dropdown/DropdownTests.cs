@@ -10,7 +10,6 @@ using System.Collections.Generic;
 public class DropdownTests : IPrebuildSetup
 {
     GameObject m_PrefabRoot;
-    GameObject m_CameraGO;
 
     const string kPrefabPath = "Assets/Resources/DropdownPrefab.prefab";
 
@@ -23,7 +22,7 @@ public class DropdownTests : IPrebuildSetup
         canvas.renderMode = RenderMode.WorldSpace;
         canvasGO.transform.SetParent(rootGO.transform);
 
-        var dropdownGO = new GameObject("Dropdown", typeof(RectTransform), typeof(Dropdown));
+        var dropdownGO = new GameObject("Dropdown", typeof(Dropdown), typeof(RectTransform));
         var dropdownTransform = dropdownGO.GetComponent<RectTransform>();
         dropdownTransform.SetParent(canvas.transform);
         dropdownTransform.anchoredPosition = Vector2.zero;
@@ -51,7 +50,7 @@ public class DropdownTests : IPrebuildSetup
     public void TestSetup()
     {
         m_PrefabRoot = Object.Instantiate(Resources.Load("DropdownPrefab")) as GameObject;
-        m_CameraGO = new GameObject("Camera", typeof(Camera));
+        new GameObject("Camera", typeof(Camera));
 #if UNITY_EDITOR
         // add a custom sorting layer before test. It doesn't seem to be serialized so no need to remove it after test
         SerializedObject tagManager = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/TagManager.asset")[0]);
@@ -135,7 +134,6 @@ public class DropdownTests : IPrebuildSetup
     public void TearDown()
     {
         Object.DestroyImmediate(m_PrefabRoot);
-        GameObject.DestroyImmediate(m_CameraGO);
     }
 
     [OneTimeTearDown]
