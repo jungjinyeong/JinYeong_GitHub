@@ -15,11 +15,11 @@ E:/JinYeong_GitHub/1. Unity_File/Effect_Window
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61480
+62614
 Successfully changed project path to: E:/JinYeong_GitHub/1. Unity_File/Effect_Window
 E:/JinYeong_GitHub/1. Unity_File/Effect_Window
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 45.19 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 44.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.13f1 (71691879b7f5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
@@ -35,37 +35,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56648
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001603 seconds.
+Registered in 0.001647 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 45.93 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 45.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.882 seconds
+- Completed reload, in  0.860 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002166 seconds.
+Registered in 0.002122 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.961 seconds
+- Completed reload, in  0.915 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2294 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 222.8 MB.
-System memory in use after: 222.7 MB.
+Unloading 2296 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 223.3 MB.
+System memory in use after: 223.2 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2747.
-Total: 2.608200 ms (FindLiveObjects: 0.255000 ms CreateObjectMapping: 0.124300 ms MarkObjects: 1.927800 ms  DeleteObjects: 0.299900 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2749.
+Total: 2.323200 ms (FindLiveObjects: 0.241000 ms CreateObjectMapping: 0.115200 ms MarkObjects: 1.685800 ms  DeleteObjects: 0.280100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -79,361 +79,161 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/4.material/FXF_ MagicCircle/FXM_MagicCircle_01_in.mat
-  artifactKey: Guid(e3b84e01d6fd4a248ac49e34a65f1da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4.material/FXF_ MagicCircle/FXM_MagicCircle_01_in.mat using Guid(e3b84e01d6fd4a248ac49e34a65f1da6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563f1219511889a2d37584d7e9b32d1f') in 0.108082 seconds 
-  Import took 0.111827 seconds .
+  path: Assets/3.Shader/Fire_Magic.shader
+  artifactKey: Guid(c20350fbab9398b44a49242021db9d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Shader/Fire_Magic.shader using Guid(c20350fbab9398b44a49242021db9d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e13f883bb2798036a15c1aca6cf680') in 0.025633 seconds 
+  Import took 0.028846 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 475.721610 seconds.
-  path: Assets/4.material/FXF_ MagicCircle/FXM_MagicCircle_01_ out.mat
-  artifactKey: Guid(5d89abefc9797b64f9cf2c61e3aea3eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4.material/FXF_ MagicCircle/FXM_MagicCircle_01_ out.mat using Guid(5d89abefc9797b64f9cf2c61e3aea3eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac67fbe365e93938c6fcd44c3483cdd7') in 0.029567 seconds 
-  Import took 0.033494 seconds .
+  Time since last request: 0.000321 seconds.
+  path: Assets/3.Shader/Fire_Magic_Ball.shader
+  artifactKey: Guid(c2d430d4594781940b419760ebb74b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Shader/Fire_Magic_Ball.shader using Guid(c2d430d4594781940b419760ebb74b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a9f438d878e8566f30cf9c59e3eb5c') in 0.004524 seconds 
+  Import took 0.007912 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.632611 seconds.
-  path: Assets/4.material/FXF_Glow/FXM_Glow_01.mat
-  artifactKey: Guid(83620f4a499878940ba5bd689ecbf26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4.material/FXF_Glow/FXM_Glow_01.mat using Guid(83620f4a499878940ba5bd689ecbf26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38e1353503123ae54a06d73b3602bb9') in 0.010460 seconds 
-  Import took 0.014091 seconds .
+  Time since last request: 0.000379 seconds.
+  path: Assets/3.Shader
+  artifactKey: Guid(5d6beb7ec45a3644d900afb9b5b3288d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3.Shader using Guid(5d6beb7ec45a3644d900afb9b5b3288d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7da68a5108507c427849b8144aa6dab') in 0.004126 seconds 
+  Import took 0.007374 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005793 seconds.
-  path: Assets/4.material/FXF_Glow/FXM_Glow_01.mat
-  artifactKey: Guid(83620f4a499878940ba5bd689ecbf26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4.material/FXF_Glow/FXM_Glow_01.mat using Guid(83620f4a499878940ba5bd689ecbf26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38e1353503123ae54a06d73b3602bb9') in 0.009134 seconds 
-  Import took 0.012574 seconds .
+  Time since last request: 36.651262 seconds.
+  path: Assets/4.material
+  artifactKey: Guid(492915a1ea9017147ab078a3b1b2c956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material using Guid(492915a1ea9017147ab078a3b1b2c956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb9230432a77cddf4db628a8b36af33c') in 0.004572 seconds 
+  Import took 0.008139 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2007.631835 seconds.
-  path: Assets/AmplifyShaderEditor
-  artifactKey: Guid(41108be7b22d67a4594aed13311b7378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor using Guid(41108be7b22d67a4594aed13311b7378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ef702032aba5ae50552d4aceb04be4') in 0.007479 seconds 
-  Import took 0.011791 seconds .
+  Time since last request: 0.007877 seconds.
+  path: Assets/4.material
+  artifactKey: Guid(492915a1ea9017147ab078a3b1b2c956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material using Guid(492915a1ea9017147ab078a3b1b2c956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb9230432a77cddf4db628a8b36af33c') in 0.001406 seconds 
+  Import took 0.005060 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000683 seconds.
-  path: Assets/AmplifyShaderEditor
-  artifactKey: Guid(41108be7b22d67a4594aed13311b7378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor using Guid(41108be7b22d67a4594aed13311b7378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ef702032aba5ae50552d4aceb04be4') in 0.001430 seconds 
-  Import took 0.004638 seconds .
+  Time since last request: 1.861657 seconds.
+  path: Assets/4.material/Fire_Magic_Ball_Shader.mat
+  artifactKey: Guid(6c2c95540ee41564d93d83e598ab4741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/Fire_Magic_Ball_Shader.mat using Guid(6c2c95540ee41564d93d83e598ab4741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8349569cbd9f92a3c213874a9d2ebd') in 0.106949 seconds 
+  Import took 0.110261 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.562363 seconds.
-  path: Assets/Art Resource
-  artifactKey: Guid(30f9d9385506d10449b7e04291e57592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource using Guid(30f9d9385506d10449b7e04291e57592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e48bbe8a6c2fed966bda608aa56b436') in 0.004900 seconds 
-  Import took 0.008289 seconds .
+  Time since last request: 0.000182 seconds.
+  path: Assets/4.material/M_Plan.mat
+  artifactKey: Guid(0c05f309e53753a4c8bd0f0df0b94641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/M_Plan.mat using Guid(0c05f309e53753a4c8bd0f0df0b94641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e848d992d9aa727fb9a7f759b7ae29') in 0.089275 seconds 
+  Import took 0.092686 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000774 seconds.
-  path: Assets/Art Resource
-  artifactKey: Guid(30f9d9385506d10449b7e04291e57592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource using Guid(30f9d9385506d10449b7e04291e57592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e48bbe8a6c2fed966bda608aa56b436') in 0.001309 seconds 
-  Import took 0.004533 seconds .
+  Time since last request: 0.000175 seconds.
+  path: Assets/4.material/m_Ston.mat
+  artifactKey: Guid(92f310eead844d046aefdb7b29ac1487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/m_Ston.mat using Guid(92f310eead844d046aefdb7b29ac1487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb704c83c9ced604fd233b3aa38d9ff1') in 0.076238 seconds 
+  Import took 0.079377 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.339940 seconds.
-  path: Assets/Art Resource/Effect
-  artifactKey: Guid(c9e5e354949772146b733d15f570016b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect using Guid(c9e5e354949772146b733d15f570016b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f3d7048882171a905547381551ba5e') in 0.004562 seconds 
-  Import took 0.007957 seconds .
+  Time since last request: 0.000267 seconds.
+  path: Assets/4.material/Fire_Magic_Flame.mat
+  artifactKey: Guid(9e2026b795d8ec3459778b51ac5fd4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/Fire_Magic_Flame.mat using Guid(9e2026b795d8ec3459778b51ac5fd4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a4559f59393160736b3e9546091c8a') in 0.037449 seconds 
+  Import took 0.040566 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000756 seconds.
-  path: Assets/Art Resource/Effect
-  artifactKey: Guid(c9e5e354949772146b733d15f570016b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect using Guid(c9e5e354949772146b733d15f570016b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f3d7048882171a905547381551ba5e') in 0.001426 seconds 
-  Import took 0.004642 seconds .
+  Time since last request: 16.194093 seconds.
+  path: Assets/5.Practice/Shader_UV&Coler/water.jpg
+  artifactKey: Guid(80de6813d0d510e40a5a7296b105d853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/5.Practice/Shader_UV&Coler/water.jpg using Guid(80de6813d0d510e40a5a7296b105d853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd65a0e884b587d97fda743b7724b347') in 0.045121 seconds 
+  Import took 0.048698 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.372583 seconds.
-  path: Assets/Art Resource/Effect/Materials
-  artifactKey: Guid(33e56fb6987f7ee4e90696eacf4bdb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Materials using Guid(33e56fb6987f7ee4e90696eacf4bdb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f450e8df1b87e931fcf3c94bfb372928') in 0.004727 seconds 
-  Import took 0.008513 seconds .
+  Time since last request: 0.000140 seconds.
+  path: Assets/2.Textures/TXS_Water_01.jpg
+  artifactKey: Guid(0c5c899619e886b41a798555299abd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2.Textures/TXS_Water_01.jpg using Guid(0c5c899619e886b41a798555299abd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a893c0596986044b9afb300582ea402a') in 0.028982 seconds 
+  Import took 0.032230 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.900396 seconds.
-  path: Assets/Art Resource/Effect/Materials/FX
-  artifactKey: Guid(5c4a4fef67a3b0844bcc313e9d8e350b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Materials/FX using Guid(5c4a4fef67a3b0844bcc313e9d8e350b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ceb8fe31e0e0e89b4f0a635060aae5') in 0.004455 seconds 
-  Import took 0.007755 seconds .
+  Time since last request: 0.000220 seconds.
+  path: Assets/5.Practice/Shader_UV&Coler/water.jpg
+  artifactKey: Guid(80de6813d0d510e40a5a7296b105d853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/5.Practice/Shader_UV&Coler/water.jpg using Guid(80de6813d0d510e40a5a7296b105d853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd65a0e884b587d97fda743b7724b347') in 0.010082 seconds 
+  Import took 0.013084 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000847 seconds.
-  path: Assets/Art Resource/Effect/Materials/FX
-  artifactKey: Guid(5c4a4fef67a3b0844bcc313e9d8e350b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Materials/FX using Guid(5c4a4fef67a3b0844bcc313e9d8e350b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ceb8fe31e0e0e89b4f0a635060aae5') in 0.001489 seconds 
-  Import took 0.004757 seconds .
+  Time since last request: 0.002253 seconds.
+  path: Assets/2.Textures/TXS_Water_01.jpg
+  artifactKey: Guid(0c5c899619e886b41a798555299abd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2.Textures/TXS_Water_01.jpg using Guid(0c5c899619e886b41a798555299abd18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a893c0596986044b9afb300582ea402a') in 0.016789 seconds 
+  Import took 0.020028 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.706455 seconds.
-  path: Assets/Art Resource/Effect/Materials/FX/Light
-  artifactKey: Guid(bd05714a9a1fb124d835d87603122961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Materials/FX/Light using Guid(bd05714a9a1fb124d835d87603122961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d48430035a578702e483802faee233c') in 0.006090 seconds 
-  Import took 0.009782 seconds .
+  Time since last request: 1180.858172 seconds.
+  path: Assets/4.material/FXF_ MagicCircle
+  artifactKey: Guid(adef47378f9dee6469507b307648bfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/FXF_ MagicCircle using Guid(adef47378f9dee6469507b307648bfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74de2c54d1afb28e0591dcb0ab783c87') in 0.004733 seconds 
+  Import took 0.008602 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/Art Resource/Effect/Materials/FX/Light
-  artifactKey: Guid(bd05714a9a1fb124d835d87603122961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Materials/FX/Light using Guid(bd05714a9a1fb124d835d87603122961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d48430035a578702e483802faee233c') in 0.001492 seconds 
-  Import took 0.004649 seconds .
+  Time since last request: 0.009918 seconds.
+  path: Assets/4.material/FXF_ MagicCircle
+  artifactKey: Guid(adef47378f9dee6469507b307648bfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/FXF_ MagicCircle using Guid(adef47378f9dee6469507b307648bfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74de2c54d1afb28e0591dcb0ab783c87') in 0.001415 seconds 
+  Import took 0.004731 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.054299 seconds.
-  path: Assets/Art Resource/Effect/Textures
-  artifactKey: Guid(bd7cc886e0d65174b858f54187f40258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Textures using Guid(bd7cc886e0d65174b858f54187f40258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d731421e819cd2057c26c2548af6c7') in 0.004439 seconds 
-  Import took 0.007775 seconds .
+  Time since last request: 0.068737 seconds.
+  path: Assets/4.material/FXF_ MagicCircle/FXM_MagicCircle_02.mat
+  artifactKey: Guid(616ad67722e706a45876aeb31dda62ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/FXF_ MagicCircle/FXM_MagicCircle_02.mat using Guid(616ad67722e706a45876aeb31dda62ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec76f39dac37257c674e22aa74776ba') in 0.060929 seconds 
+  Import took 0.064562 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000771 seconds.
-  path: Assets/Art Resource/Effect/Textures
-  artifactKey: Guid(bd7cc886e0d65174b858f54187f40258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Textures using Guid(bd7cc886e0d65174b858f54187f40258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d731421e819cd2057c26c2548af6c7') in 0.001285 seconds 
-  Import took 0.004440 seconds .
+  Time since last request: 0.000196 seconds.
+  path: Assets/4.material/FXF_ MagicCircle/FXM_MagicCircle_04.mat
+  artifactKey: Guid(f9dce8e7203908946bd195c04e5b29a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/FXF_ MagicCircle/FXM_MagicCircle_04.mat using Guid(f9dce8e7203908946bd195c04e5b29a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54c1be833fb7f0bf5fc9e884d7121498') in 0.056090 seconds 
+  Import took 0.059093 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.937283 seconds.
-  path: Assets/Art Resource/Effect/Textures/Fire
-  artifactKey: Guid(29d29ee57b5a2a048b8ee30a582779ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Textures/Fire using Guid(29d29ee57b5a2a048b8ee30a582779ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0fff429975e869ae39de2d37dd36cf') in 0.005308 seconds 
-  Import took 0.009109 seconds .
+  Time since last request: 0.000200 seconds.
+  path: Assets/4.material/FXF_ MagicCircle/M_magic circle2.mat
+  artifactKey: Guid(48774ef268695094f95bfbdd82e104b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/FXF_ MagicCircle/M_magic circle2.mat using Guid(48774ef268695094f95bfbdd82e104b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c76ef9ceddc3c00f526a560b2e4d2bb') in 0.094164 seconds 
+  Import took 0.097238 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.061709 seconds.
-  path: Assets/Art Resource/Effect/Textures/Light
-  artifactKey: Guid(1a797cd3ed8ea6e458b5c877f9636509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Textures/Light using Guid(1a797cd3ed8ea6e458b5c877f9636509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba6c4e7de0e79bb653d3de13ddeea76') in 0.001359 seconds 
-  Import took 0.004643 seconds .
+  Time since last request: 0.000253 seconds.
+  path: Assets/4.material/FXF_ MagicCircle/FXM_MagicCircle_03_in.mat
+  artifactKey: Guid(79109ef823711ba40b7fe4b51bbd0513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/FXF_ MagicCircle/FXM_MagicCircle_03_in.mat using Guid(79109ef823711ba40b7fe4b51bbd0513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06578342f9bcf9938075dfb96419d2ed') in 0.012650 seconds 
+  Import took 0.015761 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.458631 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU
-  artifactKey: Guid(513fea8fd1513254c8cb55a447993e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU using Guid(513fea8fd1513254c8cb55a447993e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8118733f2acf029cbaa3288bb9039b0') in 0.004391 seconds 
-  Import took 0.007891 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.786775 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Shader
-  artifactKey: Guid(ab01389a055866740b8c45c7b39138b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Shader using Guid(ab01389a055866740b8c45c7b39138b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cef2737371df3f8c6a0c8bd8e263cb48') in 0.004238 seconds 
-  Import took 0.007706 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.221002 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Materials
-  artifactKey: Guid(6702bd8a1b4dc7f41a2f64ddd58a2114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Materials using Guid(6702bd8a1b4dc7f41a2f64ddd58a2114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c874672c36b1a68caf486531b4a3102') in 0.001551 seconds 
-  Import took 0.004951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.089016 seconds.
-  path: Assets/Art Resource/Effect/Textures/Fire/FX_ParticleFlare.png
-  artifactKey: Guid(76b24fa8a46a2c14f9a7df1e975dc4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Textures/Fire/FX_ParticleFlare.png using Guid(76b24fa8a46a2c14f9a7df1e975dc4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a9103e715ffbd550ebe5daaa2f9ad99') in 0.050715 seconds 
-  Import took 0.054148 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002173 seconds.
-  path: Assets/Art Resource/Effect/Textures/Fire/FX_ParticleFlare.png
-  artifactKey: Guid(76b24fa8a46a2c14f9a7df1e975dc4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Textures/Fire/FX_ParticleFlare.png using Guid(76b24fa8a46a2c14f9a7df1e975dc4b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a9103e715ffbd550ebe5daaa2f9ad99') in 0.025708 seconds 
-  Import took 0.029118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.855176 seconds.
-  path: Assets/Art Resource/Effect/Textures/Light/Fx_Spark_stretched_01.png
-  artifactKey: Guid(4af8c58ff307d7b47b26a784719eecd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Textures/Light/Fx_Spark_stretched_01.png using Guid(4af8c58ff307d7b47b26a784719eecd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a03dfa14747366737665b1beb256c68') in 0.022262 seconds 
-  Import took 0.026322 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.345975 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Materials/ASE_Materials
-  artifactKey: Guid(0a1f07a902dccf24593bb270fbd799d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Materials/ASE_Materials using Guid(0a1f07a902dccf24593bb270fbd799d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef62b0ea689b7d2a4078e65f79a65e9') in 0.004685 seconds 
-  Import took 0.007942 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.015241 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Textures/FX_Trail_02.png
-  artifactKey: Guid(4392275ca9b340e49a2ac8fa0008c591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Textures/FX_Trail_02.png using Guid(4392275ca9b340e49a2ac8fa0008c591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e76739a3edab28288210eadbd0c120d') in 0.025491 seconds 
-  Import took 0.028981 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Textures/Noise/Noise_04.png
-  artifactKey: Guid(099f2d1f879268948b102480a7b0f9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Textures/Noise/Noise_04.png using Guid(099f2d1f879268948b102480a7b0f9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '801e79caaefeecadf838a4696aca0d5e') in 0.031816 seconds 
-  Import took 0.035012 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.925492 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Mesh
-  artifactKey: Guid(563f1af8bb127e54d873759b5b54eb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Mesh using Guid(563f1af8bb127e54d873759b5b54eb81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7ff38b13f7c310f8e5595d07c1b4b8') in 0.004456 seconds 
-  Import took 0.007744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.381043 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Mesh/Sword_Trail_01.FBX
-  artifactKey: Guid(4d787b217b010c944aafa5f4ab71fba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Mesh/Sword_Trail_01.FBX using Guid(4d787b217b010c944aafa5f4ab71fba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b42e6e742b9c6226437bd2fd1bbc2207') in 0.218579 seconds 
-  Import took 0.222280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000388 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Mesh/Sword_Trail_01.FBX
-  artifactKey: Guid(4d787b217b010c944aafa5f4ab71fba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Mesh/Sword_Trail_01.FBX using Guid(4d787b217b010c944aafa5f4ab71fba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b42e6e742b9c6226437bd2fd1bbc2207') in 0.009270 seconds 
-  Import took 0.012749 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.153387 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Mesh/Sword_Trail_02.FBX
-  artifactKey: Guid(bd0497f797c249f4486248c3875a06db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Mesh/Sword_Trail_02.FBX using Guid(bd0497f797c249f4486248c3875a06db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b57fc490a41243d633e27266099b829') in 0.012204 seconds 
-  Import took 0.015730 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.853051 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Shader/Master_Shader
-  artifactKey: Guid(efa063284333c1c418881fbb4fcd6428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Shader/Master_Shader using Guid(efa063284333c1c418881fbb4fcd6428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '108ff099a25c072c722aad26305cf8a5') in 0.005374 seconds 
-  Import took 0.008717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.379267 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Shader/Sword_Trail_Shader.shader
-  artifactKey: Guid(ab7a21cf5efc2524ea0bbdc5020afdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Shader/Sword_Trail_Shader.shader using Guid(ab7a21cf5efc2524ea0bbdc5020afdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9dd57b7553b3967805dfb4097d4e1b') in 0.007151 seconds 
-  Import took 0.010526 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.051125 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Shader/Sword_Trail_Shader.shader
-  artifactKey: Guid(ab7a21cf5efc2524ea0bbdc5020afdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Shader/Sword_Trail_Shader.shader using Guid(ab7a21cf5efc2524ea0bbdc5020afdce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9dd57b7553b3967805dfb4097d4e1b') in 0.002208 seconds 
-  Import took 0.005594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.779958 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Textures
-  artifactKey: Guid(332c60346b6d4e84d8bf718163ef10f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Textures using Guid(332c60346b6d4e84d8bf718163ef10f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7599e8a52ea35ccb4f4da061cd6a19d3') in 0.001394 seconds 
-  Import took 0.004671 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.286570 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Textures/Noise
-  artifactKey: Guid(5b40006a74b18d04fb7bf5ff620e169d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Textures/Noise using Guid(5b40006a74b18d04fb7bf5ff620e169d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65320349426dea4c6cbf109f9dada4ac') in 0.004431 seconds 
-  Import took 0.008078 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.599596 seconds.
-  path: Assets/ResourcesValkyrie
-  artifactKey: Guid(b91ad473435988548bb30246a36ee731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResourcesValkyrie using Guid(b91ad473435988548bb30246a36ee731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f10ea0e3f8ab3c72ab882f4ac11438') in 0.004702 seconds 
-  Import took 0.008008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.073694 seconds.
-  path: Assets/ResourcesValkyrie/Prefabs
-  artifactKey: Guid(7b25cfcfc4545a54e9830595a8a111b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResourcesValkyrie/Prefabs using Guid(7b25cfcfc4545a54e9830595a8a111b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f11cafa04e93c9afec73a6127bd0bbf') in 0.004351 seconds 
-  Import took 0.007669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.647821 seconds.
-  path: Assets/ResourcesValkyrie/Prefabs/Effect
-  artifactKey: Guid(737c983933c8e8d4b901302d04236096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResourcesValkyrie/Prefabs/Effect using Guid(737c983933c8e8d4b901302d04236096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92003656ab0b0397485d71d265c8623d') in 0.001540 seconds 
-  Import took 0.004940 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.609532 seconds.
-  path: Assets/ResourcesValkyrie/Prefabs/Effect/Character
-  artifactKey: Guid(e04147b358c76154a8d4fa81758dbda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResourcesValkyrie/Prefabs/Effect/Character using Guid(e04147b358c76154a8d4fa81758dbda9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ddeba74930a64b9380d0e19164610b1') in 0.004816 seconds 
-  Import took 0.008564 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.519192 seconds.
-  path: Assets/ResourcesValkyrie/Prefabs/Effect/Character/Swordman
-  artifactKey: Guid(fbb83c84a8026d84ba901c7016803ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResourcesValkyrie/Prefabs/Effect/Character/Swordman using Guid(fbb83c84a8026d84ba901c7016803ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c144524d0081c5a1d22e0ae4457685') in 0.004722 seconds 
-  Import took 0.008305 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.552205 seconds.
-  path: Assets/ResourcesValkyrie/Prefabs/Effect/Character/Swordman/Common
-  artifactKey: Guid(0fa4226a020da474bb24750eecb3d37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ResourcesValkyrie/Prefabs/Effect/Character/Swordman/Common using Guid(0fa4226a020da474bb24750eecb3d37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80fff091d537b889b165a696365c2f3') in 0.004492 seconds 
-  Import took 0.008241 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7932.039553 seconds.
-  path: Assets/Art Resource/Effect/Materials/FX/FX_Particle_Glow_01.mat
-  artifactKey: Guid(c10b1630d5621ec48a17223c3c102023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/Materials/FX/FX_Particle_Glow_01.mat using Guid(c10b1630d5621ec48a17223c3c102023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bbcffd41d83a036dfe34d2f42c31b59') in 0.068439 seconds 
-  Import took 0.079159 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 576.648112 seconds.
-  path: Assets/Art Resource/Effect/VFX_LJU/Materials/Trail_02_AP.mat
-  artifactKey: Guid(a16a7bdbd2702ab47ac232f79b423652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art Resource/Effect/VFX_LJU/Materials/Trail_02_AP.mat using Guid(a16a7bdbd2702ab47ac232f79b423652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9590db586a0f1e9fe52abd401b119a6') in 0.043517 seconds 
-  Import took 0.047586 seconds .
+  Time since last request: 398.452959 seconds.
+  path: Assets/4.material/Fire_Magic_Ball_Shader.mat
+  artifactKey: Guid(6c2c95540ee41564d93d83e598ab4741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4.material/Fire_Magic_Ball_Shader.mat using Guid(6c2c95540ee41564d93d83e598ab4741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb456452cbc0167f029091671f62451c') in 0.028262 seconds 
+  Import took 0.032187 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
