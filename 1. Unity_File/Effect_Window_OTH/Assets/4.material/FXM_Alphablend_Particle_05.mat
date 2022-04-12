@@ -36,9 +36,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Dissolve_Texture:
-        m_Texture: {fileID: 2800000, guid: f5b5dc88cfafbeb4d873a97f5ce54184, type: 3}
+        m_Texture: {fileID: 2800000, guid: cb3db7b0a3d7e1e4cb96977896ea78b7, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Offset: {x: 0, y: 0.01}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -52,15 +52,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Main_Texture:
-        m_Texture: {fileID: 2800000, guid: 61924d2b51e42a74bb4f6ccd3f594277, type: 3}
-        m_Scale: {x: 6.77, y: -1}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: d010bcc6d54f28a41aa8be3558cfd9f3, type: 3}
+        m_Scale: {x: 0.85, y: 0.73}
+        m_Offset: {x: 2.05, y: 0.01}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texture:
-        m_Texture: {fileID: 2800000, guid: 645b0a2fda25d114599a2fba6417fe81, type: 3}
+        m_Texture: {fileID: 2800000, guid: e08c295755c0885479ad19f518286ff2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -74,7 +74,7 @@ Material:
     - _Sword_Texture:
         m_Texture: {fileID: 2800000, guid: 7b081e079f7aa9c43b1de5daf2815f96, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: -0.18}
+        m_Offset: {x: 0, y: 0.01}
     - _TextureSample0:
         m_Texture: {fileID: 2800000, guid: ca13f4c0cd8f4eb4fb22f7b62e6e0d7e, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -104,22 +104,22 @@ Material:
     - _Dissolve: 1
     - _DstBlend: 0
     - _Emi_Ims: 0
-    - _Emi_Offset: -0.087
+    - _Emi_Offset: -0.867
     - _FX_Mask: 2
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Main_Ins: 2.9
-    - _Main_Power: 2.4472737
-    - _Main_UPanner: 1.7
+    - _Main_Ins: 3.91
+    - _Main_Power: 2.21
+    - _Main_UPanner: 0.3
     - _Main_VPanner: 0
     - _Metallic: 0
     - _Mode: 0
     - _Noise_UPanner: -7.25
     - _Noise_VPanner: 0
-    - _Noise_Val: 0
+    - _Noise_Val: 0.05
     - _OcclusionStrength: 1
-    - _Opacity: 1.49
+    - _Opacity: 4.04
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -131,6 +131,6 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Emi_Color: {r: 1.9766746, g: 1.4902678, b: 0.24837795, a: 0}
+    - _Emi_Color: {r: 0.21698111, g: 0.13900396, b: 0.0501513, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint_Color: {r: 3.1208413, g: 0.27969795, b: 1.802962, a: 0}
+    - _Tint_Color: {r: 2.9359744, g: 0.68278474, b: 0.32773668, a: 0}
