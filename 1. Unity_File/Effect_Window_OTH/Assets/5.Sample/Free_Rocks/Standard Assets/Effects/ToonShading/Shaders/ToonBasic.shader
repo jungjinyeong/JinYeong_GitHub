@@ -5,6 +5,8 @@ Shader "Toon/Basic" {
 		_Color ("Main Color", Color) = (.5,.5,.5,1)
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		_ToonShade ("ToonShader Cubemap(RGB)", CUBE) = "" { }
+        _RimColor("Rim Color", Color) = (0.0, 0.0, 0.0, 0.0)
+        _RimPower("Rim Power", Range(0,2.0)) = 0
 	}
 
 
@@ -20,6 +22,7 @@ Shader "Toon/Basic" {
 			#pragma multi_compile_fog
 
 			#include "UnityCG.cginc"
+            #include "limlightmodule.cginc"
 
 			sampler2D _MainTex;
 			samplerCUBE _ToonShade;
@@ -37,6 +40,7 @@ Shader "Toon/Basic" {
 				float2 texcoord : TEXCOORD0;
 				float3 cubenormal : TEXCOORD1;
 				UNITY_FOG_COORDS(2)
+                fixed4 color : COLOR;
 			};
 
 			v2f vert (appdata v)
@@ -46,6 +50,7 @@ Shader "Toon/Basic" {
 				o.texcoord = TRANSFORM_TEX(v.texcoord, _MainTex);
 				o.cubenormal = mul (UNITY_MATRIX_MV, float4(v.normal,0));
 				UNITY_TRANSFER_FOG(o,o.pos);
+                o.color = Rim_Light(v.vertex, v.normal);
 				return o;
 			}
 
@@ -55,6 +60,7 @@ Shader "Toon/Basic" {
 				fixed4 cube = texCUBE(_ToonShade, i.cubenormal);
 				fixed4 c = fixed4(2.0f * cube.rgb * col.rgb, col.a);
 				UNITY_APPLY_FOG(i.fogCoord, c);
+                c.xyz += i.color;
 				return c;
 			}
 			ENDCG			
