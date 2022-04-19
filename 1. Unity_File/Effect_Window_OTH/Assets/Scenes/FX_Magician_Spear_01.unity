@@ -240,7 +240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69582036}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.03, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 419398910}
@@ -4985,7 +4985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &213386423
 Transform:
   m_ObjectHideFlags: 0
@@ -4994,7 +4994,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213386422}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -8.43, y: 0, z: -0}
+  m_LocalPosition: {x: -3.45, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 585595456}
@@ -5050,7 +5050,7 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
-  m_RenderAlignment: 2
+  m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
   m_UseCustomVertexStreams: 0
@@ -5081,12 +5081,12 @@ ParticleSystem:
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
-  autoRandomSeed: 1
+  autoRandomSeed: 0
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 0.9
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -5139,7 +5139,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 0
+  randomSeed: 120
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -9805,7 +9805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419398909}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.63, y: 0, z: 0}
+  m_LocalPosition: {x: -30.53, y: -4.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 69582037}
@@ -9858,7 +9858,7 @@ ParticleSystemRenderer:
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
-  m_SortingFudge: 0
+  m_SortingFudge: 500
   m_NormalDirection: 1
   m_ShadowBias: 0
   m_RenderAlignment: 2
@@ -10899,7 +10899,7 @@ ParticleSystem:
           inWeight: 0
           outWeight: 0.22658098
         - serializedVersion: 3
-          time: 0.03952433
+          time: 0.01
           value: 1
           inSlope: 4.700543
           outSlope: 0.0101042865
@@ -13672,7 +13672,7 @@ ParticleSystem:
     radiusScale: 1
   SubModule:
     serializedVersion: 2
-    enabled: 1
+    enabled: 0
     subEmitters:
     - serializedVersion: 3
       emitter: {fileID: 0}
@@ -38725,6 +38725,8 @@ PlayableDirector:
   - key: {fileID: -7134972461194723648, guid: 1d7bf1da52966e74a91ed8827617ffa2, type: 2}
     value: {fileID: 0}
   - key: {fileID: 866464627746280767, guid: 1d7bf1da52966e74a91ed8827617ffa2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 464826317096875693, guid: 1d7bf1da52966e74a91ed8827617ffa2, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References:
