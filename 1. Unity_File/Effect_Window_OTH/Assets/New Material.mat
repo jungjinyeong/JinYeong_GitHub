@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texture:
-        m_Texture: {fileID: 2800000, guid: 41a89d3615ad8f34e9bd4fd043a70610, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4f599298d22bf8047b38f3bd26dad4c7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -79,9 +79,12 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _Dissolve_Int: 1
+    - _Dissolve_Val: 1
     - _DstBlend: 0
-    - _F_Pow: 5
-    - _F_Scale: 1
+    - _F_Pow: 0.5
+    - _F_Scale: 0.08
+    - _Float0: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -94,11 +97,14 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Step_Int: -0.46
+    - _Step_Size_Int: 0.17
     - _UVSec: 0
     - _Use_Custom: 1
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color0: {r: 2.3174946, g: 0.6992495, b: 0.4263316, a: 1}
+    - _Color0: {r: 1.1206975, g: 0.37225845, b: 0.24845651, a: 1}
+    - _Dissolve_Color: {r: 1.8443027, g: 0.7821388, b: 0.37658536, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
