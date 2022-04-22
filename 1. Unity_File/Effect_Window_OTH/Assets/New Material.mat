@@ -67,6 +67,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _tex1coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex3coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _tex4coord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -82,8 +90,8 @@ Material:
     - _Dissolve_Int: 1
     - _Dissolve_Val: 1
     - _DstBlend: 0
-    - _F_Pow: 0.5
-    - _F_Scale: 0.08
+    - _F_Pow: 5
+    - _F_Scale: -0.27
     - _Float0: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -108,3 +116,4 @@ Material:
     - _Color0: {r: 1.1206975, g: 0.37225845, b: 0.24845651, a: 1}
     - _Dissolve_Color: {r: 1.8443027, g: 0.7821388, b: 0.37658536, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Fresnel_Color: {r: 1.3268353, g: 0.36549714, b: 0.2065357, a: 1}
