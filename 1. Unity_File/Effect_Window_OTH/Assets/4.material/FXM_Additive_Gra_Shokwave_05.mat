@@ -41,7 +41,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Gra_Texture:
         m_Texture: {fileID: 2800000, guid: bf7680e5aec3acf49a734b4f6bb6160c, type: 3}
-        m_Scale: {x: 1, y: 1.71}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
@@ -52,8 +52,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texture:
-        m_Texture: {fileID: 2800000, guid: 61c0b9c0523734e0e91bc6043c72a490, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 291b26790b4e30e43b6347b381849af8, type: 3}
+        m_Scale: {x: 3, y: 0.25}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -89,26 +89,26 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Gra_Ins: 1
-    - _Gra_Offset: 1
-    - _Gra_Pow: 1
+    - _Gra_Offset: -0.33
+    - _Gra_Pow: 1.8
     - _Gra_UOffset: 0
     - _Gra_VOffset: 1.23
-    - _Mask_Pow: 6.4
+    - _Mask_Pow: 5.7
     - _Mask_Val: 8.8
     - _Metallic: 0
     - _Mode: 0
-    - _Noise_UPanner: 1
-    - _Noise_VPanner: 0.5
-    - _Noise_Val: 1
+    - _Noise_UPanner: 0.54
+    - _Noise_VPanner: -0.3
+    - _Noise_Val: 0.87
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Sub_Ins: 4.1
+    - _Sub_Ins: 3.3
     - _Sub_Pow: 1
     - _Sub_UPanner: 0
-    - _Sub_VPanner: 0
+    - _Sub_VPanner: -0.2
     - _UVSec: 0
     - _Use_Custom: 1
     - _ZWrite: 1
@@ -116,5 +116,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Gra_Color: {r: 0.7490196, g: 0.40392157, b: 0.12941177, a: 0}
+    - _Gra_Color: {r: 1.9910773, g: 1.3604194, b: 0.4234418, a: 0}
     - _Sub_Color: {r: 1, g: 1, b: 1, a: 0}
