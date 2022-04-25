@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Additive_Gra_Shokwave_08
-  m_Shader: {fileID: 4800000, guid: e4bfb0db8e593da48a3560432c52d055, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7ede13646dced854b9fd4b0bede1253e, type: 3}
   m_ShaderKeywords: _USE_CUSTOM_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Gra_Texture:
-        m_Texture: {fileID: 2800000, guid: 90c7e899747425248a6d16f412e7cf3d, type: 3}
+        m_Texture: {fileID: 2800000, guid: bf7680e5aec3acf49a734b4f6bb6160c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -52,8 +52,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texture:
-        m_Texture: {fileID: 2800000, guid: 645b0a2fda25d114599a2fba6417fe81, type: 3}
-        m_Scale: {x: 3, y: 0.25}
+        m_Texture: {fileID: 2800000, guid: c3ec6f776be501a4db757961359756df, type: 3}
+        m_Scale: {x: 3.52, y: 0.83}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -80,6 +80,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Bias: 0
     - _BumpScale: 1
     - _CullMode: 0
     - _Cutoff: 0.5
@@ -89,7 +90,7 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Gra_Ins: 1
-    - _Gra_Offset: 0.49
+    - _Gra_Offset: 1
     - _Gra_Pow: 1
     - _Gra_UOffset: 0
     - _Gra_VOffset: 1.23
@@ -97,11 +98,13 @@ Material:
     - _Mask_Val: 8.8
     - _Metallic: 0
     - _Mode: 0
-    - _Noise_UPanner: 0.54
-    - _Noise_VPanner: -0.3
+    - _Noise_UPanner: 1
+    - _Noise_VPanner: 1.19
     - _Noise_Val: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Power: 5
+    - _Scale: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -113,8 +116,11 @@ Material:
     - _Use_Custom: 1
     - _ZWrite: 1
     - __dirty: 0
+    - _int: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 1, g: 1, b: 1, a: 0}
+    - _Color1: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Gra_Color: {r: 0.8938896, g: 0.6965519, b: 0.25720406, a: 0}
-    - _Sub_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Sub_Color: {r: 0.8490566, g: 0.5425128, b: 0.18823424, a: 0}
