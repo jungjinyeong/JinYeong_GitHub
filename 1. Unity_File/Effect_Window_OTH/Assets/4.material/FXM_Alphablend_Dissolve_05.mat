@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Alphablend_Dissolve_05
-  m_Shader: {fileID: 4800000, guid: 3451f20ff7ec1184db48b56abc6a77d9, type: 3}
+  m_Shader: {fileID: 4800000, guid: a2865101138fa66498194ca9e6b8410d, type: 3}
   m_ShaderKeywords: _KEYWORD0_ON _USE_COSTOM_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -75,6 +75,8 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _Diss_UPanner: 0
+    - _Diss_VPanner: 0
     - _Dissolve: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
@@ -82,11 +84,11 @@ Material:
     - _GlossyReflections: 1
     - _Keyword0: 1
     - _Main_Ins: 1
-    - _Main_Power: 6.01
+    - _Main_Power: 1.62
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Opacity: 0.25
+    - _Opacity: 4.61
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -98,4 +100,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint_Color: {r: 8.237267, g: 2.841846, b: 1.5957005, a: 1}
+    - _Tint_Color: {r: 1.3041189, g: 0.45063797, b: 0.25263038, a: 1}
