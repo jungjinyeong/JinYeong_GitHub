@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Additive_Gra_Shokwave_12
-  m_Shader: {fileID: 4800000, guid: 7ede13646dced854b9fd4b0bede1253e, type: 3}
+  m_Shader: {fileID: 4800000, guid: 05c6c96ac87d18043a1d964a01febe14, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -45,6 +45,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask_Texture:
+        m_Texture: {fileID: 2800000, guid: c7d564bbc661feb448e7dcb86e2aa438, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -89,12 +93,15 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Gra_Ins: 1
+    - _Gra_Ins: 2.19
     - _Gra_Offset: 0.32
-    - _Gra_Pow: 1
+    - _Gra_Pow: 1.9
     - _Gra_UOffset: 0
     - _Gra_VOffset: 1.23
-    - _Mask_Pow: 2.7
+    - _Mask_Ins: 1.2
+    - _Mask_Pow: 3
+    - _Mask_UPanner: 1
+    - _Mask_VPanner: 0
     - _Mask_Val: 8.8
     - _Metallic: 0
     - _Mode: 0
@@ -108,8 +115,8 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Sub_Ins: 8.9
-    - _Sub_Pow: 1
+    - _Sub_Ins: 2.4
+    - _Sub_Pow: 1.28
     - _Sub_UPanner: 0
     - _Sub_VPanner: 0.2
     - _UVSec: 0
