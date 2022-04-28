@@ -57,7 +57,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Noise_Texture:
         m_Texture: {fileID: 2800000, guid: 19891385e026bce4894bf60164334a4f, type: 3}
-        m_Scale: {x: 5, y: 0.3}
+        m_Scale: {x: 5, y: 0.35}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -98,15 +98,15 @@ Material:
     - _Gra_Pow: 2
     - _Gra_UOffset: 0
     - _Gra_VOffset: 1.23
-    - _Mask_Ins: 1.3
-    - _Mask_Pow: 5
+    - _Mask_Ins: 1
+    - _Mask_Pow: 3.5
     - _Mask_UPanner: 1
     - _Mask_VPanner: 0
     - _Mask_Val: 8.8
     - _Metallic: 0
     - _Mode: 0
-    - _Noise_UPanner: 0
-    - _Noise_VPanner: -0.6
+    - _Noise_UPanner: 0.05
+    - _Noise_VPanner: -0.3
     - _Noise_Val: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
