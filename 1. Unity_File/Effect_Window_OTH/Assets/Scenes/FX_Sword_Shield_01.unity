@@ -308,7 +308,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: -4.0179395e+37, y: 1.1e-44, z: 8.5e-44, w: NaN}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -68386,6 +68386,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 657855340}
     m_Modifications:
+    - target: {fileID: 1296133433180015119, guid: 2aebcdf4ccbda1049928031966dfb507,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296133433180015119, guid: 2aebcdf4ccbda1049928031966dfb507,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296133433180015119, guid: 2aebcdf4ccbda1049928031966dfb507,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2458112875041363884, guid: 2aebcdf4ccbda1049928031966dfb507,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6f30fbee99192142b0ce9bf469cdabd, type: 2}
+    - target: {fileID: 2458112875041363884, guid: 2aebcdf4ccbda1049928031966dfb507,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6f30fbee99192142b0ce9bf469cdabd, type: 2}
     - target: {fileID: 8141653247592257888, guid: 2aebcdf4ccbda1049928031966dfb507,
         type: 3}
       propertyPath: m_Name
