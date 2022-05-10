@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Additive_Shokewave_Custom
   m_Shader: {fileID: 4800000, guid: f3363cf82a94fee47bc2f6c32821b25d, type: 3}
-  m_ShaderKeywords: _USE_CUSTOM_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -53,10 +53,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Main_Texture:
         m_Texture: {fileID: 2800000, guid: 8d21b35fab1359d4aa689ddf302e1b01, type: 3}
-        m_Scale: {x: 2, y: 0.5}
+        m_Scale: {x: 2, y: 0.25}
         m_Offset: {x: 0, y: 0}
     - _Mask_Texture:
-        m_Texture: {fileID: 2800000, guid: 6904366d56281b64b949da6521ac47d2, type: 3}
+        m_Texture: {fileID: 2800000, guid: a2b434f2424cfc145872c7207c36c447, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0.01}
     - _MetallicGlossMap:
@@ -93,7 +93,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _Diss_UPanner: 0
     - _Diss_VPanner: 0.5
-    - _Dissolve: 1
+    - _Dissolve: -0.65
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -102,7 +102,7 @@ Material:
     - _Main_Pow: 3
     - _Main_UPanner: 0
     - _Main_VPanner: 0.35
-    - _Mask_Range: 3.84
+    - _Mask_Range: 2
     - _Metallic: 0
     - _Mian_UVPow: 1
     - _Mode: 0
@@ -116,10 +116,10 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Use_Custom: 1
+    - _Use_Custom: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Main_Color: {r: 0.29009438, g: 0.29208642, b: 0.38679248, a: 0}
+    - _Main_Color: {r: 6.5663877, g: 6.5663877, b: 8.784761, a: 0}
