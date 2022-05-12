@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Alphablend_Particle_09
-  m_Shader: {fileID: 4800000, guid: a0a4ea171d6ea9b40a16543e631df945, type: 3}
+  m_Shader: {fileID: 4800000, guid: b8ce0bd5273b8844b9e4946262caff8a, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -35,6 +35,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Dissolve_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Dissove_Texture:
         m_Texture: {fileID: 2800000, guid: 0c5c899619e886b41a798555299abd18, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -51,7 +55,15 @@ Material:
         m_Texture: {fileID: 2800000, guid: 019a46b174c20524da7e64a1f435f5c4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Mask_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_Texture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -67,7 +79,15 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 0.6}
         m_Offset: {x: 0, y: 0}
+    - _Texture_Obj:
+        m_Texture: {fileID: 2800000, guid: 019a46b174c20524da7e64a1f435f5c4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _tex4coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord2:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -77,17 +97,29 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
+    - _Chromatic_Val: 0.04
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _Diss_UPanner: 0
+    - _Diss_VPanner: 1
     - _Dissolve: 0.1540282
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Main_Ins: 2.5
+    - _Main_Pow: 1
     - _Main_Power: 1.52
+    - _Main_UPanner: 0
+    - _Main_UVPow: 2.5
+    - _Main_VPanner: 1
+    - _Mani_Ins: 0
+    - _Mask_Rang: 0
     - _Metallic: 0
     - _Mode: 0
+    - _Noise_UPanner: 0
+    - _Noise_VPanner: 1
+    - _Noise_Val: 0
     - _OcclusionStrength: 1
     - _Opacity: 1.57
     - _Parallax: 0.02
@@ -100,6 +132,7 @@ Material:
     - _Sub_Texture_VPanner: 0.2
     - _UVSec: 0
     - _Use_Costom: 0
+    - _Use_Costum: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
