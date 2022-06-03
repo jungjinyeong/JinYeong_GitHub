@@ -44,8 +44,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 710f0ecf3a70db046b1d6dc37fef65ac, type: 3}
-        m_Scale: {x: 4, y: 1}
+        m_Texture: {fileID: 2800000, guid: a6838ad1f58538f4589587594b750c3d, type: 3}
+        m_Scale: {x: 2.24, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -65,7 +65,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Sub_Texture:
         m_Texture: {fileID: 2800000, guid: 02898dfb4fcd1e249b2c981ed0c5c828, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 1, y: 0.45}
         m_Offset: {x: 0, y: 0}
     - _tex4coord:
         m_Texture: {fileID: 0}
@@ -77,7 +77,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Chromatic_Val: 0.007
+    - _Chromatic_Val: 0.0062
     - _Cull_Mode: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -86,12 +86,12 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Main_Ins: 5.07
+    - _Main_Ins: 5.14
     - _Main_Noise_Str: 0.14
     - _Main_Noise_UTiling: 2.34
     - _Main_Noise_VPanner: 1.84
     - _Main_Noise_VTiling: 0
-    - _Main_Pow: 1.99
+    - _Main_Pow: 3.25
     - _Main_UPanner: 0.5
     - _Main_VPanner: 0.3
     - _Metallic: 0
@@ -105,7 +105,7 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SubTex_Ins: 1.24
+    - _SubTex_Ins: 0.93
     - _SubTex_Pow: 2.49
     - _SubTex_UPanner: 0
     - _SubTex_VPanner: 0.35
@@ -117,5 +117,5 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Edge_Color: {r: 3.3962264, g: 1.3966558, b: 0.5286579, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SubTex_Color: {r: 2.6082377, g: 1.4201922, b: 0.805686, a: 0}
-    - _Tint_Color: {r: 1.425956, g: 1.2553178, b: 0.63898975, a: 0}
+    - _SubTex_Color: {r: 2.3696065, g: 1.9215727, b: 1.3971736, a: 0}
+    - _Tint_Color: {r: 1.39772, g: 1.2367262, b: 0.62933993, a: 0}
