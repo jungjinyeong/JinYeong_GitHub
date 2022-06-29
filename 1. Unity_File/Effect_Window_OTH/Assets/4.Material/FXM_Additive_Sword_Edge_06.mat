@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FXM_Alphablend_Particle_39
-  m_Shader: {fileID: 4800000, guid: a0dac7c0552a0d540a012d543a01f583, type: 3}
-  m_ShaderKeywords: _KEYWORD0_ON _USE_CUSTOM_ON
+  m_Name: FXM_Additive_Sword_Edge_06
+  m_Shader: {fileID: 4800000, guid: e281cd5c28c159c4f9d435c207358ee6, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -36,66 +36,38 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Dissolve_Texture:
-        m_Texture: {fileID: 2800000, guid: 03344d3d32e85af4faf109e635145a9b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Dissove_Texture:
-        m_Texture: {fileID: 2800000, guid: 0c5c899619e886b41a798555299abd18, type: 3}
+        m_Texture: {fileID: 2800000, guid: d66bfe10b05fc6e46b051b9afca6d29b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _FXT_Circle_Normal:
-        m_Texture: {fileID: 2800000, guid: c12d25eccac6f9d4ea9e7b0250a35c48, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Main_Texture:
-        m_Texture: {fileID: 2800000, guid: 03344d3d32e85af4faf109e635145a9b, type: 3}
-        m_Scale: {x: 0.57, y: 0.56}
-        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Noise_Texture:
-        m_Texture: {fileID: 2800000, guid: 19891385e026bce4894bf60164334a4f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Normal_Textrue:
-        m_Texture: {fileID: 2800000, guid: c12d25eccac6f9d4ea9e7b0250a35c48, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Opacity_Texture:
-        m_Texture: {fileID: 2800000, guid: c2413ef1a54da374ab4fc98b50b8ef17, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Sub_Texture:
-        m_Texture: {fileID: 2800000, guid: 8d21b35fab1359d4aa689ddf302e1b01, type: 3}
-        m_Scale: {x: 1, y: 0.6}
-        m_Offset: {x: 0, y: 0}
     - _Sword_Texture:
         m_Texture: {fileID: 2800000, guid: 7b081e079f7aa9c43b1de5daf2815f96, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _tex4coord:
-        m_Texture: {fileID: 0}
+        m_Offset: {x: 0, y: -0.18}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: 8d21b35fab1359d4aa689ddf302e1b01, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _tex4coord2:
+    - _tex4coord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -105,53 +77,27 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Cull_Mode: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Diss_UPanner: 0.48
-    - _Diss_VPanner: 0
-    - _Dissolve: 1
+    - _Dissolve: -0.67
     - _DstBlend: 0
-    - _Emi_Ims: 10
-    - _Emi_Offset: 0
-    - _FX_Mask: 2
+    - _Edge_Ins: 1.76
+    - _Edge_Range: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Keyword0: 1
-    - _Main_Ins: 3.8
-    - _Main_Power: 3.8
-    - _Main_UOffset: 0
-    - _Main_UPanner: 0
-    - _Main_VOffset: 0
-    - _Main_VPanner: 0
-    - _Mask_Pow: 0.98
-    - _Mask_Val: 1
     - _Metallic: 0
     - _Mode: 0
-    - _Noise_UPanner: 0
-    - _Noise_VPanner: 0
-    - _Noise_Val: 0
-    - _Normal_Scale: 0
     - _OcclusionStrength: 1
-    - _Opacity: 2.5
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Sub_Ins: 1.02
-    - _Sub_Pow: 1
-    - _Sub_Texture_UPanner: 0
-    - _Sub_Texture_VPanner: 0
-    - _Sword_UOffset: -0.24
     - _UVSec: 0
-    - _Use_Costom: 0
-    - _Use_Custom: 1
+    - _Use_Custom: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Emi_Color: {r: 1.345086, g: 0.8398253, b: 0.24580252, a: 0}
+    - _Edge_Color: {r: 1.0534363, g: 0.448922, b: 1.3792967, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Sub_Color: {r: 2.8824515, g: 2.159931, b: 1.2644715, a: 0}
-    - _Tint_Color: {r: 3.0901961, g: 0.6431373, b: 3.3568628, a: 1}
