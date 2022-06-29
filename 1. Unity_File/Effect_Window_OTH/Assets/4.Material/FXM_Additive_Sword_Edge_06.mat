@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Additive_Sword_Edge_06
   m_Shader: {fileID: 4800000, guid: e281cd5c28c159c4f9d435c207358ee6, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _USE_CUSTOM_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -62,7 +62,7 @@ Material:
     - _Sword_Texture:
         m_Texture: {fileID: 2800000, guid: 7b081e079f7aa9c43b1de5daf2815f96, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: -0.18}
+        m_Offset: {x: 0, y: 0}
     - _TextureSample0:
         m_Texture: {fileID: 2800000, guid: 8d21b35fab1359d4aa689ddf302e1b01, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -81,7 +81,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _Dissolve: -0.67
     - _DstBlend: 0
-    - _Edge_Ins: 1.76
+    - _Edge_Ins: 1.69
     - _Edge_Range: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -94,10 +94,10 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Use_Custom: 0
+    - _Use_Custom: 1
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Edge_Color: {r: 1.0534363, g: 0.448922, b: 1.3792967, a: 0}
+    - _Edge_Color: {r: 1.3842942, g: 0.45618448, b: 2.3548987, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
