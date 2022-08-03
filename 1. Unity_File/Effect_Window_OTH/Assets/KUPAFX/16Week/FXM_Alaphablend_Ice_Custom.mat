@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FXM_Alaphablend_Ice_Custom
+  m_Shader: {fileID: 4800000, guid: 870e2bad3d92c234f9983999a8fea736, type: 3}
+  m_ShaderKeywords: _USE_CUSTOM_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Dissolve_Texture:
+        m_Texture: {fileID: 2800000, guid: ed92731307059fd4fa0510d6b97bce10, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _FXT_Ice01:
+        m_Texture: {fileID: 2800000, guid: 27b83114de59fc44dab96ecdeda996a0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ice_Tex_Normal:
+        m_Texture: {fileID: 2800000, guid: a193986083da480468d48b2feb42d6cd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ice_Texture:
+        m_Texture: {fileID: 2800000, guid: 27b83114de59fc44dab96ecdeda996a0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Parallax_Texture:
+        m_Texture: {fileID: 2800000, guid: 4f599298d22bf8047b38f3bd26dad4c7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Diss_Tex_VPanner: 0.05
+    - _Dissove: 1
+    - _Fade_Distance: 0.84
+    - _Fresnel_Pow: 2.36
+    - _Fresnel_Scale: 1
+    - _Ice_Tex_VPanner: 0.1
+    - _Normal_Scale: 0.171
+    - _Parallax_Scale: 0.69
+    - _Use_Custom: 1
+    - __dirty: 0
+    m_Colors:
+    - _Fresnel_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Tint_Color: {r: 0.7688679, g: 0.87974036, b: 1, a: 0}
