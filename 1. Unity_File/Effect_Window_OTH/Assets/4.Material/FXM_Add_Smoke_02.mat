@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FXM_Alphablend_Ice_01
-  m_Shader: {fileID: 4800000, guid: 3ec91c542790f4b4b8a4735c665a947d, type: 3}
+  m_Name: FXM_Add_Smoke_02
+  m_Shader: {fileID: 4800000, guid: 40bd1920d1fb4b0418140b6eabae9453, type: 3}
   m_ShaderKeywords: _USE_CUSTOM_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -35,28 +35,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Dissolve_Texture:
-        m_Texture: {fileID: 2800000, guid: c3ec6f776be501a4db757961359756df, type: 3}
-        m_Scale: {x: 0.5, y: 0.91}
+    - _Dissove_Texture:
+        m_Texture: {fileID: 2800000, guid: 710f0ecf3a70db046b1d6dc37fef65ac, type: 3}
+        m_Scale: {x: 0.37, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _FXT_Ice_01:
-        m_Texture: {fileID: 2800000, guid: 1fd0a24bca365a343912d72c2c55ea4f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Ice_Tex_Normal:
-        m_Texture: {fileID: 2800000, guid: 1612e87ed21a8af4080fd48ab7954cae, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Ice_Texure:
-        m_Texture: {fileID: 2800000, guid: 1fd0a24bca365a343912d72c2c55ea4f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Main_Texture:
+        m_Texture: {fileID: 2800000, guid: 019a46b174c20524da7e64a1f435f5c4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -71,10 +63,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Parallax_Tex:
-        m_Texture: {fileID: 2800000, guid: 4f599298d22bf8047b38f3bd26dad4c7, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _tex4coord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -85,39 +73,28 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Cull_Mode: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Dissolve_UPanner: 0
-    - _Dissolve_VPanner: 0.1
-    - _Dissolve_Val: 1
+    - _Dissolve: -0.05
     - _DstBlend: 0
-    - _Fresnel_Pow: 4.03
-    - _Fresnel_Scale: 1
+    - _Fade_Distance: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Ice_Tex_UPanner: 0
-    - _Ice_Tex_VPanner: 0.15
-    - _Ice_UPanner: 0
-    - _Ice_VPanner: 0
+    - _Main_Ins: 1
+    - _Main_Pow: 1
     - _Metallic: 0
     - _Mode: 0
-    - _Normal_Scale: 1.14
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Parallax_Scale: 3.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _Use_Custom: 1
-    - _Use_Custum: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Fresnel_Color: {r: 0.44348806, g: 0.44348806, b: 0.44348806, a: 0}
-    - _Tint_Color: {r: 1, g: 1, b: 1, a: 0}
-    - _Vector0: {r: -0.26, g: 3.18, b: 0, a: 0}
+    - _Tint_Color: {r: 12.894436, g: 14.761663, b: 14.937817, a: 1}
