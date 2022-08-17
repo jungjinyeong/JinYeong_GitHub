@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FXM_Additive_Shokwave_14
+  m_Name: FXM_Additive_Shokwave_15
   m_Shader: {fileID: 4800000, guid: 5c32856f1ef8d2d4aabcec85709de624, type: 3}
-  m_ShaderKeywords: _USE_COSTUM_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -52,19 +52,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Main_Texture:
-        m_Texture: {fileID: 2800000, guid: 8d21b35fab1359d4aa689ddf302e1b01, type: 3}
-        m_Scale: {x: 1, y: 0.61}
+        m_Texture: {fileID: 2800000, guid: 03344d3d32e85af4faf109e635145a9b, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Mask_Texture:
         m_Texture: {fileID: 2800000, guid: c2413ef1a54da374ab4fc98b50b8ef17, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0.01}
+        m_Offset: {x: 0, y: 0.13}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texture:
-        m_Texture: {fileID: 2800000, guid: 291b26790b4e30e43b6347b381849af8, type: 3}
+        m_Texture: {fileID: 2800000, guid: f99cd2cad01a9ec4c9f1d25eebf10402, type: 3}
         m_Scale: {x: 2, y: 0.25}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -119,10 +119,10 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Use_Costum: 1
+    - _Use_Costum: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint_Color: {r: 0.52078146, g: 0.6119594, b: 0.7830189, a: 0}
+    - _Tint_Color: {r: 0.19632053, g: 0.07035421, b: 0.2924528, a: 0}
