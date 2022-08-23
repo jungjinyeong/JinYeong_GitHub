@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{62B07B40-3F93-2987-E911-D2DBF3DEDD0D}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmplifyShaderEditor", "AmplifyShaderEditor.csproj", "{438623EC-EBE6-1DB0-1909-2462B8E233A0}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62B07B40-3F93-2987-E911-D2DBF3DEDD0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62B07B40-3F93-2987-E911-D2DBF3DEDD0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62B07B40-3F93-2987-E911-D2DBF3DEDD0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62B07B40-3F93-2987-E911-D2DBF3DEDD0D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{438623EC-EBE6-1DB0-1909-2462B8E233A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{438623EC-EBE6-1DB0-1909-2462B8E233A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{438623EC-EBE6-1DB0-1909-2462B8E233A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
