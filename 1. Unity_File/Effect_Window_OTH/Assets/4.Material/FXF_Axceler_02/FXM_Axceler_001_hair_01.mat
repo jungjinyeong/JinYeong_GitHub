@@ -47,6 +47,18 @@ Material:
         m_Texture: {fileID: 2800000, guid: 645b0a2fda25d114599a2fba6417fe81, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Fresnel_Normal_Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ice_Tex_Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Ice_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -60,6 +72,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Parallax_Texture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -89,6 +105,8 @@ Material:
     - _F_Normal_Tex_Str: 1
     - _F_Normal_Tex_UTiling: 0
     - _F_Normal_Tex_VTiling: 0
+    - _Float1: 1
+    - _Float3: 6.188235
     - _Fresnel_Pow: 1.63
     - _Fresnel_Scale: 0
     - _Fresnel_Val: 0.638
@@ -96,26 +114,32 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Hit_Val: 0
+    - _Ice_Tex_VPanner: 0
     - _Metallic: 0
     - _Mode: 0
-    - _Normal_Str: 1
+    - _Normal_Scale: 0.7882353
+    - _Normal_Str: 4.68
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Parallax_Scale: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _Use_Lerp_FX: 0
     - _Use_Vertex_Dissove: 0
     - _Vertex_Diss_Edge: 0.1
     - _Vertex_Dissolve: 10
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Albedo_Color: {r: 0.05660379, g: 0.03748504, b: 0.019490927, a: 0}
+    - _Albedo_Color: {r: 0.31132078, g: 0.20893544, b: 0.077830195, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 1, g: 1, b: 1, a: 0}
+    - _Color1: {r: 1, g: 1, b: 1, a: 0}
     - _Edge_Color: {r: 1, g: 1, b: 1, a: 0}
-    - _Emi_Color: {r: 0.103773594, g: 0.042463962, b: 0.022027416, a: 0}
+    - _Emi_Color: {r: 0.5660378, g: 0.088109665, b: 0.16899307, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Fresnel_Color: {r: 3.8199854, g: 2.360463, b: 0.88292116, a: 0}
+    - _Fresnel_Color: {r: 3.9399853, g: 0.539998, b: 1.0107816, a: 0}
     - _Hit_Fx: {r: 1, g: 1, b: 1, a: 0}
     - _Tint_Color: {r: 1, g: 1, b: 1, a: 0}
