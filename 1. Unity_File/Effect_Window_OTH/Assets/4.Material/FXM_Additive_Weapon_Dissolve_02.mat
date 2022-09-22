@@ -60,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Main_Texture:
-        m_Texture: {fileID: 2800000, guid: 881d985a758544b40991e70cf9130a76, type: 3}
+        m_Texture: {fileID: 2800000, guid: b661ce021aa40ea40875646ad1cdf161, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -84,7 +84,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample0:
-        m_Texture: {fileID: 2800000, guid: c7d564bbc661feb448e7dcb86e2aa438, type: 3}
+        m_Texture: {fileID: 2800000, guid: 951950474f889244586e51364bc1fbe3, type: 3}
         m_Scale: {x: 1, y: 0.8}
         m_Offset: {x: 0, y: 0}
     - _Tint_Dissolve_Texture:
@@ -111,14 +111,14 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Dissolve_Int: 0.29
+    - _Dissolve_Int: 1
     - _Dissolve_Val: 1
     - _DstBlend: 0
-    - _F_Pow: 4.18
-    - _F_Scale: -100
+    - _F_Pow: 0.96
+    - _F_Scale: 0.48
     - _Float0: 0
     - _Float1: 2.2
-    - _Float2: 0
+    - _Float2: 0.2660801
     - _Flow_Ins: 1.35
     - _Flow_Pow: 0.85
     - _Flow_Time_1: 1
@@ -127,6 +127,9 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Glow: 0.8
+    - _Keyword0: 0
+    - _Keyword1: 0
+    - _Keyword2: 0
     - _Mask_Pow: 0.92
     - _Metallic: 0
     - _Mode: 0
@@ -140,7 +143,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Step_Int: -0.46
-    - _Step_Size_Int: 0.02
+    - _Step_Size_Int: 1.59
     - _UVSec: 0
     - _Use_Custom: 1
     - _ZWrite: 1
@@ -148,7 +151,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1.1206975, g: 0.37225845, b: 0.24845651, a: 1}
-    - _Dissolve_Color: {r: 29.508846, g: 19.621065, b: 4.016911, a: 1}
+    - _Dissolve_Color: {r: 2.067393, g: 1.472907, b: 0.4193298, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Fresnel_Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Main_Color: {r: 1.1486983, g: 1.1486983, b: 1.1486983, a: 0}
+    - _Fresnel_Color: {r: 0.805686, g: 0.3755316, b: 0.08876202, a: 1}
+    - _Main_Color: {r: 0.98833734, g: 0.98833734, b: 0.98833734, a: 0}
