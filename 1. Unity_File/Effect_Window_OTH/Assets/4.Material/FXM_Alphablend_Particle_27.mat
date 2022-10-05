@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Alphablend_Particle_27
-  m_Shader: {fileID: 4800000, guid: b8ce0bd5273b8844b9e4946262caff8a, type: 3}
+  m_Shader: {fileID: 4800000, guid: 872e767325fe1cc46a9d0565ba5cdbbd, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -74,6 +74,7 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
+    - _DepthFade: 1
     - _DetailNormalMapScale: 1
     - _Dissolve: 0.1540282
     - _DstBlend: 0
@@ -82,6 +83,8 @@ Material:
     - _GlossyReflections: 1
     - _Main_Ins: 1
     - _Main_Power: 1.43
+    - _Main_Upanner: 0
+    - _Main_Vpanner: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -97,4 +100,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint_Color: {r: 0.71568966, g: 0.76530594, b: 1.3669028, a: 1}
+    - _Tint_Color: {r: 1.8249228, g: 1.8249228, b: 1.8249228, a: 1}

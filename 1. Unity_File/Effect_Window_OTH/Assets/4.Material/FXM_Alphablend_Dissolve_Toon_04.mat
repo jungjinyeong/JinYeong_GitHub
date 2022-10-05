@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Alphablend_Dissolve_Toon_04
-  m_Shader: {fileID: 4800000, guid: e168318167f2d374ea6c21c0826fb2a1, type: 3}
+  m_Shader: {fileID: 4800000, guid: f15f2979d3518be47a9e933422c449b2, type: 3}
   m_ShaderKeywords: _USE_CUSTOM_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -77,7 +77,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
+    - _Cull_Mode: 0
     - _Cutoff: 0.5
+    - _Depth_Fade: 0
     - _DetailNormalMapScale: 1
     - _Dissolve: 1
     - _Dissolve_Rotator1: 3.86

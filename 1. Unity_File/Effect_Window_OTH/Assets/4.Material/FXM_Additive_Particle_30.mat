@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Additive_Particle_30
-  m_Shader: {fileID: 4800000, guid: ba9430b3cbc844e4ebcfbc0c4ece53c5, type: 3}
+  m_Shader: {fileID: 4800000, guid: c3dc919efbf7b1a4991c465b43ff12b9, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -70,12 +70,14 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
+    - _DepthFade: 1.31
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Main_Ins: 1.8
+    - _Main_Ins: 1.63
+    - _Main_Pow: 1
     - _Main_Power: 5.36
     - _Metallic: 0
     - _Mode: 0
