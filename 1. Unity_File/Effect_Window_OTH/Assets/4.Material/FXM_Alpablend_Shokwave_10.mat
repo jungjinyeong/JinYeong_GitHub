@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Alpablend_Shokwave_10
   m_Shader: {fileID: 4800000, guid: 6b6079144d88bde4a84b39b97fb28667, type: 3}
-  m_ShaderKeywords: _USE_COSTUM_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -41,7 +41,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Dissolve_Texture:
         m_Texture: {fileID: 2800000, guid: a8ec58d7d9ea3ef4ab485d9213a9f139, type: 3}
-        m_Scale: {x: 1, y: 0.25}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
@@ -52,20 +52,20 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Main_Texture:
-        m_Texture: {fileID: 2800000, guid: 7942e01aa6202744db9bc724f6356fc4, type: 3}
+        m_Texture: {fileID: 2800000, guid: d66bfe10b05fc6e46b051b9afca6d29b, type: 3}
         m_Scale: {x: 2, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Mask_Texture:
         m_Texture: {fileID: 2800000, guid: c2413ef1a54da374ab4fc98b50b8ef17, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0.01}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texture:
         m_Texture: {fileID: 2800000, guid: 291b26790b4e30e43b6347b381849af8, type: 3}
-        m_Scale: {x: 2, y: 0.5}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -95,7 +95,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _Diss_UPanner: 0
     - _Diss_VPanner: 1
-    - _Dissolve: 0.85
+    - _Dissolve: 1
     - _Dissolve_Val: 0
     - _DstBlend: 0
     - _GlossMapScale: 1
@@ -106,11 +106,11 @@ Material:
     - _Main_UVPow: 1
     - _Main_VPanner: 0.5
     - _Mani_Ins: 2.3
-    - _Mask_Rang: 1.33
+    - _Mask_Rang: 2.2
     - _Metallic: 0
     - _Mode: 0
     - _Noise_UPanner: 0
-    - _Noise_VPanner: 0
+    - _Noise_VPanner: -0.5
     - _Noise_Val: 0.054
     - _OcclusionStrength: 1
     - _Opacity: 0.61
@@ -119,10 +119,10 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Use_Costum: 1
+    - _Use_Costum: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint_Color: {r: 2.0490139, g: 2.096323, b: 5.5908804, a: 0}
+    - _Tint_Color: {r: 6.4116073, g: 3.1671796, b: 7.3772106, a: 0}

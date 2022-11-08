@@ -53,7 +53,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Main_Texture:
         m_Texture: {fileID: 2800000, guid: 8d21b35fab1359d4aa689ddf302e1b01, type: 3}
-        m_Scale: {x: 2, y: 0.5}
+        m_Scale: {x: 1, y: 0}
         m_Offset: {x: 0, y: 0}
     - _Mask_Texture:
         m_Texture: {fileID: 2800000, guid: c2413ef1a54da374ab4fc98b50b8ef17, type: 3}
@@ -64,8 +64,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texture:
-        m_Texture: {fileID: 2800000, guid: 291b26790b4e30e43b6347b381849af8, type: 3}
-        m_Scale: {x: 2, y: 0.25}
+        m_Texture: {fileID: 2800000, guid: 19891385e026bce4894bf60164334a4f, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -90,6 +90,7 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Chromatic_Val: 0
+    - _Cull_Mode: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _Diss_UPanner: 0
@@ -103,12 +104,12 @@ Material:
     - _Main_Pow: 0.93
     - _Main_UPanner: 0
     - _Main_UVPow: 1
-    - _Main_VPanner: 0.5
+    - _Main_VPanner: -0.5
     - _Mani_Ins: 0.91
-    - _Mask_Rang: 2.35
+    - _Mask_Rang: 3
     - _Metallic: 0
     - _Mode: 0
-    - _Noise_UPanner: -0.06
+    - _Noise_UPanner: -1
     - _Noise_VPanner: 0
     - _Noise_Val: 0.087
     - _OcclusionStrength: 1
@@ -124,4 +125,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint_Color: {r: 4.6181526, g: 1.3717173, b: 7.092783, a: 0}
+    - _Tint_Color: {r: 1.3739944, g: 7.043363, b: 7.092783, a: 0}

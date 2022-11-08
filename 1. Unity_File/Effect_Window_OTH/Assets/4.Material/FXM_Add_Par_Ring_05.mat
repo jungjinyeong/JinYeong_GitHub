@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Chromatic_Texture_Obj:
-        m_Texture: {fileID: 2800000, guid: b5adf78e477c2ca40a0e1d3df1f16a83, type: 3}
+        m_Texture: {fileID: 2800000, guid: d6519871a572e074d8db45063bd7881a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -69,8 +69,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Chromatic_Val: 0.013
+    - _Chromatic_Val: 0
+    - _Cull_Mode: 0
     - _Cutoff: 0.5
+    - _Depth_Fade: 0
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
@@ -93,4 +95,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Main_Texture_Offset: {r: 1, g: 1, b: 0, a: 0}
-    - _Tint_Color: {r: 0.32079923, g: 0.3665778, b: 0.8396226, a: 1}
+    - _Tint_Color: {r: 0.5625639, g: 0.3215687, b: 0.8392157, a: 1}
