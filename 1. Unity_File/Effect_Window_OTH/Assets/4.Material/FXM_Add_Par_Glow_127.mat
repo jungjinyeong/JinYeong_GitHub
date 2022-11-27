@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Add_Par_Glow_127
-  m_Shader: {fileID: 4800000, guid: ba9430b3cbc844e4ebcfbc0c4ece53c5, type: 3}
+  m_Shader: {fileID: 4800000, guid: c3dc919efbf7b1a4991c465b43ff12b9, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -66,6 +66,7 @@ Material:
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
+    - _DepthFade: 2.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
@@ -86,4 +87,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint_Color: {r: 1.6055588, g: 0.77335817, b: 0.504364, a: 1}
+    - _Tint_Color: {r: 2.143547, g: 2.143547, b: 2.143547, a: 1}
