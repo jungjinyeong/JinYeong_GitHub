@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FXM_Alphablend_Sword01
+  m_Shader: {fileID: 4800000, guid: 3849625d43563364bb22f08a6dd4aba4, type: 3}
+  m_ShaderKeywords: USE_CUSTOM_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Dissolve_Texture:
+        m_Texture: {fileID: 2800000, guid: cba05dd92e71fcb48a1aac76c4c30af5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FXT_Sword01:
+        m_Texture: {fileID: 2800000, guid: c655ce6b69242084aae743bf2992a8f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Main_Texture:
+        m_Texture: {fileID: 2800000, guid: e3c24bd69ca2d4a42933ef11dbb112c5, type: 3}
+        m_Scale: {x: 2, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_Texture:
+        m_Texture: {fileID: 2800000, guid: 1dbf1177420b46f47b20959a7c02ae71, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Sword_Texture:
+        m_Texture: {fileID: 2800000, guid: c655ce6b69242084aae743bf2992a8f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Use_Custom: 1
+    - _DissTex_UPanner: -0.15
+    - _DissTex_VPanner: 0
+    - _Dissolve_Val: 1
+    - _Emi_Ins: 2.1
+    - _Emi_Offset: 0.22
+    - _Main_Ins: 1
+    - _Main_Pow: 1
+    - _Main_UPanner: -0.2
+    - _Main_VPanner: 0
+    - _Noise_Str: 0.176
+    - _Noise_UPanner: -0.22
+    - _Noise_VPanner: 0
+    - _Opacity: 2
+    - _Sword_Uoffset: -0.04
+    - __dirty: 0
+    m_Colors:
+    - _Color0: {r: 1.9502074, g: 1.3785949, b: 3.2111173, a: 0}
+    - _Emi_Color: {r: 6.7032022, g: 2.1661003, b: 0.5561609, a: 0}
+    - _Main_Color: {r: 1.1553019, g: 0.7521323, b: 4.309515, a: 0}
+  m_BuildTextureStacks: []

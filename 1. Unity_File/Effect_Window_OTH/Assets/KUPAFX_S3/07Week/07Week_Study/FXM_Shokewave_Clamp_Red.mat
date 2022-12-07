@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FXM_Shokewave_Clamp_Red
+  m_Shader: {fileID: 4800000, guid: 4409ef03b4c79e34a9e0f2dac3db7915, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FXT_GraTex01:
+        m_Texture: {fileID: 2800000, guid: f67296ec8cc86e149905ff5e9142a83f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FXT_GraTexure:
+        m_Texture: {fileID: 2800000, guid: f67296ec8cc86e149905ff5e9142a83f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Gra_Tetutre:
+        m_Texture: {fileID: 2800000, guid: f67296ec8cc86e149905ff5e9142a83f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_Texture:
+        m_Texture: {fileID: 2800000, guid: 1dbf1177420b46f47b20959a7c02ae71, type: 3}
+        m_Scale: {x: 2, y: 0.1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Chromatic: 0.0065
+    - _CullMode: 0
+    - _Dst: 10
+    - _Gra_Pow: 6
+    - _Noise_Str: 1.19
+    - _Noise_UPanner: 0
+    - _Noise_VPanner: 0.15
+    - _Src: 5
+    - _Use_Custom: 0
+    - _VOffset: -0.21
+    - __dirty: 0
+    m_Colors:
+    - _Color0: {r: 5.5784883, g: 1.6777633, b: 1.1314859, a: 0}
+  m_BuildTextureStacks: []

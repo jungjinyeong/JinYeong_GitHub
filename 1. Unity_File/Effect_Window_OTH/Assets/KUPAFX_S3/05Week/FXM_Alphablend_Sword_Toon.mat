@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FXM_Alphablend_Sword_Toon
+  m_Shader: {fileID: 4800000, guid: 50c05c39c47b0a24d9f326b3e8f6249c, type: 3}
+  m_ShaderKeywords: USE_CUSTOM_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Dissolve_Texture:
+        m_Texture: {fileID: 2800000, guid: 145143eb93006454baed654b5669d0c3, type: 3}
+        m_Scale: {x: 1, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _Main_Texture:
+        m_Texture: {fileID: 2800000, guid: 145143eb93006454baed654b5669d0c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_Texture:
+        m_Texture: {fileID: 2800000, guid: 1dbf1177420b46f47b20959a7c02ae71, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Sword_Texture:
+        m_Texture: {fileID: 2800000, guid: ad10936c74d94c64bb56d6aebb2e9221, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Use_Custom: 1
+    - _Ceil_Count: 2
+    - _DissTex_UPanner: 0
+    - _DissTex_VPanner: 0
+    - _Dissolve_Val: 0
+    - _Emi_Ins: 0
+    - _Emi_Offset: 0
+    - _Head_Ins: 3
+    - _Head_Pow: 2.63
+    - _Main_Ins: 1
+    - _Main_Pow: 1
+    - _Main_UPanner: -0.05
+    - _Main_VPanner: 0
+    - _Noise_Str: 0.026
+    - _Noise_UPanner: 0.05
+    - _Noise_VPanner: 0
+    - _Opacity: 10
+    - _Sword_Uoffset: 0.2235294
+    - __dirty: 0
+    m_Colors:
+    - _Emi_Color: {r: 2.1185474, g: 0.59896106, b: 0.32166424, a: 0}
+    - _Main_Color: {r: 0.8018868, g: 0.43811986, b: 0.17777678, a: 0}
+  m_BuildTextureStacks: []
