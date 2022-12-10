@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PostCustom_2
   m_Shader: {fileID: 4800000, guid: da626533905584341934ecfc80818aae, type: 3}
-  m_ShaderKeywords: _KEYWORD0_ON
+  m_ShaderKeywords: _KEYWORD0_ON _ONEMINUS_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,12 +20,12 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: da1b421283118de4783b12bc4f65fe0f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample1:
         m_Texture: {fileID: 2800000, guid: 33089684546b211479fd8af0f2569dbf, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 1, y: 1.29}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
@@ -33,9 +33,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Keyword0: 1
-    - _Max: 0.99
-    - _Min: 0.03
-    - _OneMinus: 0
+    - _Max: 0.43
+    - _Min: -0.01
+    - _OneMinus: 1
     m_Colors:
-    - _ColorA: {r: 0.9245283, g: 0.48406905, b: 0.48406905, a: 0}
+    - _ColorA: {r: 1, g: 1, b: 1, a: 0}
     - _ColorB: {r: 0, g: 0, b: 0, a: 0}
