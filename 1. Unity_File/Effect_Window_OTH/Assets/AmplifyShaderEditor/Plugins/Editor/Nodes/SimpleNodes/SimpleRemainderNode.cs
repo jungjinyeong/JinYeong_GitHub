@@ -6,11 +6,13 @@ using System;
 namespace AmplifyShaderEditor
 {
 	[Serializable]
-	[NodeAttributes( "Remainder", "Math Operators", "Remainder between two variables" )]
+	[NodeAttributes( "Remainder", "Math Operators", "Remainder between two int variables",tags:"modulo fmod" )]
 	public sealed class SimpleRemainderNode : DynamicTypeNode
 	{
 		private const string VertexFragRemainder = "( {0} % {1} )";
-		private const string SurfaceRemainder = "fmod( {0} , {1} )";
+		//private const string SurfaceRemainder = "fmod( {0} , {1} )";
+		private const string RemainderCalculationInt = "( {0} - {1} * ({0}/{1}))";
+		private const string RemainderCalculationFloat = "( {0} - {1} * floor({0}/{1}))";
 
 		protected override void CommonInit( int uniqueId )
 		{
@@ -29,7 +31,13 @@ namespace AmplifyShaderEditor
 				return m_outputPorts[ 0 ].LocalValue( dataCollector.PortCategory );
 
 			base.BuildResults( outputId, ref dataCollector, ignoreLocalvar );
-			string opMode = dataCollector.IsTemplate ? VertexFragRemainder : SurfaceRemainder;
+#if UNITY_2018_1_OR_NEWER
+			string opMode = VertexFragRemainder;
+#else
+			string opMode =	dataCollector.IsTemplate ? 
+							VertexFragRemainder :
+							( ( m_outputPorts[ 0 ].DataType == WirePortDataType.INT ) ? RemainderCalculationInt: RemainderCalculationFloat );
+#endif
 			string result = string.Empty;
 			switch( m_outputPorts[ 0 ].DataType )
 			{

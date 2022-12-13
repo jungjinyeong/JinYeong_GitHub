@@ -4,6 +4,7 @@
 using UnityEngine;
 using UnityEditor;
 using System;
+using System.Collections.Generic;
 
 namespace AmplifyShaderEditor
 {
@@ -23,12 +24,18 @@ namespace AmplifyShaderEditor
 														"Sampler 1D",
 														"Sampler 2D",
 														"Sampler 3D",
-														"Sampler Cube"};
+														"Sampler Cube",
+														"Sampler 2D Array",
+														"Sampler State",
+														"Custom"};
 
 		[SerializeField]
 		private int m_selectedInputTypeInt = 1;
 
 		private WirePortDataType m_selectedInputType = WirePortDataType.FLOAT;
+
+		[SerializeField]
+		private FunctionNode m_functionNode;
 
 		[SerializeField]
 		private string m_inputName = "Input";
@@ -76,8 +83,43 @@ namespace AmplifyShaderEditor
 
 		public override void SetPreviewInputs()
 		{
+			if( Fnode == null )
+			{
+				m_ignoreConnection = false;
+				CheckSpherePreview();
+			}
+			else
+			{
+				var input = Fnode.GetInput( this );
+				if( input != null && ( !InputPorts[ 0 ].IsConnected || input.IsConnected ) )
+				{
+					m_ignoreConnection = true;
+					InputPorts[ 0 ].PreparePortCacheID();
+					Fnode.SetPreviewInput( input );
+					if( input.ExternalReferences.Count > 0 )
+					{
+						SpherePreview = Fnode.ContainerGraph.GetNode( input.ExternalReferences[ 0 ].NodeId ).SpherePreview;
+					}
+					else
+					{
+						SpherePreview = false;
+					}
+					PreviewMaterial.SetTexture( InputPorts[ 0 ].CachedPropertyId, input.InputPreviewTexture( Fnode.ContainerGraph ) );
+				}
+				else
+				{
+					m_ignoreConnection = false;
+					CheckSpherePreview();
+				}
+			}
+
 			if( !m_ignoreConnection )
 				base.SetPreviewInputs();
+
+			for( int i = 0; i < OutputPorts[ 0 ].ExternalReferences.Count; i++ )
+			{
+				ContainerGraph.GetNode( OutputPorts[ 0 ].ExternalReferences[ i ].NodeId ).OnNodeChange();
+			}
 
 			if( m_typeId == -1 )
 				m_typeId = Shader.PropertyToID( "_Type" );
@@ -91,6 +133,57 @@ namespace AmplifyShaderEditor
 			else
 				PreviewMaterial.SetInt( m_typeId, 0 );
 
+		}
+
+		public override bool RecursivePreviewUpdate( Dictionary<string, bool> duplicatesDict = null )
+		{
+			if( duplicatesDict == null )
+			{
+				duplicatesDict = ContainerGraph.ParentWindow.VisitedChanged;
+			}
+
+			for( int i = 0; i < InputPorts.Count; i++ )
+			{
+				ParentNode outNode = null;
+				if( Fnode != null )
+				{
+					var input = Fnode.GetInput( this );
+					if( input.ExternalReferences.Count > 0 )
+					{
+						outNode = Fnode.ContainerGraph.GetNode( input.ExternalReferences[ 0 ].NodeId );
+					} 
+					else if( InputPorts[ i ].ExternalReferences.Count > 0 )
+					{
+						outNode = ContainerGraph.GetNode( InputPorts[ i ].ExternalReferences[ 0 ].NodeId );
+					}
+				}
+				else
+				{
+					if( InputPorts[ i ].ExternalReferences.Count > 0 )
+					{
+						outNode = ContainerGraph.GetNode( InputPorts[ i ].ExternalReferences[ 0 ].NodeId );
+					}
+				}
+				if( outNode != null )
+				{
+					if( !duplicatesDict.ContainsKey( outNode.OutputId ) )
+					{
+						bool result = outNode.RecursivePreviewUpdate();
+						if( result )
+							PreviewIsDirty = true;
+					}
+					else if( duplicatesDict[ outNode.OutputId ] )
+					{
+						PreviewIsDirty = true;
+					}
+				}
+			}
+
+			bool needsUpdate = PreviewIsDirty;
+			RenderNodePreview();
+			if( !duplicatesDict.ContainsKey( OutputId ) )
+				duplicatesDict.Add( OutputId, needsUpdate );
+			return needsUpdate;
 		}
 
 		protected override void OnUniqueIDAssigned()
@@ -149,6 +242,9 @@ namespace AmplifyShaderEditor
 				case WirePortDataType.SAMPLER2D: m_selectedInputTypeInt = 9; break;
 				case WirePortDataType.SAMPLER3D: m_selectedInputTypeInt = 10; break;
 				case WirePortDataType.SAMPLERCUBE: m_selectedInputTypeInt = 11; break;
+				case WirePortDataType.SAMPLER2DARRAY: m_selectedInputTypeInt = 12; break;
+				case WirePortDataType.SAMPLERSTATE: m_selectedInputTypeInt = 13; break;
+				case WirePortDataType.OBJECT: m_selectedInputTypeInt = 14; break;
 			}
 		}
 
@@ -270,26 +366,6 @@ namespace AmplifyShaderEditor
 
 		void UpdatePorts()
 		{
-			//switch( m_inputPorts[ 0 ].DataType )
-			//{
-			//	case WirePortDataType.INT: m_selectedInputTypeInt = 0; break;
-			//	default:
-			//	case WirePortDataType.FLOAT: m_selectedInputTypeInt = 1; break;
-			//	case WirePortDataType.FLOAT2: m_selectedInputTypeInt = 2; break;
-			//	case WirePortDataType.FLOAT3: m_selectedInputTypeInt = 3; break;
-
-			//	//case 2: m_selectedInputType = WirePortDataType.FLOAT2; break;
-			//	//case 3: m_selectedInputType = WirePortDataType.FLOAT3; break;
-			//	//case 4: m_selectedInputType = WirePortDataType.FLOAT4; break;
-			//	//case 5: m_selectedInputType = WirePortDataType.COLOR; break;
-			//	//case 6: m_selectedInputType = WirePortDataType.FLOAT3x3; break;
-			//	//case 7: m_selectedInputType = WirePortDataType.FLOAT4x4; break;
-			//	//case 8: m_selectedInputType = WirePortDataType.SAMPLER1D; break;
-			//	//case 9: m_selectedInputType = WirePortDataType.SAMPLER2D; break;
-			//	//case 10: m_selectedInputType = WirePortDataType.SAMPLER3D; break;
-			//	//case 11: m_selectedInputType = WirePortDataType.SAMPLERCUBE; break;
-			//}
-
 			switch( m_selectedInputTypeInt )
 			{
 				case 0: m_selectedInputType = WirePortDataType.INT; break;
@@ -305,6 +381,9 @@ namespace AmplifyShaderEditor
 				case 9: m_selectedInputType = WirePortDataType.SAMPLER2D; break;
 				case 10: m_selectedInputType = WirePortDataType.SAMPLER3D; break;
 				case 11: m_selectedInputType = WirePortDataType.SAMPLERCUBE; break;
+				case 12: m_selectedInputType = WirePortDataType.SAMPLER2DARRAY; break;
+				case 13: m_selectedInputType = WirePortDataType.SAMPLERSTATE; break;
+				case 14: m_selectedInputType = WirePortDataType.OBJECT; break;
 			}
 
 			ChangeInputType( m_selectedInputType, false );
@@ -342,8 +421,14 @@ namespace AmplifyShaderEditor
 				case WirePortDataType.SAMPLER2D:
 				case WirePortDataType.SAMPLER3D:
 				case WirePortDataType.SAMPLERCUBE:
+				case WirePortDataType.SAMPLER2DARRAY:
 				{
-					types = new WirePortDataType[] { WirePortDataType.SAMPLER1D, WirePortDataType.SAMPLER2D, WirePortDataType.SAMPLER3D, WirePortDataType.SAMPLERCUBE, WirePortDataType.OBJECT };
+					types = new WirePortDataType[] { WirePortDataType.SAMPLER1D, WirePortDataType.SAMPLER2D, WirePortDataType.SAMPLER3D, WirePortDataType.SAMPLERCUBE, WirePortDataType.SAMPLER2DARRAY, WirePortDataType.OBJECT };
+				}
+				break;
+				case WirePortDataType.SAMPLERSTATE:
+				{
+					types = new WirePortDataType[] { WirePortDataType.SAMPLERSTATE };
 				}
 				break;
 				default:
@@ -402,6 +487,15 @@ namespace AmplifyShaderEditor
 			SetAdditonalTitleText( "( " + m_inputValueTypes[ m_selectedInputTypeInt ] + " )" );
 		}
 
+		public override void RefreshExternalReferences()
+		{
+			base.RefreshExternalReferences();
+
+			SetTitleText( m_inputName );
+			UpdatePorts();
+			SetAdditonalTitleText( "( " + m_inputValueTypes[ m_selectedInputTypeInt ] + " )" );
+		}
+
 		public WirePortDataType SelectedInputType
 		{
 			get { return m_selectedInputType; }
@@ -422,6 +516,12 @@ namespace AmplifyShaderEditor
 		{
 			get { return m_autoCast; }
 			set { m_autoCast = value; }
+		}
+
+		public FunctionNode Fnode
+		{
+			get { return m_functionNode; }
+			set { m_functionNode = value; }
 		}
 	}
 }

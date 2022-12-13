@@ -14,6 +14,7 @@ namespace AmplifyShaderEditor
 		private const string QueueIndexStr = "Index";
 		private const string QueueLabelStr = "Queue";
 		private const string RenderTypeLabelStr = "Type";
+		private const string CustomRenderTypeLabelStr = "Custom";
 
 		private const float ShaderKeywordButtonLayoutWidth = 15;
 		private UndoParentNode m_currentOwner;
@@ -22,6 +23,9 @@ namespace AmplifyShaderEditor
 		private bool m_tagNameCheckFlag = true;
 		private int m_tagNameCheckItemId = 0;
 		private const double TagNameCheckMaxInterval = 1.5;
+
+		[SerializeField]
+		private bool m_foldout = false;
 
 		[SerializeField]
 		private List<CustomTagData> m_availableTags = new List<CustomTagData>();
@@ -64,9 +68,9 @@ namespace AmplifyShaderEditor
 
 		public override void ShowUnreadableDataMessage( ParentNode owner )
 		{
-			bool foldout = owner.ContainerGraph.ParentWindow.InnerWindowVariables.ExpandedCustomTags;
-			NodeUtils.DrawPropertyGroup( ref foldout, CustomTagsStr, base.ShowUnreadableDataMessage );
-			owner.ContainerGraph.ParentWindow.InnerWindowVariables.ExpandedCustomTags = foldout;
+			//bool foldout = owner.ContainerGraph.ParentWindow.InnerWindowVariables.ExpandedCustomTags;
+			NodeUtils.DrawPropertyGroup( ref m_foldout, CustomTagsStr, base.ShowUnreadableDataMessage );
+			//owner.ContainerGraph.ParentWindow.InnerWindowVariables.ExpandedCustomTags = foldout;
 		}
 
 		public void OnLogicUpdate()
@@ -84,6 +88,10 @@ namespace AmplifyShaderEditor
 					{
 						m_availableTags[ m_tagNameCheckItemId ].SpecialTag = TemplateSpecialTags.RenderType;
 					}
+					else if( m_availableTags[ m_tagNameCheckItemId ].TagName.Equals( Constants.DisableBatchingHelperStr ) )
+					{
+						m_availableTags[ m_tagNameCheckItemId ].SpecialTag = TemplateSpecialTags.DisableBatching;
+					}
 					else
 					{
 						m_availableTags[ m_tagNameCheckItemId ].SpecialTag = TemplateSpecialTags.None;
@@ -95,16 +103,16 @@ namespace AmplifyShaderEditor
 		public override void Draw( UndoParentNode owner, bool style = true )
 		{
 			m_currentOwner = owner;
-			bool foldout = owner.ContainerGraph.ParentWindow.InnerWindowVariables.ExpandedCustomTags;
+			//bool foldout = owner.ContainerGraph.ParentWindow.InnerWindowVariables.ExpandedCustomTags;
 			if( style )
 			{
-				NodeUtils.DrawPropertyGroup( ref foldout, CustomTagsStr, DrawMainBody, DrawButtons );
+				NodeUtils.DrawPropertyGroup( ref m_foldout, CustomTagsStr, DrawMainBody, DrawButtons );
 			}
 			else
 			{
-				NodeUtils.DrawNestedPropertyGroup( ref foldout, CustomTagsStr, DrawMainBody, DrawButtons );
+				NodeUtils.DrawNestedPropertyGroup( ref m_foldout, CustomTagsStr, DrawMainBody, DrawButtons );
 			}
-			owner.ContainerGraph.ParentWindow.InnerWindowVariables.ExpandedCustomTags = foldout;
+			//owner.ContainerGraph.ParentWindow.InnerWindowVariables.ExpandedCustomTags = foldout;
 		}
 
 		void DrawButtons()
@@ -164,9 +172,19 @@ namespace AmplifyShaderEditor
 						//Tag Value
 						switch( m_availableTags[ i ].SpecialTag )
 						{
+							case TemplateSpecialTags.DisableBatching:
+							{
+								m_availableTags[ i ].Batching = (DisableBatching)m_currentOwner.EditorGUILayoutEnumPopup( RenderTypeLabelStr, m_availableTags[ i ].Batching );
+								m_availableTags[ i ].TagValue = m_availableTags[ i ].Batching.ToString();
+							}
+							break;
 							case TemplateSpecialTags.RenderType:
 							{
 								m_availableTags[ i ].RenderType = (RenderType)m_currentOwner.EditorGUILayoutEnumPopup( RenderTypeLabelStr, m_availableTags[ i ].RenderType );
+								if( m_availableTags[ i ].RenderType == RenderType.Custom )
+								{
+									m_availableTags[ i ].TagValue = m_currentOwner.EditorGUILayoutTextField( CustomRenderTypeLabelStr, m_availableTags[ i ].TagValue );
+								}
 							}
 							break;
 							case TemplateSpecialTags.Queue:
@@ -249,6 +267,11 @@ namespace AmplifyShaderEditor
 				{
 					switch( tag )
 					{
+						case TemplateSpecialTags.DisableBatching:
+						{
+							m_availableTags[ i ].Batching = TemplateHelperFunctions.StringToDisableBatching[ item.ActionData ];
+							return;
+						}
 						case TemplateSpecialTags.RenderType:
 						{
 							m_availableTags[ i ].RenderType = TemplateHelperFunctions.StringToRenderType[ item.ActionData ];
@@ -269,13 +292,24 @@ namespace AmplifyShaderEditor
 			CustomTagData data = new CustomTagData();
 			switch( tag )
 			{
+				case TemplateSpecialTags.DisableBatching:
+				{
+					data.SpecialTag = TemplateSpecialTags.DisableBatching;
+					data.TagName = "DisableBatching";
+					data.Batching = TemplateHelperFunctions.StringToDisableBatching[ item.ActionData ];
+				}
+				break;
 				case TemplateSpecialTags.RenderType:
 				{
+					data.SpecialTag = TemplateSpecialTags.RenderType;
+					data.TagName = "RenderType";
 					data.RenderType = TemplateHelperFunctions.StringToRenderType[ item.ActionData ];
 				}
 				break;
 				case TemplateSpecialTags.Queue:
 				{
+					data.SpecialTag = TemplateSpecialTags.Queue;
+					data.TagName = "Queue";
 					data.RenderQueue = TemplateHelperFunctions.StringToRenderQueue[ item.ActionData ];
 					data.RenderQueueOffset = item.ActionDataIdx;
 					data.BuildQueueTagValue();
@@ -295,7 +329,7 @@ namespace AmplifyShaderEditor
 
 				if( !m_availableTagsDict.ContainsKey( name ) )
 				{
-					CustomTagData tagData = new CustomTagData( data, m_availableTags.Count - 1 );
+					CustomTagData tagData = new CustomTagData( data, m_availableTags.Count );
 					m_availableTags.Add( tagData );
 					m_availableTagsDict.Add( name, tagData );
 				}
@@ -359,6 +393,13 @@ namespace AmplifyShaderEditor
 					IOUtils.AddFieldValueToString( ref nodeInfo, m_availableTags[ i ].ToString() );
 				}
 			}
+		}
+
+		public void ChangeTagValue( string name , string value )
+		{
+			CustomTagData tag = m_availableTags.Find( x => x.TagName.Equals( name ) );
+			if( tag != null )
+				tag.TagValue = value;
 		}
 
 		public string GenerateTags()

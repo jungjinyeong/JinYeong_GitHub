@@ -21,17 +21,29 @@ namespace AmplifyShaderEditor
 
 		public override void RenderNodePreview()
 		{
+			//Runs at least one time
 			if( !m_initialized )
-				return;
-
-			int count = m_outputPorts.Count;
-			for( int i = 0; i < count; i++ )
 			{
-				RenderTexture temp = RenderTexture.active;
-				RenderTexture.active = m_outputPorts[ i ].OutputPreviewTexture;
-				Graphics.Blit( null, m_outputPorts[ i ].OutputPreviewTexture, PreviewMaterial, i );
-				RenderTexture.active = temp;
+				// nodes with no preview don't update at all
+				PreviewIsDirty = false;
+				return;
 			}
+
+			if( !PreviewIsDirty )
+				return;
+			if( !Preferences.GlobalDisablePreviews )
+			{
+				int count = m_outputPorts.Count;
+				for( int i = 0 ; i < count ; i++ )
+				{
+					RenderTexture temp = RenderTexture.active;
+					RenderTexture.active = m_outputPorts[ i ].OutputPreviewTexture;
+					Graphics.Blit( null , m_outputPorts[ i ].OutputPreviewTexture , PreviewMaterial , i );
+					RenderTexture.active = temp;
+				}
+			}
+
+			PreviewIsDirty = m_continuousPreviewRefresh;
 		}
 
 		public override string GenerateShaderForOutput( int outputId, ref MasterNodeDataCollector dataCollector, bool ignoreLocalvar )

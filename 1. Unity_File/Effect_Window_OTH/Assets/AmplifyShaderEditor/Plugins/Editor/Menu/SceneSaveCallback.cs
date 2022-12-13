@@ -10,6 +10,9 @@ namespace AmplifyShaderEditor
 
 		static string[] OnWillSaveAssets( string[] paths )
 		{
+			if( !Preferences.GlobalUpdateOnSceneSave )
+				return paths;
+
 			bool canSave = false;
 
 			if ( paths.Length == 0 )
@@ -21,7 +24,7 @@ namespace AmplifyShaderEditor
 				for ( int i = 0; i < paths.Length; i++ )
 				{
 					// Only save shader when saving scenes
-					if ( paths[ i ].Contains( UnityStr ) )
+					if ( !string.IsNullOrEmpty( paths[ i ] ) && paths[ i ].Contains( UnityStr ) )
 					{
 						canSave = true;
 						break;

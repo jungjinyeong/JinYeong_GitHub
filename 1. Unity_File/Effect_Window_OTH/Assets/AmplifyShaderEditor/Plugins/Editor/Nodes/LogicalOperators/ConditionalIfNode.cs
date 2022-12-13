@@ -9,7 +9,7 @@ using System;
 namespace AmplifyShaderEditor
 {
 	[Serializable]
-	[NodeAttributes( "If", "Logical Operators", "Conditional comparison between A with B." )]
+	[NodeAttributes( "If", "Logical Operators", "Conditional comparison between A with B.",tags:"branch" )]
 	public sealed class ConditionalIfNode : ParentNode
 	{
 		private const string UseUnityBranchesStr = "Dynamic Branching";
@@ -145,7 +145,7 @@ namespace AmplifyShaderEditor
 			m_results[ 2 ] = m_inputPorts[ 4 ].GenerateShaderForOutput( ref dataCollector, m_outputMainDataType, ignoreLocalvar, true );
 
 			string localVarName = "ifLocalVar" + OutputId;
-			string localVarDec = string.Format( "{0} {1} = 0;", UIUtils.FinalPrecisionWirePortToCgType( m_currentPrecisionType, m_outputPorts[ 0 ].DataType ), localVarName );
+			string localVarDec = string.Format( "{0} {1} = 0;", UIUtils.PrecisionWirePortToCgType( CurrentPrecisionType, m_outputPorts[ 0 ].DataType ), localVarName );
 
 			bool lequal = false;
 			bool greater = false;

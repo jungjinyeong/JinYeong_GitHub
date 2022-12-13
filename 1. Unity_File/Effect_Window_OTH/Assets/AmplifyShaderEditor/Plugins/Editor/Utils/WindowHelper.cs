@@ -25,6 +25,15 @@ public static class WindowHelper
 				return field.GetValue( m_instance );
 			}
 		}
+
+		public object Docked
+		{
+			get
+			{
+				var property = m_type.GetProperty( "docked", BindingFlags.Instance | BindingFlags.NonPublic );
+				return property.GetValue( m_instance, null );
+			}
+		}
 	}
 
 	private class R_DockArea
@@ -47,6 +56,15 @@ public static class WindowHelper
 			}
 		}
 
+		public object ActualView
+		{
+			get
+			{
+				var field = m_type.GetField( "m_ActualView", BindingFlags.Instance | BindingFlags.NonPublic );
+				return field.GetValue( m_instance );
+			}
+		}
+
 		public object OriginalDragSource
 		{
 			set
@@ -56,15 +74,28 @@ public static class WindowHelper
 			}
 		}
 
+
 		public void AddTab( EditorWindow pane )
 		{
 #if UNITY_2018_3_OR_NEWER
 			var method = m_type.GetMethod( "AddTab", BindingFlags.Instance | BindingFlags.Public, null, new System.Type[] { typeof( EditorWindow ), typeof( bool ) }, null );
-			method.Invoke( m_instance, new object[] { pane, true } );
+			if( method != null )
+				method.Invoke( m_instance, new object[] { pane, true } );
 #else
 			var method = m_type.GetMethod( "AddTab", BindingFlags.Instance | BindingFlags.Public, null, new System.Type[] { typeof( EditorWindow ) }, null );
-			method.Invoke( m_instance, new object[] { pane } );
+			if( method != null )
+				method.Invoke( m_instance, new object[] { pane } );
 #endif
+		}
+
+		public void RemoveTab( EditorWindow pane )
+		{
+			if( !pane.maximized )
+			{
+				var method = m_type.GetMethod( "RemoveTab", BindingFlags.Instance | BindingFlags.Public, null, new System.Type[] { typeof( EditorWindow ) }, null );
+				if( method != null )
+					method.Invoke( m_instance, new object[] { pane } );
+			}
 		}
 	}
 
@@ -79,13 +110,35 @@ public static class WindowHelper
 			m_type = instance.GetType();
 		}
 
-
 		public object RootSplitView
 		{
 			get
 			{
 				var property = m_type.GetProperty( "rootSplitView", BindingFlags.Instance | BindingFlags.Public );
 				return property.GetValue( m_instance, null );
+			}
+		}
+
+		public object RootView
+		{
+			get
+			{
+				var property = m_type.GetProperty( "rootView", BindingFlags.Instance | BindingFlags.Public );
+				return property.GetValue( m_instance, null );
+			}
+		}
+
+		public object WindowPtr
+		{
+			get
+			{
+				var all = m_type.GetNestedTypes();
+				foreach( var item in all )
+				{
+					Debug.Log( item.Name );
+				}
+				var property = m_type.GetField( "m_WindowPtr", BindingFlags.Instance | BindingFlags.NonPublic );
+				return property.GetValue( m_instance );
 			}
 		}
 	}
@@ -120,6 +173,31 @@ public static class WindowHelper
 		Top,
 		Right,
 		Bottom
+	}
+
+	public static bool IsDocked( this EditorWindow wnd )
+	{
+#if UNITY_2020_2_OR_NEWER
+		return wnd.docked;
+#else
+		var parent = new R_EditorWindow( wnd );
+		return (bool)parent.Docked;
+#endif
+	}
+
+	public static void Undock( this EditorWindow wnd )
+	{
+		var parent = new R_EditorWindow( wnd );
+		var dockArea = new R_DockArea( parent.Parent );
+		dockArea.RemoveTab( wnd );
+		wnd.Show( true );
+	}
+
+	public static void RemoveTab( this EditorWindow wnd )
+	{
+		var parent = new R_EditorWindow( wnd );
+		var dockArea = new R_DockArea( parent.Parent );
+		dockArea.RemoveTab( wnd );
 	}
 
 	/// <summary>

@@ -10,7 +10,7 @@ namespace AmplifyShaderEditor
 	public sealed class WorldReflectionVector : ParentNode
 	{
 		private const string ReflectionVecValStr = "newWorldReflection";
-		private const string ReflectionVecDecStr = "float3 {0} = {1};";
+		private const string ReflectionVecDecStr = "{0} {1} = {2};";
 
 		private const string NormalizeOptionStr = "Normalize";
 		private const string NormalizeFunc = "normalize( {0} )";
@@ -69,7 +69,7 @@ namespace AmplifyShaderEditor
 						return GetOutputVectorItem( 0, outputId, m_outputPorts[ 0 ].LocalValue( dataCollector.PortCategory ) );
 
 
-					string value = dataCollector.TemplateDataCollectorInstance.GetWorldReflection( m_currentPrecisionType, m_inputPorts[ 0 ].GeneratePortInstructions( ref dataCollector ) );
+					string value = dataCollector.TemplateDataCollectorInstance.GetWorldReflection( CurrentPrecisionType, m_inputPorts[ 0 ].GeneratePortInstructions( ref dataCollector ) );
 					if( m_normalize )
 					{
 						value = string.Format( NormalizeFunc, value );
@@ -80,7 +80,7 @@ namespace AmplifyShaderEditor
 				else
 				{
 					string name;
-					string value = dataCollector.TemplateDataCollectorInstance.GetWorldReflection( m_currentPrecisionType );
+					string value = dataCollector.TemplateDataCollectorInstance.GetWorldReflection( CurrentPrecisionType );
 					if( m_normalize )
 					{
 						name = "normalizedWorldRefl";
@@ -143,7 +143,7 @@ namespace AmplifyShaderEditor
 				if( m_outputPorts[ 0 ].IsLocalValue( dataCollector.PortCategory ) )
 					return GetOutputVectorItem( 0, outputId, m_outputPorts[ 0 ].LocalValue( dataCollector.PortCategory ) );
 				
-				dataCollector.AddToInput( UniqueId, SurfaceInputs.WORLD_REFL, m_currentPrecisionType );
+				dataCollector.AddToInput( UniqueId, SurfaceInputs.WORLD_REFL, CurrentPrecisionType );
 
 				string result = string.Empty;
 				if( m_inputPorts[ 0 ].IsConnected )
@@ -164,7 +164,9 @@ namespace AmplifyShaderEditor
 
 					if( connCount > 1 )
 					{
-						dataCollector.AddToLocalVariables( UniqueId, string.Format( ReflectionVecDecStr, ReflectionVecValStr + OutputId, result ) );
+						string precisionType = UIUtils.PrecisionWirePortToCgType( UIUtils.CurrentWindow.CurrentGraph.CurrentPrecision, WirePortDataType.FLOAT3 );
+
+						dataCollector.AddToFragmentLocalVariables( UniqueId, string.Format( ReflectionVecDecStr, precisionType, ReflectionVecValStr + OutputId, result ) );
 						RegisterLocalVariable( 0, result, ref dataCollector, ReflectionVecValStr + OutputId );
 						return GetOutputVectorItem( 0, outputId, m_outputPorts[ 0 ].LocalValue( dataCollector.PortCategory ) );
 					}

@@ -27,7 +27,7 @@ namespace AmplifyShaderEditor
 		{
 			if ( dataCollector.PortCategory == MasterNodePortCategory.Tessellation )
 			{
-				UIUtils.ShowMessage( m_nodeAttribs.Name + " does not work on Tessellation port" );
+				UIUtils.ShowMessage( UniqueId, m_nodeAttribs.Name + " does not work on Tessellation port" );
 				return GenerateErrorValue();
 			}
 
@@ -35,13 +35,23 @@ namespace AmplifyShaderEditor
 			{
 				if ( dataCollector.TesselationActive )
 				{
-					UIUtils.ShowMessage( m_nodeAttribs.Name + " does not work properly on Vertex/Tessellation ports" );
+					UIUtils.ShowMessage( UniqueId, m_nodeAttribs.Name + " does not work properly on Vertex/Tessellation ports" );
 					return GenerateErrorValue();
 				}
 				else
 				{
-					UIUtils.ShowMessage( m_nodeAttribs.Name + " does not work properly on Vertex ports" );
-					return GenerateErrorValue();
+					UIUtils.ShowMessage( UniqueId , FaceVariableNode.FaceOnVertexWarning , MessageSeverity.Warning );
+					string faceVariable = GeneratorUtils.GenerateVertexFace( ref dataCollector , UniqueId );
+
+					if( m_outputPorts[ 0 ].IsLocalValue( dataCollector.PortCategory ) )
+						return m_outputPorts[ 0 ].LocalValue( dataCollector.PortCategory );
+
+					string frontValue = m_inputPorts[ 0 ].GeneratePortInstructions( ref dataCollector );
+					string backValue = m_inputPorts[ 1 ].GeneratePortInstructions( ref dataCollector );
+
+					string finalResult = string.Format( SwitchOp , faceVariable , frontValue , backValue );
+					RegisterLocalVariable( 0 , finalResult , ref dataCollector , "switchResult" + OutputId );
+					return m_outputPorts[ 0 ].LocalValue( dataCollector.PortCategory );
 				}
 			}
 
@@ -55,7 +65,7 @@ namespace AmplifyShaderEditor
 			string variable = string.Empty;
 			if ( dataCollector.IsTemplate )
 			{
-				variable = dataCollector.TemplateDataCollectorInstance.GetVFace();
+				variable = dataCollector.TemplateDataCollectorInstance.GetVFace( UniqueId );
 			}
 			else
 			{

@@ -18,32 +18,30 @@ namespace AmplifyShaderEditor
 		{
 			"multi_compile _ _MAIN_LIGHT_SHADOWS",
 			"multi_compile _ _MAIN_LIGHT_SHADOWS_CASCADE",
-			"multi_compile _ _ADDITIONAL_LIGHTS_VERTEX _ADDITIONAL_LIGHTS",
-			"multi_compile _ _ADDITIONAL_LIGHT_SHADOWS",
 			"multi_compile _ _SHADOWS_SOFT"
 		};
 
-		private readonly string[] LightweightVertexInstructions =
+#if UNITY_2021_1_OR_NEWER
+		private readonly string[] URP12PragmaMultiCompiles =
 		{
-			/*local vertex position*/"VertexPositionInputs ase_vertexInput = GetVertexPositionInputs ({0});",
-			"#ifdef _MAIN_LIGHT_SHADOWS//ase_lightAtten_vert",
-			/*available interpolator*/"{0} = GetShadowCoord( ase_vertexInput );",
-			"#endif//ase_lightAtten_vert"
+			"multi_compile _ _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN",
+			"multi_compile _ _ADDITIONAL_LIGHT_SHADOWS",
+			"multi_compile _ _SHADOWS_SOFT"
 		};
+#endif
+		//private readonly string[] LightweightVertexInstructions =
+		//{
+		//	/*local vertex position*/"VertexPositionInputs ase_vertexInput = GetVertexPositionInputs ({0});",
+		//	"#ifdef _MAIN_LIGHT_SHADOWS//ase_lightAtten_vert",
+		//	/*available interpolator*/"{0} = GetShadowCoord( ase_vertexInput );",
+		//	"#endif//ase_lightAtten_vert"
+		//};
 		private const string LightweightLightAttenDecl = "float ase_lightAtten = 0;";
 		private readonly string[] LightweightFragmentInstructions =
 		{
 			/*shadow coords*/"Light ase_lightAtten_mainLight = GetMainLight( {0} );",
-			"ase_lightAtten = ase_lightAtten_mainLight.distanceAttenuation * ase_lightAtten_mainLight.shadowAttenuation;",
-			"#ifdef _ADDITIONAL_LIGHTS//ase_lightAtten_frag",
-			"int ase_lightAtten_pixelLightCount = GetAdditionalLightsCount();",
-			"for (int i = 0; i < ase_lightAtten_pixelLightCount; ++i)",
-			"{//ase_lightAtten_frag",
-			/*world pos*/"\tLight ase_lightAtten_pointLight = GetAdditionalLight( i, {0} );",
-			"\tase_lightAtten += ase_lightAtten_pointLight.distanceAttenuation * ase_lightAtten_pointLight.shadowAttenuation;",
-			"}//ase_lightAtten_frag",
-			"#endif//ase_lightAtten_frag",
-			"ase_lightAtten = saturate( ase_lightAtten );"
+			//"ase_lightAtten = ase_lightAtten_mainLight.distanceAttenuation * ase_lightAtten_mainLight.shadowAttenuation;"
+			"ase_lightAtten = {0}.distanceAttenuation * {0}.shadowAttenuation;"
 		};
 
 		protected override void CommonInit( int uniqueId )
@@ -62,7 +60,13 @@ namespace AmplifyShaderEditor
 			{
 				if( !dataCollector.IsSRP )
 				{
-					return dataCollector.TemplateDataCollectorInstance.GetLightAtten( UniqueId ); ;
+					string result = string.Empty;
+					if( dataCollector.TemplateDataCollectorInstance.ContainsSpecialLocalFragVar( TemplateInfoOnSematics.SHADOWCOORDS, WirePortDataType.FLOAT4, ref result ) )
+					{
+						return result;
+					}
+
+					return dataCollector.TemplateDataCollectorInstance.GetLightAtten( UniqueId );
 				}
 				else
 				{
@@ -72,44 +76,54 @@ namespace AmplifyShaderEditor
 							return ASEAttenVarName;
 
 						// Pragmas
-						for( int i = 0; i < LightweightPragmaMultiCompiles.Length; i++ )
-							dataCollector.AddToPragmas( UniqueId, LightweightPragmaMultiCompiles[ i ] );
-
+#if UNITY_2021_1_OR_NEWER
+						if( ASEPackageManagerHelper.CurrentLWVersion >= ASESRPVersions.ASE_SRP_12_0_0 )
+						{
+							for( int i = 0 ; i < URP12PragmaMultiCompiles.Length ; i++ )
+								dataCollector.AddToPragmas( UniqueId , URP12PragmaMultiCompiles[ i ] );
+						}
+						else
+#endif
+						{
+							for( int i = 0 ; i < LightweightPragmaMultiCompiles.Length ; i++ )
+								dataCollector.AddToPragmas( UniqueId , LightweightPragmaMultiCompiles[ i ] );
+						}
+						//string shadowCoords = dataCollector.TemplateDataCollectorInstance.GetShadowCoords( UniqueId/*, false, dataCollector.PortCategory*/ );
+						//return shadowCoords;
 						// Vertex Instructions
-						TemplateVertexData shadowCoordsData = dataCollector.TemplateDataCollectorInstance.RequestNewInterpolator( WirePortDataType.FLOAT4, false );
-						string vertexInterpName = dataCollector.TemplateDataCollectorInstance.CurrentTemplateData.VertexFunctionData.OutVarName;
-						string vertexShadowCoords = vertexInterpName + "." + shadowCoordsData.VarNameWithSwizzle;
-						string vertexPos = dataCollector.TemplateDataCollectorInstance.GetVertexPosition( WirePortDataType.FLOAT3, PrecisionType.Float ,false,MasterNodePortCategory.Vertex );
+						//TemplateVertexData shadowCoordsData = dataCollector.TemplateDataCollectorInstance.RequestNewInterpolator( WirePortDataType.FLOAT4, false );
+						//string vertexInterpName = dataCollector.TemplateDataCollectorInstance.CurrentTemplateData.VertexFunctionData.OutVarName;
+						//string vertexShadowCoords = vertexInterpName + "." + shadowCoordsData.VarNameWithSwizzle;
+						//string vertexPos = dataCollector.TemplateDataCollectorInstance.GetVertexPosition( WirePortDataType.FLOAT3, PrecisionType.Float ,false,MasterNodePortCategory.Vertex );
 
-						dataCollector.AddToVertexLocalVariables( UniqueId, string.Format( LightweightVertexInstructions[ 0 ], vertexPos ));
-						dataCollector.AddToVertexLocalVariables( UniqueId, LightweightVertexInstructions[ 1 ]);
-						dataCollector.AddToVertexLocalVariables( UniqueId, string.Format( LightweightVertexInstructions[ 2 ], vertexShadowCoords ) );
-						dataCollector.AddToVertexLocalVariables( UniqueId, LightweightVertexInstructions[ 3 ]);
+						//dataCollector.AddToVertexLocalVariables( UniqueId, string.Format( LightweightVertexInstructions[ 0 ], vertexPos ));
+						//dataCollector.AddToVertexLocalVariables( UniqueId, LightweightVertexInstructions[ 1 ]);
+						//dataCollector.AddToVertexLocalVariables( UniqueId, string.Format( LightweightVertexInstructions[ 2 ], vertexShadowCoords ) );
+						//dataCollector.AddToVertexLocalVariables( UniqueId, LightweightVertexInstructions[ 3 ]);
 
 						// Fragment Instructions
-						string worldPos = dataCollector.TemplateDataCollectorInstance.GetWorldPos();
-						string fragmentInterpName = dataCollector.TemplateDataCollectorInstance.CurrentTemplateData.FragmentFunctionData.InVarName;
-						string fragmentShadowCoords = fragmentInterpName + "." + shadowCoordsData.VarNameWithSwizzle;
+						//string fragmentInterpName = dataCollector.TemplateDataCollectorInstance.CurrentTemplateData.FragmentFunctionData.InVarName;
+						//string fragmentShadowCoords = fragmentInterpName + "." + shadowCoordsData.VarNameWithSwizzle;
 
 						dataCollector.AddLocalVariable( UniqueId, LightweightLightAttenDecl );
-						dataCollector.AddLocalVariable( UniqueId, string.Format( LightweightFragmentInstructions[ 0 ], fragmentShadowCoords ) );
-						dataCollector.AddLocalVariable( UniqueId, LightweightFragmentInstructions[ 1 ] );
-						dataCollector.AddLocalVariable( UniqueId, LightweightFragmentInstructions[ 2 ] );
-						dataCollector.AddLocalVariable( UniqueId, LightweightFragmentInstructions[ 3 ] );
-						dataCollector.AddLocalVariable( UniqueId, LightweightFragmentInstructions[ 4 ] );
-						dataCollector.AddLocalVariable( UniqueId, LightweightFragmentInstructions[ 5 ] );
-						dataCollector.AddLocalVariable( UniqueId, string.Format( LightweightFragmentInstructions[ 6 ], worldPos ) );
-						dataCollector.AddLocalVariable( UniqueId, LightweightFragmentInstructions[ 7 ] );
-						dataCollector.AddLocalVariable( UniqueId, LightweightFragmentInstructions[ 8 ] );
-						dataCollector.AddLocalVariable( UniqueId, LightweightFragmentInstructions[ 9 ] );
-						dataCollector.AddLocalVariable( UniqueId, LightweightFragmentInstructions[ 10 ] );
+						string mainLight = dataCollector.TemplateDataCollectorInstance.GetURPMainLight( UniqueId );
+						//dataCollector.AddLocalVariable( UniqueId, string.Format( LightweightFragmentInstructions[ 0 ], shadowCoords ) );
+						dataCollector.AddLocalVariable( UniqueId, string.Format( LightweightFragmentInstructions[ 1 ], mainLight) );
 						return ASEAttenVarName;
+					}
+					else
+					{
+						UIUtils.ShowMessage( UniqueId, "Light Attenuation node currently not supported on HDRP" );
+						return "1";
 					}
 				}
 			}
 
 			if ( dataCollector.GenType == PortGenType.NonCustomLighting || dataCollector.CurrentCanvasMode != NodeAvailability.CustomLighting )
-                return "1";
+			{
+				UIUtils.ShowMessage( UniqueId, "Light Attenuation node currently not supported on non-custom lighting surface shaders" );
+				return "1";
+			}
 
 			dataCollector.UsingLightAttenuation = true;
 			return ASEAttenVarName;
@@ -118,7 +132,7 @@ namespace AmplifyShaderEditor
 		public override void Draw( DrawInfo drawInfo )
 		{
 			base.Draw( drawInfo );
-			if( ContainerGraph.CurrentCanvasMode == NodeAvailability.TemplateShader )
+			if( ContainerGraph.CurrentCanvasMode == NodeAvailability.TemplateShader && ContainerGraph.CurrentSRPType != TemplateSRPType.Lightweight )
 			{
 				m_showErrorMessage = true;
 				m_errorMessageTypeIsError = NodeMessageType.Warning;

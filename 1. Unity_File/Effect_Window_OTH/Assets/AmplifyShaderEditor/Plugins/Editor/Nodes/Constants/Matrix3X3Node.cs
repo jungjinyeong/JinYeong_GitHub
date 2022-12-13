@@ -23,7 +23,6 @@ namespace AmplifyShaderEditor
 			//m_defaultValue = new Matrix4x4();
 			//m_materialValue = new Matrix4x4();
 			m_drawPreview = false;
-			m_precisionString = UIUtils.FinalPrecisionWirePortToCgType( m_currentPrecisionType, m_outputPorts[ 0 ].DataType );
 		}
 
 		public override void CopyDefaultsToMaterial()
@@ -138,7 +137,8 @@ namespace AmplifyShaderEditor
 			else if( drawInfo.CurrentEventType == EventType.Repaint )
 			{
 				bool guiEnabled = GUI.enabled;
-				GUI.enabled = m_currentParameterType != PropertyType.Global;
+				//redundant ternary conditional but this makes easier to read that only when m_showCuffer is on that we need to take PropertyType.Property into account
+				GUI.enabled = ( m_showCBuffer )? m_currentParameterType != PropertyType.Global&& m_currentParameterType != PropertyType.Property : m_currentParameterType != PropertyType.Global;
 
 				bool currMode = m_materialMode && m_currentParameterType != PropertyType.Constant;
 				Matrix4x4 value = currMode ? m_materialValue : m_defaultValue;
@@ -167,7 +167,7 @@ namespace AmplifyShaderEditor
 		public override string GenerateShaderForOutput( int outputId, ref MasterNodeDataCollector dataCollector, bool ignoreLocalvar )
 		{
 			base.GenerateShaderForOutput( outputId, ref dataCollector, ignoreLocalvar );
-			m_precisionString = UIUtils.FinalPrecisionWirePortToCgType( m_currentPrecisionType, m_outputPorts[ 0 ].DataType );
+			m_precisionString = UIUtils.PrecisionWirePortToCgType( CurrentPrecisionType, m_outputPorts[ 0 ].DataType );
 			if( m_currentParameterType != PropertyType.Constant )
 			{
 				if( m_outputPorts[ 0 ].IsLocalValue( dataCollector.PortCategory ) )
@@ -199,7 +199,7 @@ namespace AmplifyShaderEditor
 
 		public override bool GetUniformData( out string dataType, out string dataName, ref bool fullValue )
 		{
-			dataType = UIUtils.FinalPrecisionWirePortToCgType( m_currentPrecisionType, WirePortDataType.FLOAT4x4 );
+			dataType = UIUtils.PrecisionWirePortToCgType( CurrentPrecisionType, WirePortDataType.FLOAT4x4 );
 			dataName = m_propertyName;
 			return true;
 		}
@@ -216,7 +216,10 @@ namespace AmplifyShaderEditor
 		public override void ForceUpdateFromMaterial( Material material )
 		{
 			if( UIUtils.IsProperty( m_currentParameterType ) && material.HasProperty( m_propertyName ) )
+			{
 				m_materialValue = material.GetMatrix( m_propertyName );
+				PreviewIsDirty = true;
+			}
 		}
 
 

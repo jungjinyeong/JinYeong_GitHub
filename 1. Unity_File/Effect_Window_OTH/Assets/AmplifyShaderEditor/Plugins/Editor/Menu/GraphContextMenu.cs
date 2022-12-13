@@ -4,6 +4,7 @@
 using UnityEngine;
 using UnityEditor;
 using System;
+using System.Text;
 using System.Linq;
 using System.Collections.Generic;
 using System.Reflection;
@@ -40,11 +41,6 @@ namespace AmplifyShaderEditor
 		{
 			m_currentGraph = currentGraph;
 			m_correctlyLoaded = RefreshNodes( currentGraph );
-		}
-
-		private Type[] GetTypesInNamespace( Assembly assembly, string nameSpace )
-		{
-			return assembly.GetTypes().Where( t => String.Equals( t.Namespace, nameSpace, StringComparison.Ordinal ) ).ToArray();
 		}
 
 		public bool RefreshNodes( ParentGraph currentGraph )
@@ -90,63 +86,93 @@ namespace AmplifyShaderEditor
 			try
 			{
 				//IEnumerable<System.Type> availableTypes = AppDomain.CurrentDomain.GetAssemblies().ToList().SelectMany( type => type.GetTypes() );
-				Type[] availableTypes = GetTypesInNamespace( Assembly.GetExecutingAssembly(), "AmplifyShaderEditor" );
+				var mainAssembly = Assembly.GetExecutingAssembly();
+				Type[] availableTypes = IOUtils.GetTypesInNamespace( mainAssembly, "AmplifyShaderEditor" );
+
+#if UNITY_2017_3_OR_NEWER
+				try
+				{
+					var editorAssembly = Assembly.Load( "Assembly-CSharp-Editor" );
+					if( mainAssembly != editorAssembly )
+					{
+						Type[] extraTypes = IOUtils.GetTypesInNamespace( editorAssembly, "AmplifyShaderEditor" );
+						availableTypes = availableTypes.Concat<Type>( extraTypes ).ToArray();
+					}
+				}
+				catch( Exception )
+				{
+					// quiet catch because we don't care if it fails to find the assembly, we'll just skip it
+				}
+#endif
+
+#if UNITY_2018_3_OR_NEWER
+				Type[] asmdefTypes = IOUtils.GetAssemblyTypesArray();
+				if( asmdefTypes != null && asmdefTypes.Length > 0 )
+				{
+					availableTypes = availableTypes.Concat<Type>( asmdefTypes ).ToArray();
+				}
+#endif
+
 				foreach( System.Type type in availableTypes )
 				{
-					foreach( NodeAttributes attribute in Attribute.GetCustomAttributes( type ).OfType<NodeAttributes>() )
+					if( !m_itemsDict.ContainsKey( type ) )
 					{
-						if( attribute.Available && !attribute.Deprecated )
+						foreach( NodeAttributes attribute in Attribute.GetCustomAttributes( type ).OfType<NodeAttributes>() )
 						{
-							//if ( !UIUtils.CurrentWindow.IsShaderFunctionWindow && attribute.AvailableInFunctionsOnly )
-							//	continue;
-
-							if( !UIUtils.HasColorCategory( attribute.Category ) )
+							if( attribute.Available && !attribute.Deprecated )
 							{
-								if( !String.IsNullOrEmpty( attribute.CustomCategoryColor ) )
+								//if ( !UIUtils.CurrentWindow.IsShaderFunctionWindow && attribute.AvailableInFunctionsOnly )
+								//	continue;
+
+								if( !UIUtils.HasColorCategory( attribute.Category ) )
 								{
-									try
+									if( !String.IsNullOrEmpty( attribute.CustomCategoryColor ) )
 									{
-										Color color = new Color();
-										ColorUtility.TryParseHtmlString( attribute.CustomCategoryColor, out color );
-										UIUtils.AddColorCategory( attribute.Category, color );
+										try
+										{
+											Color color = new Color();
+											ColorUtility.TryParseHtmlString( attribute.CustomCategoryColor , out color );
+											UIUtils.AddColorCategory( attribute.Category , color );
+										}
+										catch( Exception e )
+										{
+											Debug.LogException( e );
+											UIUtils.AddColorCategory( attribute.Category , Constants.DefaultCategoryColor );
+										}
 									}
-									catch( Exception e )
+									//else
+									//{
+									//	UIUtils.AddColorCategory( attribute.Category, Constants.DefaultCategoryColor );
+									//}
+								}
+
+								if( attribute.CastType != null && attribute.CastType.Length > 0 && type != null )
+								{
+									for( int i = 0 ; i < attribute.CastType.Length ; i++ )
 									{
-										Debug.LogException( e );
-										UIUtils.AddColorCategory( attribute.Category, Constants.DefaultCategoryColor );
+										m_castTypes.Add( attribute.CastType[ i ] , type );
 									}
 								}
-								//else
-								//{
-								//	UIUtils.AddColorCategory( attribute.Category, Constants.DefaultCategoryColor );
-								//}
-							}
 
-							if( attribute.CastType != null && attribute.CastType.Length > 0 && type != null )
+								if( attribute.ShortcutKey != KeyCode.None && type != null )
+									m_shortcutTypes.Add( attribute.ShortcutKey , new ShortcutKeyData( type , attribute.Name ) );
+
+								ContextMenuItem newItem = new ContextMenuItem( attribute , type , attribute.Name , attribute.Tags , attribute.Category , attribute.Description , null , attribute.ShortcutKey );
+								if( UIUtils.GetNodeAvailabilityInBitArray( attribute.NodeAvailabilityFlags , NodeAvailability.SurfaceShader ) )
+									m_items.Add( newItem );
+								else if( UIUtils.GetNodeAvailabilityInBitArray( attribute.NodeAvailabilityFlags , currentGraph.ParentWindow.CurrentNodeAvailability ) )
+									m_items.Add( newItem );
+								else if( UIUtils.GetNodeAvailabilityInBitArray( attribute.NodeAvailabilityFlags , currentGraph.CurrentCanvasMode ) )
+									m_items.Add( newItem );
+
+								m_itemsDict.Add( type , attribute );
+								m_itemFunctions.Add( newItem );
+							}
+							else
 							{
-								for( int i = 0; i < attribute.CastType.Length; i++ )
-								{
-									m_castTypes.Add( attribute.CastType[ i ], type );
-								}
+								if( !m_deprecatedItemsDict.ContainsKey(type))
+									m_deprecatedItemsDict.Add( type , attribute );
 							}
-
-							if( attribute.ShortcutKey != KeyCode.None && type != null )
-								m_shortcutTypes.Add( attribute.ShortcutKey, new ShortcutKeyData( type, attribute.Name ) );
-
-							ContextMenuItem newItem = new ContextMenuItem( attribute, type, attribute.Name, attribute.Category, attribute.Description, null, attribute.ShortcutKey );
-							if( UIUtils.GetNodeAvailabilityInBitArray( attribute.NodeAvailabilityFlags, NodeAvailability.SurfaceShader ) )
-								m_items.Add( newItem );
-							else if( UIUtils.GetNodeAvailabilityInBitArray( attribute.NodeAvailabilityFlags, currentGraph.ParentWindow.CurrentNodeAvailability ) )
-								m_items.Add( newItem );
-							else if( UIUtils.GetNodeAvailabilityInBitArray( attribute.NodeAvailabilityFlags, currentGraph.CurrentCanvasMode ) )
-								m_items.Add( newItem );
-
-							m_itemsDict.Add( type, attribute );
-							m_itemFunctions.Add( newItem );
-						}
-						else
-						{
-							m_deprecatedItemsDict.Add( type, attribute );
 						}
 					}
 				}
@@ -178,7 +204,7 @@ namespace AmplifyShaderEditor
 					NodeAttributes attribute = new NodeAttributes( allFunctions[ i ].FunctionName, allFunctions[ i ].CustomNodeCategory, allFunctions[ i ].Description, KeyCode.None, true, 0, int.MaxValue, typeof( AmplifyShaderFunction ) );
 					System.Type type = typeof( FunctionNode );
 
-					ContextMenuItem newItem = new ContextMenuItem( attribute, type, attribute.Name, attribute.Category, attribute.Description, allFunctions[ i ], attribute.ShortcutKey );
+					ContextMenuItem newItem = new ContextMenuItem( attribute, type, AddSpacesToSentence( attribute.Name ), attribute.Tags, attribute.Category, attribute.Description, allFunctions[ i ], attribute.ShortcutKey );
 					m_items.Add( newItem );
 					m_itemFunctions.Add( newItem );
 				}
@@ -221,6 +247,47 @@ namespace AmplifyShaderEditor
 			m_shortcutTypes.Clear();
 			m_shortcutTypes = null;
 
+		}
+
+		public static string AddSpacesToSentence( string text )
+		{
+			if( string.IsNullOrEmpty( text ) )
+				return string.Empty;
+
+			bool lastIsUpper = char.IsUpper( text, 0 );
+			bool lastIsLetter = char.IsLetter( text, 0 );
+			StringBuilder title = new StringBuilder();
+			title.Append( text[ 0 ] );
+			for( int i = 1; i < text.Length; i++ )
+			{
+				bool currIsUpper = char.IsUpper( text, i );
+				bool currIsLetter = char.IsLetter( text, i );
+				if( currIsUpper && !lastIsUpper && lastIsLetter )
+				{
+					title.Append( " " );
+				}
+
+				// if current is a number and previous is a letter we space it (ie: Rotation2D = Rotation 2D)
+				if( lastIsLetter && char.IsNumber( text, i ) )
+				{
+					title.Append( " " );
+				}
+
+				// if previous is upper, current is upper and the next two following are lower then we space it (ie: UVDistortion = UV Distortion)
+				if( i < text.Length - 1 )
+				{
+					bool nextIsLower = char.IsLower( text, i + 1 ) && char.IsLetter( text, i + 1 );
+					bool lastIsLower = i < text.Length - 2 ? char.IsLower( text, i + 2 ) && char.IsLetter( text, i + 2 ) : false;
+					if( lastIsUpper && currIsUpper && currIsLetter && nextIsLower && lastIsLower )
+					{
+						title.Append( " " );
+					}
+				}
+				lastIsUpper = currIsUpper;
+				lastIsLetter = currIsLetter;
+				title.Append( text[ i ] );
+			}
+			return title.ToString();
 		}
 
 		public NodeAttributes GetNodeAttributesForType( System.Type type )

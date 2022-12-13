@@ -44,8 +44,8 @@ namespace AmplifyShaderEditor
 			dataCollector.AddToInput( UniqueId, InputTangentrStr, true );
 			dataCollector.AddToInput( UniqueId, InputTangentrStr, true );
 			dataCollector.AddToInput( UniqueId, InputNormalStr, true );
-			dataCollector.AddToLocalVariables( UniqueId, "float3 binormal = cross( normalize( v.normal ), normalize( v.tangent.xyz ) ) * v.tangent.w;" );
-			dataCollector.AddToLocalVariables( UniqueId, "float3x3 rotation = float3x3( v.tangent.xyz, binormal, v.normal );" );
+			dataCollector.AddToFragmentLocalVariables( UniqueId, "float3 binormal = cross( normalize( v.normal ), normalize( v.tangent.xyz ) ) * v.tangent.w;" );
+			dataCollector.AddToFragmentLocalVariables( UniqueId, "float3x3 rotation = float3x3( v.tangent.xyz, binormal, v.normal );" );
 
 		}
 
@@ -134,7 +134,7 @@ namespace AmplifyShaderEditor
 				break;
 				case CoordinateSpaces.View:
 				{
-					UIUtils.ShowMessage( "View as Source is not supported", MessageSeverity.Warning );
+					UIUtils.ShowMessage( UniqueId, "View as Source is not supported", MessageSeverity.Warning );
 					return value;
 				}
 			}

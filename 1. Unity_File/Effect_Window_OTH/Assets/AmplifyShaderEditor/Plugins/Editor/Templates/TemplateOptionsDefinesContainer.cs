@@ -8,51 +8,62 @@ namespace AmplifyShaderEditor
 	public class TemplateOptionsDefinesContainer
 	{
 		[SerializeField]
-		private List<PropertyDataCollector> m_definesList = new List<PropertyDataCollector>();
+		private List<PropertyDataCollector> m_directivesList = new List<PropertyDataCollector>();
 
 		[NonSerialized]
-		private Dictionary<string, PropertyDataCollector> m_definesDict = new Dictionary<string, PropertyDataCollector>();
+		private Dictionary<string, PropertyDataCollector> m_directivesDict = new Dictionary<string, PropertyDataCollector>();
 
 		void Refresh()
 		{
-			if( m_definesDict.Count != m_definesList.Count )
+			if( m_directivesDict.Count != m_directivesList.Count )
 			{
-				m_definesDict.Clear();
-				for( int i = 0; i < m_definesList.Count; i++ )
+				m_directivesDict.Clear();
+				for( int i = 0; i < m_directivesList.Count; i++ )
 				{
-					m_definesDict.Add( m_definesList[ i ].PropertyName, m_definesList[ i ] );
+					m_directivesDict.Add( m_directivesList[ i ].PropertyName, m_directivesList[ i ] );
 				}
 			}
 		}
 
-		public void AddDefine( string define )
+		public void RemoveTemporaries()
 		{
-			Refresh();
-			if( !m_definesDict.ContainsKey( define ) )
+			List<PropertyDataCollector> temporaries = m_directivesList.FindAll( ( x ) => ( x.NodeId == 1 ) );
+			for( int i = 0; i < temporaries.Count; i++ )
 			{
-				PropertyDataCollector data = new PropertyDataCollector( -1, define );
-				m_definesDict.Add( define, data );
-				m_definesList.Add( data );
+				m_directivesList.Remove( temporaries[ i ] );
+				m_directivesDict.Remove( temporaries[ i ].PropertyName );
 			}
 		}
 
-		public void RemoveDefine( string define )
+		public void AddDirective( string directive , bool temporary , bool isPragma = false )
 		{
 			Refresh();
-			if( m_definesDict.ContainsKey( define ) )
+			if( !m_directivesDict.ContainsKey( directive ) )
 			{
-				m_definesList.Remove( m_definesDict[define] );
-				m_definesDict.Remove( define );
+				int nodeId = temporary ? 1 : 0;
+				PropertyDataCollector data = new PropertyDataCollector( nodeId, directive,-1, isPragma );
+				m_directivesDict.Add( directive, data );
+				m_directivesList.Add( data );
+			}
+		}
+
+		public void RemoveDirective( string directive )
+		{
+			Refresh();
+			if( m_directivesDict.ContainsKey( directive ) )
+			{
+				m_directivesList.Remove( m_directivesDict[directive] );
+				m_directivesDict.Remove( directive );
 			}
 		}
 
 		public void Destroy()
 		{
-			m_definesDict.Clear();
-			m_definesDict = null;
-			m_definesList.Clear();
-			m_definesList = null;
+			m_directivesDict.Clear();
+			m_directivesDict = null;
+			m_directivesList.Clear();
+			m_directivesList = null;
 		}
-		public List<PropertyDataCollector> DefinesList { get { return m_definesList; } }
+		public List<PropertyDataCollector> DefinesList { get { return m_directivesList; } }
 	}
 }

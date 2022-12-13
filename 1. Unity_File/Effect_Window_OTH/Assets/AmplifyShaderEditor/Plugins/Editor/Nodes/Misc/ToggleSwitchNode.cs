@@ -13,7 +13,9 @@ namespace AmplifyShaderEditor
 	{
 		private const string InputPortName = "In ";
 		private const string CurrSelectedStr = "Toggle Value";
-		private const string LerpOp = "lerp({0},{1},{2})";
+		private const string GenerateKeywordStr = "Generate Keyword"; 
+		//private const string LerpOp = "lerp({0},{1},{2})";
+		private const string LerpOp = "(( {2} )?( {1} ):( {0} ))";
 
 		[SerializeField]
 		private string[] AvailableInputsLabels = { "In 0", "In 1" };
@@ -26,6 +28,9 @@ namespace AmplifyShaderEditor
 
 		[SerializeField]
 		private WirePortDataType m_mainDataType = WirePortDataType.FLOAT;
+
+		[SerializeField]
+		private bool m_generateKeyword = true;
 
 		private int m_cachedPropertyId = -1;
 
@@ -50,6 +55,7 @@ namespace AmplifyShaderEditor
 			m_popContent.image = UIUtils.PopupIcon;
 
 			m_availableAttribs.Clear();
+			//Need to maintain this because of retrocompatibility reasons
 			m_availableAttribs.Add( new PropertyAttributes( "Toggle", "[Toggle]" ) );
 
 			m_drawAttributes = false;
@@ -60,6 +66,8 @@ namespace AmplifyShaderEditor
 
 			m_allowPropertyDuplicates = true;
 			m_showAutoRegisterUI = false;
+
+			m_srpBatcherCompatible = true;
 		}
 
 		protected override void OnUniqueIDAssigned()
@@ -159,6 +167,7 @@ namespace AmplifyShaderEditor
 				m_currentSelectedInput = EditorGUIIntPopup( m_varRect, m_currentSelectedInput, AvailableInputsLabels, AvailableInputsValues, UIUtils.SwitchNodePopUp );
 				if ( EditorGUI.EndChangeCheck() )
 				{
+					PreviewIsDirty = true;
 					UpdateConnection();
 					m_requireMaterialUpdate = true;
 					m_editing = false;
@@ -182,7 +191,19 @@ namespace AmplifyShaderEditor
 
 		public override void DrawMainPropertyBlock()
 		{
-			base.DrawMainPropertyBlock();
+			EditorGUILayout.BeginVertical();
+			{
+				ShowPropertyInspectorNameGUI();
+				ShowPropertyNameGUI( true );
+				ShowVariableMode();
+				ShowHybridInstanced();
+				ShowAutoRegister();
+				ShowPrecision();
+				m_generateKeyword = EditorGUILayoutToggle( GenerateKeywordStr, m_generateKeyword );
+				ShowToolbar();
+			}
+			EditorGUILayout.EndVertical();
+
 			EditorGUILayout.Separator();
 			EditorGUI.BeginChangeCheck();
 			m_currentSelectedInput = EditorGUILayoutIntPopup( CurrSelectedStr, m_currentSelectedInput, AvailableInputsLabels, AvailableInputsValues );
@@ -202,7 +223,7 @@ namespace AmplifyShaderEditor
 		public override string GenerateShaderForOutput( int outputId, ref MasterNodeDataCollector dataCollector, bool ignoreLocalvar )
 		{
 			base.GenerateShaderForOutput( outputId, ref dataCollector, ignoreLocalvar );
-			m_precisionString = UIUtils.FinalPrecisionWirePortToCgType( m_currentPrecisionType, m_outputPorts[ 0 ].DataType );
+			m_precisionString = UIUtils.PrecisionWirePortToCgType( CurrentPrecisionType, m_outputPorts[ 0 ].DataType );
 
 			string resultA = m_inputPorts[ 0 ].GenerateShaderForOutput( ref dataCollector, m_mainDataType, ignoreLocalvar, true );
 			string resultB = m_inputPorts[ 1 ].GenerateShaderForOutput( ref dataCollector, m_mainDataType, ignoreLocalvar, true );
@@ -213,33 +234,44 @@ namespace AmplifyShaderEditor
 		{
 			base.ReadFromString( ref nodeParams );
 			m_currentSelectedInput = Convert.ToInt32( GetCurrentParam( ref nodeParams ) );
+			if( UIUtils.CurrentShaderVersion() > 18806 )
+			{
+				m_generateKeyword = Convert.ToBoolean( GetCurrentParam( ref nodeParams ) );
+			}
 		}
 
 		public override void WriteToString( ref string nodeInfo, ref string connectionsInfo )
 		{
 			base.WriteToString( ref nodeInfo, ref connectionsInfo );
 			IOUtils.AddFieldValueToString( ref nodeInfo, m_currentSelectedInput );
+			IOUtils.AddFieldValueToString( ref nodeInfo, m_generateKeyword );
 		}
 
 		public override void RefreshExternalReferences()
 		{
 			base.RefreshExternalReferences();
+			m_selectedAttribs.Clear();
 			UpdateConnection();
 		}
 		public override string GetPropertyValue()
 		{
-			return PropertyAttributes + "[Toggle]" + m_propertyName + "(\"" + m_propertyInspectorName + "\", Float) = " + m_currentSelectedInput;
+#if UNITY_2018_1_OR_NEWER
+			string toggleAttribute = ( m_generateKeyword ) ? "[Toggle]":"[ToggleUI]";
+#else
+			string toggleAttribute = ( m_generateKeyword ) ? "[Toggle]": "[NoKeywordToggle]";
+#endif
+			return PropertyAttributes + toggleAttribute + m_propertyName + "(\"" + m_propertyInspectorName + "\", Float) = " + m_currentSelectedInput;
 		}
 
 		public override string GetUniformValue()
 		{
 			int index = m_containerGraph.IsSRP ? 1 : 0;
-			return string.Format( Constants.UniformDec[ index ], UIUtils.FinalPrecisionWirePortToCgType( m_currentPrecisionType, WirePortDataType.FLOAT ), m_propertyName );
+			return string.Format( Constants.UniformDec[ index ], UIUtils.PrecisionWirePortToCgType( CurrentPrecisionType, WirePortDataType.FLOAT ), m_propertyName );
 		}
 
 		public override bool GetUniformData( out string dataType, out string dataName, ref bool fullValue )
 		{
-			dataType = UIUtils.FinalPrecisionWirePortToCgType( m_currentPrecisionType, WirePortDataType.FLOAT );
+			dataType = UIUtils.PrecisionWirePortToCgType( CurrentPrecisionType, WirePortDataType.FLOAT );
 			dataName = m_propertyName;
 			return true;
 		}
@@ -264,8 +296,11 @@ namespace AmplifyShaderEditor
 
 		public override void ForceUpdateFromMaterial( Material material )
 		{
-			if ( UIUtils.IsProperty( m_currentParameterType ) && material.HasProperty( m_propertyName ) )
-				m_currentSelectedInput = ( int ) material.GetFloat( m_propertyName );
+			if( UIUtils.IsProperty( m_currentParameterType ) && material.HasProperty( m_propertyName ) )
+			{
+				m_currentSelectedInput = (int)material.GetFloat( m_propertyName );
+				PreviewIsDirty = true;
+			}
 		}
 
 		public override string GetPropertyValStr()
