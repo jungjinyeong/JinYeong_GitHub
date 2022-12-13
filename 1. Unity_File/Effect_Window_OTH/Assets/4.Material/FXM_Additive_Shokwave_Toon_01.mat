@@ -8,9 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Additive_Shokwave_Toon_01
-  m_Shader: {fileID: 4800000, guid: d52ac1ad99b244743bee2aa5fe963d69, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_Shader: {fileID: 4800000, guid: 9650fce955c19cb42b4bb292b4270dff, type: 3}
+  m_ShaderKeywords: _SW_MASK_RIGHT
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -53,6 +53,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Main_Texture:
         m_Texture: {fileID: 2800000, guid: 03344d3d32e85af4faf109e635145a9b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: 41a85f3c5b2a80740ae3c1974d3d6058, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Mask_Texture:
@@ -101,10 +105,14 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Lerp_Color_Size: 0.04
+    - _Lerp_Color_Size_02: 0.11
     - _Main_Pow: 0.87
+    - _Main_Str: 1
     - _Main_UPanner: -2
     - _Main_UVPow: 1.4
     - _Main_VPanner: 0
+    - _Main_step: 0.5
     - _Mani_Ins: 1.09
     - _Mask_Rang: 4.7
     - _Metallic: 0
@@ -115,14 +123,28 @@ Material:
     - _OcclusionStrength: 1
     - _Opacity: 1.36
     - _Parallax: 0.02
+    - _SW_Mask: 3
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Sphere_Size: 1.05
+    - _Sphere_Str: 1.45
     - _SrcBlend: 1
+    - _Time_Scale_01: 0
+    - _Time_Scale_02: -1.61
     - _UVSec: 0
     - _Use_Costum: 0
-    - _ZWrite: 1
+    - _Use_Custom: 0
+    - _Voronoi_Scale_01: 5
+    - _Voronoi_Scale_02: 3
+    - _ZWrite: 0
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _In_Color: {r: 3.482353, g: 0.09411765, b: 0.09411765, a: 1}
+    - _Main_Color: {r: 0.45476672, g: 0.1552862, b: 1.0592737, a: 1}
+    - _Out_Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Sphere_UV: {r: 0, g: 0, b: 0, a: 0}
     - _Tint_Color: {r: 14.919563, g: 4.03621, b: 6.4867663, a: 0}
+    - _Voronoi_TilingSpeed_01: {r: 2, g: 1, b: -1, a: 0}
+    - _Voronoi_TilingSpeed_02: {r: 2, g: 1, b: -2, a: 0}
