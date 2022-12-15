@@ -8,8 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Additive_Sword_Edge_09
-  m_Shader: {fileID: 4800000, guid: e281cd5c28c159c4f9d435c207358ee6, type: 3}
-  m_ShaderKeywords: _USE_CUSTOM_ON
+  m_Shader: {fileID: 4800000, guid: 657de354667853d47a531c5e0660cc87, type: 3}
+  m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -75,6 +75,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texcoord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -86,6 +90,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Mask_Ins: 1
+    - _Mask_Pow: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -93,8 +99,12 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Sword_UOffset: 0
+    - _Sword_VOffset: 0
     - _UVSec: 0
-    - _Use_Custom: 1
+    - _Use_Custom: 0
+    - _Use_Custom1: 0
+    - _Use_Custom2: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
