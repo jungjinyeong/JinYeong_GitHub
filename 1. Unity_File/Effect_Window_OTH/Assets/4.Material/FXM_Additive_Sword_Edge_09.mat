@@ -51,6 +51,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Noise_Texture:
+        m_Texture: {fileID: 2800000, guid: 1dbf1177420b46f47b20959a7c02ae71, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -86,7 +90,7 @@ Material:
     - _Dissolve: 1
     - _DstBlend: 0
     - _Edge_Ins: 1
-    - _Edge_Range: -0.9
+    - _Edge_Range: -0.69
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -94,6 +98,9 @@ Material:
     - _Mask_Pow: 1
     - _Metallic: 0
     - _Mode: 0
+    - _Noise_UPanner: 1
+    - _Noise_VPanner: 0
+    - _Noise_Val: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -109,5 +116,5 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Edge_Color: {r: 13.76636, g: 1.8018795, b: 2.5947068, a: 0}
+    - _Edge_Color: {r: 11.984314, g: 3.3882353, b: 1.882353, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
