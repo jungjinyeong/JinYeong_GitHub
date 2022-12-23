@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Alphablend_Sword_Toon_06
-  m_Shader: {fileID: 4800000, guid: 742d9e4098a9710498fa54c975f39d98, type: 3}
+  m_Shader: {fileID: 4800000, guid: 9da5ccfd98132e34e9c56a911556ffef, type: 3}
   m_ShaderKeywords: _USE_CUSTOM_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -83,6 +83,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texcoord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -97,7 +101,7 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Main_Ins: 1.38
-    - _Main_Pow: 2.94
+    - _Main_Pow: 1.91
     - _Main_UPanner: -0.5
     - _Main_VPanner: 0
     - _Mask_Val: 1.57
@@ -116,9 +120,12 @@ Material:
     - _UVSec: 0
     - _Use_Custom: 1
     - _ZWrite: 1
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0: {r: 0.2450042, g: 0.9058824, b: 0.2196078, a: 0}
     - _Emi_Color: {r: 0.4991342, g: 2.1185474, b: 0.43258297, a: 0}
+    - _Emi_Lerp_Color_A: {r: 0.18612966, g: 0.01601993, b: 0.3773585, a: 0}
+    - _Emi_Lerp_Color_B: {r: 0.55863434, g: 0.035367332, b: 0.8330975, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint_Color: {r: 0.34464875, g: 0.7229218, b: 1.6055588, a: 0}
+    - _Tint_Color: {r: 3.0637956, g: 3.0637956, b: 3.0637956, a: 0}
