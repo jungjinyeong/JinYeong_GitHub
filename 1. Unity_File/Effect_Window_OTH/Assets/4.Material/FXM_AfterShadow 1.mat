@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_AfterShadow 1
   m_Shader: {fileID: 4800000, guid: 7bfb0394fd9b06b47ad3f5583846a536, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _USE_CUSTOM1_ON _USE_CUSTOM2_ON _USE_CUSTOM3_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -70,9 +70,12 @@ Material:
     - _UPanner: 0
     - _U_Tiling: 5
     - _Use_Custom: 0
+    - _Use_Custom1: 1
+    - _Use_Custom2: 1
+    - _Use_Custom3: 1
     - _VPanner: 0
     - _V_Tiling: 5
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _F_Color_A: {r: 0.2407866, g: 0.2830189, b: 0.081434675, a: 0}
     - _F_Color_B: {r: 1.3449706, g: 12.844469, b: 2.3536985, a: 0}
