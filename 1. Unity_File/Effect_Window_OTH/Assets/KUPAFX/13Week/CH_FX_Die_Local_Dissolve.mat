@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: CH_FX_Die_Local_Dissolve
   m_Shader: {fileID: 4800000, guid: 099e0e6de4dec464d81141f6d422b259, type: 3}
-  m_ShaderKeywords: _USE_VERTEX_DISSOVE_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -102,12 +102,14 @@ Material:
     - _Dissolve: 1
     - _Dissove_Test: 0.9
     - _DstBlend: 0
-    - _Edge_Thnkinee: 0.1383
+    - _Edge_Thnkinee: 0.14
+    - _Emi_Ins: 0
+    - _Emi_Pow: 3
     - _F_Normal_Tex_Str: 1.46
     - _F_Normal_Tex_UTiling: 0.5
     - _F_Normal_Tex_VTiling: 3.83
-    - _Float1: -1.2
-    - _Float3: 6.188235
+    - _Float1: 1
+    - _Float3: 7.46
     - _Fresnel_Pow: 3.04
     - _Fresnel_Scale: 1
     - _Fresnel_Val: 0
@@ -119,19 +121,19 @@ Material:
     - _Keyword0: 0
     - _Metallic: 0
     - _Mode: 0
-    - _Normal_Scale: 0.7882353
+    - _Normal_Scale: 1.33
     - _Normal_Str: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Parallax_Scale: 0
+    - _Parallax_Scale: -1.7
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _Use_Lerp_FX: 0
-    - _Use_Vertex_Dissove: 1
+    - _Use_Vertex_Dissove: 0
     - _Vertex_Diss_Edge: 0.1
-    - _Vertex_Dissolve: -0.8
+    - _Vertex_Dissolve: 10
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:

@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_CH_FX_Ice
   m_Shader: {fileID: 4800000, guid: 099e0e6de4dec464d81141f6d422b259, type: 3}
-  m_ShaderKeywords: _USE_LERP_FX_ON _USE_MOVEOFFSET_ON
+  m_ShaderKeywords: _USE_MOVEOFFSET_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -99,9 +99,11 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Dissolve: -1
+    - _Dissolve: 1
     - _DstBlend: 0
     - _Edge_Thnkinee: 0.1
+    - _Emi_Ins: 0
+    - _Emi_Pow: 3
     - _F_Normal_Tex_Str: 3.89
     - _F_Normal_Tex_UTiling: 0
     - _F_Normal_Tex_VTiling: 0
@@ -127,14 +129,14 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _Use_Color: 0
-    - _Use_Lerp_FX: 1
+    - _Use_Lerp_FX: 0
     - _Use_MoveOffset: 1
     - _Use_Vertex_Color: 0
     - _Use_Vertex_Dissove: 0
     - _VertexPosi_UPanner: 0
     - _VertexPosi_VPanner: 0
     - _Vertex_Diss_Edge: 0.1
-    - _Vertex_Dissolve: -0.5292548
+    - _Vertex_Dissolve: 0.2
     - _Vertex_Noise: 0.077
     - _Vertex_Position_Val: -2.87
     - _ZWrite: 1

@@ -95,6 +95,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 19891385e026bce4894bf60164334a4f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Vertex_Nomal_Texture:
+        m_Texture: {fileID: 2800000, guid: 19891385e026bce4894bf60164334a4f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _tex4coord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -116,12 +120,15 @@ Material:
     - _Float5: -0.36
     - _Float6: 0
     - _Float7: 1
+    - _Fresnel_Ins: 2.74
+    - _Fresnel_Pow: 0.86
+    - _Fresnel_Scale: 1.06
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Grab_Texture_Upanner: 0.1
     - _Grab_Texture_Vpanner: 0.1
-    - _Grap_Texture_Scale: 0.06
+    - _Grap_Texture_Scale: 0.14
     - _Grap_UPanner: 0
     - _Grap_VPanner: 0
     - _Line_Max: 0.05
@@ -130,7 +137,7 @@ Material:
     - _Line_Noise_Upanner: 1
     - _Line_Noise_Vpanner: 0
     - _Line_Offset: -0.66
-    - _Main_Ins: 1.92
+    - _Main_Ins: 3.37
     - _Main_Noise_Str: 0
     - _Main_Noise_UTiling: 1
     - _Main_Noise_VPanner: 0
@@ -163,11 +170,14 @@ Material:
     - _SubTex_Ins: 0.93
     - _SubTex_Pow: 2.49
     - _SubTex_UPanner: 0
-    - _SubTex_VPanner: 0
+    - _SubTex_VPanner: 0.15
     - _UVSec: 0
     - _Use_Costom: 0
     - _Use_Custom: 1
     - _Use_Custom1: 0
+    - _Vertex_Nomal_Str: 0.05
+    - _Vertex_Nomal_Upanner: 0
+    - _Vertex_Nomal_Vpanner: 0.5
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
