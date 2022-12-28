@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Dissolve_Texture:
-        m_Texture: {fileID: 2800000, guid: d8ff680519601264083db3bc60a9ecb1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 80de6813d0d510e40a5a7296b105d853, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Main_Texture:
-        m_Texture: {fileID: 2800000, guid: 4f599298d22bf8047b38f3bd26dad4c7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8d21b35fab1359d4aa689ddf302e1b01, type: 3}
         m_Scale: {x: 1, y: -0.21}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -105,12 +105,12 @@ Material:
     - _DstBlend: 0
     - _Emi_Ims: 0
     - _Emi_Offset: 0.73
-    - _FX_Mask: 2
+    - _FX_Mask: 1.7
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Main_Ins: 9
-    - _Main_Power: 2.73
+    - _Main_Ins: 1
+    - _Main_Power: 1.46
     - _Main_UPanner: 0.2
     - _Main_VPanner: -1
     - _Metallic: 0
@@ -119,7 +119,7 @@ Material:
     - _Noise_VPanner: 0.5
     - _Noise_Val: 0.34
     - _OcclusionStrength: 1
-    - _Opacity: 0.85
+    - _Opacity: 3.86
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -133,4 +133,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Emi_Color: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint_Color: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 0}
+    - _Tint_Color: {r: 0, g: 0, b: 0, a: 0}

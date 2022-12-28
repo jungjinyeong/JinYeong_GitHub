@@ -43,6 +43,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texcoord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - Use_Custom: 1
     - _Ceil_Count: 2
@@ -66,4 +70,3 @@ Material:
     m_Colors:
     - _Emi_Color: {r: 2.1185474, g: 0.59896106, b: 0.32166424, a: 0}
     - _Main_Color: {r: 0.8018868, g: 0.43811986, b: 0.17777678, a: 0}
-  m_BuildTextureStacks: []
