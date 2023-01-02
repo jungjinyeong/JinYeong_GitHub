@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FXM_Gunslinger_003_hand_01
+  m_Name: New Material 1
   m_Shader: {fileID: 4800000, guid: da5ab4c3b24d2174bb718f04365e34de, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 0
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -36,15 +36,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Dissolve_Texture:
-        m_Texture: {fileID: 2800000, guid: 8d21b35fab1359d4aa689ddf302e1b01, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Fresnel_Norma_Tex:
-        m_Texture: {fileID: 2800000, guid: 645b0a2fda25d114599a2fba6417fe81, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Fresnel_Normal_Tex:
@@ -80,19 +76,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Vampire_diffuse:
-        m_Texture: {fileID: 2800000, guid: aee86f50bf49ac44da86b64304fd0226, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Vampire_emission:
-        m_Texture: {fileID: 2800000, guid: aee86f50bf49ac44da86b64304fd0226, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Vampire_normal:
-        m_Texture: {fileID: 2800000, guid: bf06d5af762451d4fb6a49f60d79a842, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _VertexNoise_Texture:
-        m_Texture: {fileID: 2800000, guid: d7d3515830774a341aef56fd0ffc2124, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -106,16 +102,12 @@ Material:
     - _Dissolve: 1
     - _DstBlend: 0
     - _Edge_Thnkinee: 0.1
-    - _Emi_Ins: 0
-    - _Emi_Pow: 3
     - _F_Normal_Tex_Str: 0
     - _F_Normal_Tex_UTiling: 0
     - _F_Normal_Tex_VTiling: 0
-    - _Float1: 1
-    - _Float3: 6.188235
-    - _Fresnel_Pow: 1.57
+    - _Fresnel_Pow: 0
     - _Fresnel_Scale: 0
-    - _Fresnel_Val: 0.638
+    - _Fresnel_Val: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -139,23 +131,21 @@ Material:
     - _VertexPosi_UPanner: 0
     - _VertexPosi_VPanner: 0
     - _Vertex_Diss_Edge: 0.1
-    - _Vertex_Dissolve: 10
-    - _Vertex_Noise: 0
-    - _Vertex_Position_Val: -5
+    - _Vertex_Dissolve: -0.5292548
+    - _Vertex_Noise: 1.8
+    - _Vertex_Position_Val: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Albedo_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Albedo_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color0: {r: 1, g: 1, b: 1, a: 0}
-    - _Color1: {r: 1, g: 1, b: 1, a: 0}
     - _Edge_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Emi_Color: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Fresnel_Color: {r: 3.8199854, g: 2.360463, b: 0.88292116, a: 0}
+    - _Fresnel_Color: {r: 0, g: 0, b: 0, a: 0}
     - _Hit_Fx: {r: 1, g: 1, b: 1, a: 0}
     - _Ice_Color: {r: 1, g: 1, b: 1, a: 0}
-    - _Position: {r: -0.9, g: 0.88, b: 0, a: 0}
-    - _Tint_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Position: {r: 0, g: 0, b: 0, a: 0}
+    - _Tint_Color: {r: 0, g: 0, b: 0, a: 0}
     - _VertexOffset_ColorA: {r: 0, g: 0, b: 0, a: 0}
     - _VertexOffset_ColorB: {r: 0, g: 0, b: 0, a: 0}
