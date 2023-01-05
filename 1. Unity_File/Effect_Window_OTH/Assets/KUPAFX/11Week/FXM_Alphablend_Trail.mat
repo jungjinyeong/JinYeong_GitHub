@@ -75,6 +75,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texcoord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _CullMode: 0
@@ -88,6 +96,7 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Ins: 2.08
+    - _Lerp_Val: 0
     - _Mask_Pow: 1
     - _Metallic: 0
     - _Mode: 0
@@ -107,10 +116,13 @@ Material:
     - _Trail_VPanner: 0
     - _UVSec: 0
     - _Use_Custom: 0
+    - _Use_Custom_Lerp: 0
     - _Use_Toon_Disoove: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Lerp_Tint_Color_A: {r: 1, g: 1, b: 1, a: 1}
+    - _Lerp_Tint_Color_B: {r: 1, g: 1, b: 1, a: 1}
     - _Tint_Color: {r: 1, g: 1, b: 1, a: 1}
