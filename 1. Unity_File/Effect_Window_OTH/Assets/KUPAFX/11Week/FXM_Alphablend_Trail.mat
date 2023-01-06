@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Dissolve_Texture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 03344d3d32e85af4faf109e635145a9b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texure:
-        m_Texture: {fileID: 2800000, guid: f99cd2cad01a9ec4c9f1d25eebf10402, type: 3}
+        m_Texture: {fileID: 2800000, guid: 19891385e026bce4894bf60164334a4f, type: 3}
         m_Scale: {x: 0.25, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -96,22 +96,22 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Ins: 2.08
-    - _Lerp_Val: 0
-    - _Mask_Pow: 1
+    - _Lerp_Val: -0.03
+    - _Mask_Pow: 2.04
     - _Metallic: 0
     - _Mode: 0
-    - _NoiseTex_UPanner: 0.85
-    - _Noise_Str: 0.16
+    - _NoiseTex_UPanner: 0
+    - _Noise_Str: -0.1
     - _OcclusionStrength: 1
     - _Opacity: 2.52
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Trail_Tex_Ins: 2.79
+    - _Trail_Tex_Ins: 6.06
     - _Trail_Tex_Pow: 1
     - _Trail_UOffset: 0
-    - _Trail_UPanner: 1
+    - _Trail_UPanner: 0.5
     - _Trail_VOffset: 0
     - _Trail_VPanner: 0
     - _UVSec: 0
@@ -123,6 +123,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Lerp_Tint_Color_A: {r: 1, g: 1, b: 1, a: 1}
+    - _Lerp_Tint_Color_A: {r: 1.7411011, g: 1.7411011, b: 1.7411011, a: 1}
     - _Lerp_Tint_Color_B: {r: 1, g: 1, b: 1, a: 1}
     - _Tint_Color: {r: 1, g: 1, b: 1, a: 1}
