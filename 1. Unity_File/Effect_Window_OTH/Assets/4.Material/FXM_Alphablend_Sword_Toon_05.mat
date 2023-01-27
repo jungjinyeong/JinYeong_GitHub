@@ -83,6 +83,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texcoord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -100,6 +104,7 @@ Material:
     - _Main_Pow: 2.94
     - _Main_UPanner: -0.5
     - _Main_VPanner: 0
+    - _Mask_Ins: 2.03
     - _Mask_Val: 1.57
     - _Metallic: 0
     - _Mode: 0
@@ -121,4 +126,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Emi_Color: {r: 9.408335, g: 28.329653, b: 44.323704, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint_Color: {r: 2.2157774, g: 1.0539086, b: 0.6728539, a: 0}
+    - _Tint_Color: {r: 2.5954342, g: 0.73003185, b: 0.4040063, a: 0}

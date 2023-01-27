@@ -56,8 +56,8 @@ Material:
         m_Scale: {x: 0.25, y: 0.25}
         m_Offset: {x: 0, y: 0}
     - _Noise_Texure:
-        m_Texture: {fileID: 2800000, guid: 19891385e026bce4894bf60164334a4f, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 03344d3d32e85af4faf109e635145a9b, type: 3}
+        m_Scale: {x: 0.37, y: 1.26}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
@@ -85,9 +85,9 @@ Material:
     - _Cull_Mode: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _Diss_Tex_UPanner: 0
+    - _Diss_Tex_UPanner: 1
     - _Diss_Tex_VPanner: 0
-    - _Dissolve: 1
+    - _Dissolve: 0.46
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -95,8 +95,8 @@ Material:
     - _Mask_Pow: 2.8
     - _Metallic: 0
     - _Mode: 0
-    - _NoiseTex_UPanner: 0
-    - _Noise_Str: -0.03
+    - _NoiseTex_UPanner: 1
+    - _Noise_Str: 0.13
     - _Noise_UPanner: 1
     - _Noise_VPanner: 0
     - _OcclusionStrength: 1
@@ -110,7 +110,7 @@ Material:
     - _Trail_Tex_Pow: 1.05
     - _Trail_UOffset: 0
     - _Trail_UPanner: 3
-    - _Trail_VOffset: 0
+    - _Trail_VOffset: 0.28
     - _Trail_VPanner: 0
     - _UVSec: 0
     - _Use_Custom: 0

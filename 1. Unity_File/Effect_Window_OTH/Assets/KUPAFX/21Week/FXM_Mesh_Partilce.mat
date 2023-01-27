@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FXM_Mesh_Partilce
   m_Shader: {fileID: 4800000, guid: a16cff9e4fc62f34eb28a3e3a1bf64ef, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _USE_CUSTOM_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -90,7 +90,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _Use_Custom: 0
+    - _Use_Custom: 1
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
