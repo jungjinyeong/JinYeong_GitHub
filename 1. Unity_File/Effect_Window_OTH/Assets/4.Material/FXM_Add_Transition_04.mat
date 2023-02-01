@@ -37,10 +37,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Dissolve_Line_Texture:
         m_Texture: {fileID: 2800000, guid: d66bfe10b05fc6e46b051b9afca6d29b, type: 3}
-        m_Scale: {x: 3, y: 0.5}
+        m_Scale: {x: 1, y: 2.01}
         m_Offset: {x: 0, y: 0}
     - _Dissolve_Main_Texture:
-        m_Texture: {fileID: 2800000, guid: 645b0a2fda25d114599a2fba6417fe81, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2b088034f60d33a4ea929615e8faa704, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Dissolve_Texture:
@@ -64,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Main_Texture:
-        m_Texture: {fileID: 2800000, guid: 567f6e3987a573340a2c5fd917116c0d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 208bac7389793b6479de721b5a7902d1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -96,10 +96,10 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _Dissolve: -1
-    - _Dissolve_Line: 0
+    - _Dissolve_Line: 0.025
     - _Dissolve_Pow: 1.57
     - _Dissolve_UPanner: 0
-    - _Dissolve_VPanner: 0.2
+    - _Dissolve_VPanner: -0.2
     - _DstBlend: 0
     - _Flow_Pow: 0.5
     - _GlossMapScale: 1
@@ -121,7 +121,7 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Dissolve_Line_Color: {r: 2.9960785, g: 1.3176471, b: 1.3333334, a: 0}
+    - _Dissolve_Line_Color: {r: 9.734288, g: 1.6308755, b: 1.7328053, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Main_Color: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 0}
+    - _Main_Color: {r: 2.0589879, g: 1.1142852, b: 0.45647368, a: 0}
     - _Tint_Color: {r: 0.74509805, g: 0.7490196, b: 0.37254903, a: 1}
