@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FXM_Crack01
+  m_Shader: {fileID: 4800000, guid: 8e83f987697176249af1410e920052fa, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Emi_Noise:
+        m_Texture: {fileID: 2800000, guid: 8d21b35fab1359d4aa689ddf302e1b01, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FXT_Crack_Base:
+        m_Texture: {fileID: 2800000, guid: f719773caaa49fe40ac0521d134f36b8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FXT_Crack_Emi:
+        m_Texture: {fileID: 2800000, guid: ccd47012bab324f468dec368548f3049, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FXT_Crack_Height:
+        m_Texture: {fileID: 2800000, guid: bde8fbc25f37f954d8e511165edab3fc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FXT_Crack_Normal:
+        m_Texture: {fileID: 2800000, guid: 3557bae52f9f5b544b5a4224a7c67086, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Brightness: 3
+    - _Emi_Noise_UPanner: 0
+    - _Emi_Noise_VPanner: -0.15
+    - _Emi_Pow: 2
+    - _Glow_Ins: 0.59
+    - _Glow_Range: 3.65
+    - _Height_Scale: 0.12
+    - _Mask_Pow: 1.9
+    - _Normal_Scale: 1
+    - _Opacity: 3.5
+    - __dirty: 0
+    m_Colors:
+    - _Base_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _Emi_Color: {r: 35.582153, g: 12.703571, b: 3.8603284, a: 0}

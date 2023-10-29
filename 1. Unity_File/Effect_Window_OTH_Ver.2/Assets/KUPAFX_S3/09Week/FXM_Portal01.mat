@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FXM_Portal01
+  m_Shader: {fileID: 4800000, guid: cbb7a1ed6db5ff74da655d9447b7a2d6, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FXT_CardMask:
+        m_Texture: {fileID: 2800000, guid: 748c6b242b944714f8aa29e298b6ad51, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FXT_Circle_RG:
+        m_Texture: {fileID: 2800000, guid: d38cd1127fc69224abe2d3e55c9da608, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FXT_Space_Noise01:
+        m_Texture: {fileID: 2800000, guid: ff43c8a762114ad42a9677b19874a99c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask_Texture:
+        m_Texture: {fileID: 2800000, guid: 8813ac6b4a65824479c76a296ad80607, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Height: 0.21
+    - _Height_Circle: -0.22
+    - _Height_Space: -2.7
+    - _Hole_Radius: 1
+    - _Radius: 0.08
+    - _Use_MaskTex: 0
+    - __dirty: 0
+    m_Colors:
+    - _CireleColor: {r: 5.2164755, g: 1.8025517, b: 0, a: 0}
