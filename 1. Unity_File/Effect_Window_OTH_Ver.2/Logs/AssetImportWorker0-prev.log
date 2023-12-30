@@ -15,7 +15,7 @@ C:/Users/wlsdu/Desktop/JinYeong_GitHub/1. Unity_File/Effect_Window_OTH_Ver.2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-5857
+4839
 Successfully changed project path to: C:/Users/wlsdu/Desktop/JinYeong_GitHub/1. Unity_File/Effect_Window_OTH_Ver.2
 C:/Users/wlsdu/Desktop/JinYeong_GitHub/1. Unity_File/Effect_Window_OTH_Ver.2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/wlsdu/Desktop/JinYeong_GitHub/1. Unity_File/Effect_Window_OTH_Ver.2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21620] Host "[IP] 192.168.45.159 [Port] 0 [Flags] 2 [Guid] 1785556965 [EditorId] 1785556965 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-V9KNPFG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10804] Host "[IP] 192.168.45.159 [Port] 0 [Flags] 2 [Guid] 3878801394 [EditorId] 3878801394 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-V9KNPFG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [21620] Host "[IP] 192.168.45.159 [Port] 0 [Flags] 2 [Guid] 1785556965 [EditorId] 1785556965 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-V9KNPFG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10804] Host "[IP] 192.168.45.159 [Port] 0 [Flags] 2 [Guid] 3878801394 [EditorId] 3878801394 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-V9KNPFG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
-Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 6.17 ms, found 5 plugins.
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 6.32 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.1.16f1 (e5ad54273a6f)
 [Subsystems] Discovering subsystems at path C:/Users/wlsdu/Desktop/2023.1.16f1/Editor/Data/Resources/UnitySubsystems
@@ -72,7 +72,7 @@ Initialize mono
 Mono path[0] = 'C:/Users/wlsdu/Desktop/2023.1.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/wlsdu/Desktop/2023.1.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Users/wlsdu/Desktop/2023.1.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -86,41 +86,41 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/wlsdu/Desktop/2023.1.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003022 seconds.
-- Loaded All Assemblies, in  0.437 seconds
+Registered in 0.003017 seconds.
+- Loaded All Assemblies, in  0.424 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.329 seconds
-Domain Reload Profiling: 765ms
-	BeginReloadAssembly (142ms)
+- Finished resetting the current domain, in  0.332 seconds
+Domain Reload Profiling: 754ms
+	BeginReloadAssembly (135ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (42ms)
+	RebuildCommonClasses (39ms)
 	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (56ms)
-	LoadAllAssembliesAndSetupDomain (180ms)
-		LoadAssemblies (138ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (179ms)
+		LoadAssemblies (131ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (175ms)
-			TypeCache.Refresh (174ms)
-				TypeCache.ScanAssembly (161ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (174ms)
+			TypeCache.Refresh (173ms)
+				TypeCache.ScanAssembly (160ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (330ms)
+	FinalizeReload (332ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (277ms)
+		SetupLoadedEditorAssemblies (281ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
+			InitializePlatformSupportModulesInManaged (12ms)
 			SetLoadedEditorAssemblies (5ms)
 			BeforeProcessingInitializeOnLoad (8ms)
-			ProcessInitializeOnLoadAttributes (192ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
+			ProcessInitializeOnLoadAttributes (198ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -141,53 +141,84 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Loaded All Assemblies, in  0.905 seconds
-Refreshing native plugins compatible for Editor in 2.44 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.902 seconds
+Refreshing native plugins compatible for Editor in 2.60 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.736 seconds
-Domain Reload Profiling: 1638ms
-	BeginReloadAssembly (345ms)
+- Finished resetting the current domain, in  0.648 seconds
+Domain Reload Profiling: 1548ms
+	BeginReloadAssembly (329ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (457ms)
-		LoadAssemblies (276ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (468ms)
+		LoadAssemblies (285ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (283ms)
-			TypeCache.Refresh (263ms)
-				TypeCache.ScanAssembly (250ms)
+		AnalyzeDomain (285ms)
+			TypeCache.Refresh (265ms)
+				TypeCache.ScanAssembly (252ms)
 			ScanForSourceGeneratedMonoScriptInfo (13ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (737ms)
+	FinalizeReload (649ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (418ms)
+		SetupLoadedEditorAssemblies (411ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
+			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (77ms)
-			ProcessInitializeOnLoadAttributes (295ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (8ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (294ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2.41 ms, found 5 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 3.11 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3075 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (2.4 MB). Loaded Objects now: 3610.
-Memory consumption went from 394.5 MB to 392.0 MB.
-Total: 5.183000 ms (FindLiveObjects: 0.385300 ms CreateObjectMapping: 0.098900 ms MarkObjects: 3.548300 ms  DeleteObjects: 1.149200 ms)
+Unloading 3077 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (2.5 MB). Loaded Objects now: 3612.
+Memory consumption went from 397.7 MB to 395.2 MB.
+Total: 6.060100 ms (FindLiveObjects: 0.414200 ms CreateObjectMapping: 0.106300 ms MarkObjects: 4.163700 ms  DeleteObjects: 1.373900 ms)
 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 847020.939626 seconds.
+  path: Assets/8.Animation/Human
+  artifactKey: Guid(a2d0a9a4a6fc5ce4a90756ae0526128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8.Animation/Human using Guid(a2d0a9a4a6fc5ce4a90756ae0526128d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26d7e4e475f3f0861624a502ef75148') in 0.004822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 2.38 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (2.5 MB). Loaded Objects now: 3612.
+Memory consumption went from 220.8 MB to 218.3 MB.
+Total: 4.946300 ms (FindLiveObjects: 0.332600 ms CreateObjectMapping: 0.100200 ms MarkObjects: 3.380400 ms  DeleteObjects: 1.132000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -203,993 +234,49 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1312130.697045 seconds.
-  path: Assets/9998.Material[구]/FXM_Add_Par_Glow_155.mat
-  artifactKey: Guid(f164e9bdf091a1545a177ccca2236493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9998.Material[구]/FXM_Add_Par_Glow_155.mat using Guid(f164e9bdf091a1545a177ccca2236493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c645b16f890bda7248e8e7c5cebabc') in 0.106056 seconds
+  Time since last request: 47.540278 seconds.
+  path: Assets/8.Animation/Human/Tera
+  artifactKey: Guid(9180a62a97266ba46b5db582736b91bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8.Animation/Human/Tera using Guid(9180a62a97266ba46b5db582736b91bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5329b8b81224ec3f7d85850a1a1ac99') in 0.032212 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/9998.Material[구]/FXM_Add_Par_Glow_154.mat
-  artifactKey: Guid(901aa6b5adcb0d94ca240d947ba2774e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9998.Material[구]/FXM_Add_Par_Glow_154.mat using Guid(901aa6b5adcb0d94ca240d947ba2774e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fceff03c9aa06c2c36ebeea67faff190') in 0.015030 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/9995.Mesh[구]/FXSM_Cone_02.FBX
-  artifactKey: Guid(d1690f4df73f8e04eadd4bd6f8de41e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9995.Mesh[구]/FXSM_Cone_02.FBX using Guid(d1690f4df73f8e04eadd4bd6f8de41e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb99f431715688fecac460dbd755e601') in 0.066862 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/9995.Mesh[구]/중국 mesh/E3D-Curve-Helix42.FBX
-  artifactKey: Guid(1018d52663e54ee4d9deaaefafe4072d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9995.Mesh[구]/중국 mesh/E3D-Curve-Helix42.FBX using Guid(1018d52663e54ee4d9deaaefafe4072d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aa9745eda3ed72f3853c56aa9715b34') in 0.024421 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 148.251792 seconds.
-  path: Assets/1.Prefabs/FX_Real_Shield_01/EF_Dash_Wave.prefab
-  artifactKey: Guid(3bcf534ef84b91b45a8a3735253106ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/1.Prefabs/FX_Real_Shield_01/EF_Dash_Wave.prefab using Guid(3bcf534ef84b91b45a8a3735253106ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0f013e036428869c87927e8c986e63') in 0.035163 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 204.907084 seconds.
-  path: Assets/5.Practice/Toon Projectiles 2/Textures/Gradient3r.png
-  artifactKey: Guid(ed3a5efebe958ba429d350e04f14d1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5.Practice/Toon Projectiles 2/Textures/Gradient3r.png using Guid(ed3a5efebe958ba429d350e04f14d1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef600f33cff4b52431fae9a9c9405df7') in 0.021014 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/5.Practice/Toon Projectiles 2/Textures/Gradient4.3.png
-  artifactKey: Guid(396f38a210576e54e859be3bfc253e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5.Practice/Toon Projectiles 2/Textures/Gradient4.3.png using Guid(396f38a210576e54e859be3bfc253e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1ef699216bc41b786e5f1425d6cbe1') in 0.011303 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/GrayNormalHeaderSquare.png
-  artifactKey: Guid(b16188b8a3dee8146bd9cb0bde234a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/GrayNormalHeaderSquare.png using Guid(b16188b8a3dee8146bd9cb0bde234a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41081d3d79aded68166ee499e0f658d1') in 0.013604 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/8.Animation/Nomal_Obj/Rock/_textures/ground_nm.PNG
-  artifactKey: Guid(e08601931f0ac4ff4a07d512f7f0e821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Nomal_Obj/Rock/_textures/ground_nm.PNG using Guid(e08601931f0ac4ff4a07d512f7f0e821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '944444c3433d7594f5cf42a8d5527dc0') in 0.019423 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Body_001_DIFF.png
-  artifactKey: Guid(18637a945104ffb4eb2340347be72cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Body_001_DIFF.png using Guid(18637a945104ffb4eb2340347be72cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86419db3a299d4d2f60feff17a514de') in 0.013430 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Body_002_MC.png
-  artifactKey: Guid(9d22e1d448820cf429a4ac97c7d65e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Body_002_MC.png using Guid(9d22e1d448820cf429a4ac97c7d65e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448723a5e361dfa4b967c327670e5792') in 0.013593 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Body_003_MC.png
-  artifactKey: Guid(6879833fd686c8541a75d9888aa071f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Body_003_MC.png using Guid(6879833fd686c8541a75d9888aa071f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a0cb8dc943dafc2bf90d6eb4091822') in 0.013005 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Body_005_NORM.png
-  artifactKey: Guid(5fabbb5823c2f5c499585cba73749be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Body_005_NORM.png using Guid(5fabbb5823c2f5c499585cba73749be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4612132c1e7dc433adef08c0040ac8') in 0.013988 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Body_005_MC.png
-  artifactKey: Guid(36a9103319923dd43b4392e98f281946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Body_005_MC.png using Guid(36a9103319923dd43b4392e98f281946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cbcd35a6a192ac49be0efe7883d76bd') in 0.013960 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Body_004_MC.png
-  artifactKey: Guid(3f70a083610505b40be149e4fed40746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Body_004_MC.png using Guid(3f70a083610505b40be149e4fed40746) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f727573dca5c6428200ead1d08d55a2b') in 0.013300 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Body_004_NORM.png
-  artifactKey: Guid(45121dc1def72704c90fcee3639864f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Body_004_NORM.png using Guid(45121dc1def72704c90fcee3639864f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b6636237d1198a34d3bfc30c1014fd') in 0.014850 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Hand_003_DIFF.png
-  artifactKey: Guid(bd3c7783e9a247647b1d38186dfad46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Hand_003_DIFF.png using Guid(bd3c7783e9a247647b1d38186dfad46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20880b4f4ed8ac3458430ee11eb9561') in 0.013325 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Hand_004_NORM.png
-  artifactKey: Guid(7c117b9be5bb6e44bbe28a5e6cb8f361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Hand_004_NORM.png using Guid(7c117b9be5bb6e44bbe28a5e6cb8f361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15e197c4d80a4d301c08566ee8c67e2') in 0.013763 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Hand_005_DIFF.png
-  artifactKey: Guid(b1c505bccc0afca4f9f18df3151cc5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Hand_005_DIFF.png using Guid(b1c505bccc0afca4f9f18df3151cc5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa6fbf930c7b8d2dba137d629355473') in 0.014646 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/8.Animation/Human/V4_Magician/Magician_001/Texture/Gunslinger_Cloak_001_DIFF.png
-  artifactKey: Guid(2be3a322ddccd5c49a021aec9f79d662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Magician/Magician_001/Texture/Gunslinger_Cloak_001_DIFF.png using Guid(2be3a322ddccd5c49a021aec9f79d662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '439e65089a33ab95714c0c73c55c33a8') in 0.012426 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Leg_001_DIFF.png
-  artifactKey: Guid(fe7454d20f978794fbeb32c4688817f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Leg_001_DIFF.png using Guid(fe7454d20f978794fbeb32c4688817f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b09628c23ce9c6877b0cf5115d7850c') in 0.013276 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Leg_006_DIFF.png
-  artifactKey: Guid(f00bc393070b1a54886a9ea69e5a7f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Leg_006_DIFF.png using Guid(f00bc393070b1a54886a9ea69e5a7f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90b9b443b66db3d728482f9d8cdd90b') in 0.012438 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Weapon_003_DIFF.png
-  artifactKey: Guid(8399ddd8bb506a244b63355fe088a561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Weapon_003_DIFF.png using Guid(8399ddd8bb506a244b63355fe088a561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f800a75177494eefca4795c97b809053') in 0.013652 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Weapon_005_DIFF.png
-  artifactKey: Guid(12515d2cf25651c4886b17ac9f34df7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Weapon_005_DIFF.png using Guid(12515d2cf25651c4886b17ac9f34df7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09e0e06f6a618d14f12556b3451c6004') in 0.012812 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Leg_100_DIFF.png
-  artifactKey: Guid(800f0a405e1560f4a9d0896ceb89bac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Leg_100_DIFF.png using Guid(800f0a405e1560f4a9d0896ceb89bac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7552dce3bf872ab8351fcd7f7cb41c6') in 0.012698 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Body_005_DIFF.png
-  artifactKey: Guid(4ac77e565eeeb8d4b8f91f30c79d0dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Body_005_DIFF.png using Guid(4ac77e565eeeb8d4b8f91f30c79d0dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f21bf8875cd4bdff54804b81f13183') in 0.016745 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/8.Animation/Human/V4_Knight/Knight_003/Material/Texture/Gunslinger_Cloak_003_DIFF.png
-  artifactKey: Guid(aa70a8a5af221654ea8fe55be92e6475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Knight/Knight_003/Material/Texture/Gunslinger_Cloak_003_DIFF.png using Guid(aa70a8a5af221654ea8fe55be92e6475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4007251c0d2212133a02fa1b2c66c311') in 0.020966 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Body_006_DIFF.png
-  artifactKey: Guid(cb9883ac05574b448962b0bd7c1c4fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Body_006_DIFF.png using Guid(cb9883ac05574b448962b0bd7c1c4fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f16eb209dc91b43de6a725a986d41d') in 0.014354 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000099 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Weapon_004_DIFF.png
-  artifactKey: Guid(67fe8753bab61d54c9a4cea024abb2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Weapon_004_DIFF.png using Guid(67fe8753bab61d54c9a4cea024abb2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e61d73044dbd245160c6f5910da429') in 0.013629 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Hand_100_DIFF.png
-  artifactKey: Guid(24bfefb12a3b6634fb72a21e9752c95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Hand_100_DIFF.png using Guid(24bfefb12a3b6634fb72a21e9752c95b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ead2b7b52afc08064c15b1b1808e4bb') in 0.014018 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Body_000A_MC.png
-  artifactKey: Guid(9cb4666ce10808e43ae9b3f1ac35791e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Body_000A_MC.png using Guid(9cb4666ce10808e43ae9b3f1ac35791e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdf161951b6e565bd9b5ee20a3c9fc5') in 0.016878 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Cloak_005_DIFF.png
-  artifactKey: Guid(c16e66d26e98a7942a6306405a943b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Cloak_005_DIFF.png using Guid(c16e66d26e98a7942a6306405a943b5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b1c98e780eefd5c73be4f736fa20c2d') in 0.015655 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Hand_006_NORM.png
-  artifactKey: Guid(bf06d5af762451d4fb6a49f60d79a842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Hand_006_NORM.png using Guid(bf06d5af762451d4fb6a49f60d79a842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '161e4944834889acf16051f6965423b3') in 0.016631 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Weapon_002_DIFF.png
-  artifactKey: Guid(0ae9c2296d083b94ebbe8797da02088c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Weapon_002_DIFF.png using Guid(0ae9c2296d083b94ebbe8797da02088c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '080ad36091d02f31f507dcb9a5ca9f7a') in 0.021549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/5.Practice/Toon Projectiles 2/Textures/Gradient11.png
-  artifactKey: Guid(e535306ab7c05d54294264b1d2c16fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5.Practice/Toon Projectiles 2/Textures/Gradient11.png using Guid(e535306ab7c05d54294264b1d2c16fd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13838e5e7a2c6c242b14a129b93a2b46') in 0.015281 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Camera_FX/assert/Textures/ground.png
-  artifactKey: Guid(780c61563f54ff847a845124a9fef13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Camera_FX/assert/Textures/ground.png using Guid(780c61563f54ff847a845124a9fef13d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b63f032f64fe5b3754b48eaef6f85b') in 0.021709 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Body_100_MC.png
-  artifactKey: Guid(f10f28d84a8ccec4f96c80af8e3ef648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Body_100_MC.png using Guid(f10f28d84a8ccec4f96c80af8e3ef648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82f91d91f7d8363eb047e37e7d6412fc') in 0.015667 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Body_004_DIFF.png
-  artifactKey: Guid(d5612c055b0e7fd4d97803c6f7798a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Body_004_DIFF.png using Guid(d5612c055b0e7fd4d97803c6f7798a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9408ef867a3c936e0a542c50e6c20355') in 0.018565 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000125 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Body_002_DIFF.png
-  artifactKey: Guid(70a69a038876ea24e8c7bf3e750d69c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Body_002_DIFF.png using Guid(70a69a038876ea24e8c7bf3e750d69c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c868d8e39517605948ef88e8c12ebcc4') in 0.017094 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Leg_002_DIFF.png
-  artifactKey: Guid(1a980d5eb5b760b489e58f00da3def07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Leg_002_DIFF.png using Guid(1a980d5eb5b760b489e58f00da3def07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf1a03ef779ae5076499584ad937294') in 0.014533 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Leg_000A_DIFF.png
-  artifactKey: Guid(4d137d21e5ce22642814fee8a345a7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Leg_000A_DIFF.png using Guid(4d137d21e5ce22642814fee8a345a7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23406eb819a55486198f4c9d0d78f00e') in 0.015461 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Weapon_100_DIFF.png
-  artifactKey: Guid(198c0c8a5989e93419490ee47fc10e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Weapon_100_DIFF.png using Guid(198c0c8a5989e93419490ee47fc10e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782639c47aa0447ed04b00caa984af76') in 0.013738 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Body_002_NORM.png
-  artifactKey: Guid(12502050c029baa4b9d803efce74ae9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Body_002_NORM.png using Guid(12502050c029baa4b9d803efce74ae9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02902091bc63902676774fe7127db7df') in 0.016992 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/GrayNormalHeader.png
-  artifactKey: Guid(9e88b336bd16b1e4b99de75f486126c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/GrayNormalHeader.png using Guid(9e88b336bd16b1e4b99de75f486126c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b03257b6448b6430eda44321cb2494e2') in 0.015211 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/8.Animation/Human/V4_Magician/Magician_007/Texture/Gunslinger_Cloak_100_DIFF.png
-  artifactKey: Guid(6e2b952bf0c7c4e43969e97e60802a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Magician/Magician_007/Texture/Gunslinger_Cloak_100_DIFF.png using Guid(6e2b952bf0c7c4e43969e97e60802a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c6f21783bc34d6c202c0c2aa108329e') in 0.019008 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/5.Practice/Toon Projectiles 2/Textures/Gradient12.png
-  artifactKey: Guid(32a2a0fff0c45634fb83d8d541ab67a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5.Practice/Toon Projectiles 2/Textures/Gradient12.png using Guid(32a2a0fff0c45634fb83d8d541ab67a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef44d23f285255368a273af9e47ffe54') in 0.014186 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Body_003_NORM.png
-  artifactKey: Guid(087991d5a83e12342935dca205908cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Body_003_NORM.png using Guid(087991d5a83e12342935dca205908cac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3288b538a29125be64bcb4b4100e15') in 0.017983 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Hand_002_NORM.png
-  artifactKey: Guid(616db91602f8a4544a1d395d9eaea415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Hand_002_NORM.png using Guid(616db91602f8a4544a1d395d9eaea415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e8b59dc61107ecb93622576dd6b38b3') in 0.014484 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Leg_004_DIFF.png
-  artifactKey: Guid(3f6080543cd07694e8f316631d2efad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Leg_004_DIFF.png using Guid(3f6080543cd07694e8f316631d2efad3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e096163a338d4183a8590cdd300a00a') in 0.027536 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Leg_005_DIFF.png
-  artifactKey: Guid(4dbf142a0333a3e419638252c0ded17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Leg_005_DIFF.png using Guid(4dbf142a0333a3e419638252c0ded17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '410e42d3b2943bc7853cf5a1b6559082') in 0.019871 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Hand_006_MC.png
-  artifactKey: Guid(2859694711204fe48b49804b465fd834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Hand_006_MC.png using Guid(2859694711204fe48b49804b465fd834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e72beb8c290b5d5f3b326245fbea81f') in 0.026252 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000755 seconds.
-  path: Assets/8.Animation/Nomal_Obj/Rock/Standard Assets/Effects/Projectors/Textures/Grid.psd
-  artifactKey: Guid(529239097d02f9f42b0ddd436c6fcbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Nomal_Obj/Rock/Standard Assets/Effects/Projectors/Textures/Grid.psd using Guid(529239097d02f9f42b0ddd436c6fcbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6bef2692d44b6670c95666748151f56') in 0.017089 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/8.Animation/Human/V4_Knight/Knight_001/Material/Texture/Gunslinger_Cloak_001_DIFF.png
-  artifactKey: Guid(1804e4d57def4514fb470762fde663f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Knight/Knight_001/Material/Texture/Gunslinger_Cloak_001_DIFF.png using Guid(1804e4d57def4514fb470762fde663f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '142509a1f3d79cf576b99464af3d6a5a') in 0.019635 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/8.Animation/Human/V4_Knight/Knight_005/Material/Texture/Gunslinger_Cloak_005_DIFF.png
-  artifactKey: Guid(d68b0fc139066ce4bac97b58a5f5bfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Knight/Knight_005/Material/Texture/Gunslinger_Cloak_005_DIFF.png using Guid(d68b0fc139066ce4bac97b58a5f5bfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414bf6740fa7cc47ec9e4816e800f38d') in 0.018401 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Hand_001_MC.png
-  artifactKey: Guid(425256a8f08e5524baf7f401a3fb8f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Hand_001_MC.png using Guid(425256a8f08e5524baf7f401a3fb8f26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b61f4ca1bbe0dda205eed6951e2ae1') in 0.015131 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/8.Animation/Nomal_Obj/Rock/Standard Assets/Effects/ImageEffects/Textures/MotionBlurJitter.png
-  artifactKey: Guid(31f5a8611c4ed1245b18456206e798dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Nomal_Obj/Rock/Standard Assets/Effects/ImageEffects/Textures/MotionBlurJitter.png using Guid(31f5a8611c4ed1245b18456206e798dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3218cf2c2788cf859dccd4bdd98fa9d7') in 0.014428 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/OpenListedShader.png
-  artifactKey: Guid(a66917730dccde947a01140dc04b9e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/OpenListedShader.png using Guid(a66917730dccde947a01140dc04b9e59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73461f5067ed0a6b6e24b47a5ce3111d') in 0.016738 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Spine/Editor/spine-unity/Editor/ImporterPresets/StraightAlphaPresetTemplate.png
-  artifactKey: Guid(ade885c25e49d7740b5c00d4e10a6197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spine/Editor/spine-unity/Editor/ImporterPresets/StraightAlphaPresetTemplate.png using Guid(ade885c25e49d7740b5c00d4e10a6197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96cf24160ec9ba9deb2204c47da0dbcc') in 0.014705 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/Nodes/TextureReferenceBg.png
-  artifactKey: Guid(f9bd85ea2601b824c87556c13e852933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/Nodes/TextureReferenceBg.png using Guid(f9bd85ea2601b824c87556c13e852933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efecbda9359478576e639b2ca17456d6') in 0.013885 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/9996.Textures[구]/Tex_8.1.png
-  artifactKey: Guid(65bf7c8d3823b3f4f9fbf1dc0328fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9996.Textures[구]/Tex_8.1.png using Guid(65bf7c8d3823b3f4f9fbf1dc0328fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4904cdf58a46e06cf419dfadc84f19a7') in 0.033848 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/WhitePortSolid.png
-  artifactKey: Guid(8113366f9f7cec647878e3af2fb98922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/WhitePortSolid.png using Guid(8113366f9f7cec647878e3af2fb98922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82338095620e9dcad6c4c3a2ef091371') in 0.016205 seconds
+  Time since last request: 701.008709 seconds.
+  path: Assets/8.Animation/Human/Tera/AbandonedAutomatedGuardian_skel.psk
+  artifactKey: Guid(c35be9439e28ae0469abe9d16809b78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8.Animation/Human/Tera/AbandonedAutomatedGuardian_skel.psk using Guid(c35be9439e28ae0469abe9d16809b78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5047689676e93288a564df00d62b181b') in 0.018857 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/Material.png
-  artifactKey: Guid(157b94751c138d84bbe1768c672b5168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/Material.png using Guid(157b94751c138d84bbe1768c672b5168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee7633516370440fd730b9eeede13453') in 0.018693 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Hand_001_DIFF.png
-  artifactKey: Guid(1fd1c98e312ebc342a3097b1ac98a680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Hand_001_DIFF.png using Guid(1fd1c98e312ebc342a3097b1ac98a680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e1e9cd02226e014a5867425a82b958') in 0.015637 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/9996.Textures[구]/Tex_9.1.png
-  artifactKey: Guid(fd1ed77c4eeab1740a8d03858df837c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9996.Textures[구]/Tex_9.1.png using Guid(fd1ed77c4eeab1740a8d03858df837c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16f6570a043adafae38c0cfdb823371') in 0.017214 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Hand_003_MC.png
-  artifactKey: Guid(aeae5542d04112248960a865dcc9c535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Hand_003_MC.png using Guid(aeae5542d04112248960a865dcc9c535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827c94f5dabf12f83b01543bf83c8847') in 0.014155 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Hand_002_MC.png
-  artifactKey: Guid(4f1acb18b8bc2494abe0097ec68fa6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Hand_002_MC.png using Guid(4f1acb18b8bc2494abe0097ec68fa6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f62ac22aa6fca004fda85a2bd7c0e0') in 0.019886 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Body_003_DIFF.png
-  artifactKey: Guid(802b544b2d014784cb2ed75100ef86f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Body_003_DIFF.png using Guid(802b544b2d014784cb2ed75100ef86f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffaeb296bb65939ca792355a67047cae') in 0.015051 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Hand_000A_MC.png
-  artifactKey: Guid(5de7054e895c1a74aa403c9a81145739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Hand_000A_MC.png using Guid(5de7054e895c1a74aa403c9a81145739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a46f8252e970c6183d371a15f5e9ee') in 0.014479 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Cloak_001_DIFF.png
-  artifactKey: Guid(69cc1d33c43d5b14697dd6fbd3c94fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Cloak_001_DIFF.png using Guid(69cc1d33c43d5b14697dd6fbd3c94fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531717aa9a7f8a872f639f8a7155953b') in 0.019985 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Hand_005_MC.png
-  artifactKey: Guid(7e99744640d987c478fa8df0cc5aa515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Hand_005_MC.png using Guid(7e99744640d987c478fa8df0cc5aa515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2932f1b2ee32e4d8f6443b7b302ca62d') in 0.014450 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Hand_100_MC.png
-  artifactKey: Guid(03de4a377e7055b45a09816c39fa94a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Hand_100_MC.png using Guid(03de4a377e7055b45a09816c39fa94a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921c300b3adee6de9caea0b158934d3f') in 0.013541 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/8.Animation/Human/Ari_E/A2_Jiaose/7_xiaojiejie01/Textures/Monster_Huangxiaoyan_Body.png
-  artifactKey: Guid(3e5a684e5d7d9e74ea58ede48572964d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/Ari_E/A2_Jiaose/7_xiaojiejie01/Textures/Monster_Huangxiaoyan_Body.png using Guid(3e5a684e5d7d9e74ea58ede48572964d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3b0a101858992fc6171381e974a42ab') in 0.014137 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/5.Practice/Shader_UV&Coler/water.jpg
-  artifactKey: Guid(80de6813d0d510e40a5a7296b105d853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5.Practice/Shader_UV&Coler/water.jpg using Guid(80de6813d0d510e40a5a7296b105d853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5538f02a9fde63faf26e23ac46ead364') in 0.017021 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Weapon_001_DIFF.png
-  artifactKey: Guid(59526c0ae491b614594c4094bbca64ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Weapon_001_DIFF.png using Guid(59526c0ae491b614594c4094bbca64ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c18a082ab0e26b5e26abaad63a158ee') in 0.014552 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Retina_000_DIFF.png
-  artifactKey: Guid(41f3eef531caa474fa9b2b540b4304dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Retina_000_DIFF.png using Guid(41f3eef531caa474fa9b2b540b4304dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b76ad21c54b437c41d41731fb6833bd') in 0.015927 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Cloak_003_DIFF.png
-  artifactKey: Guid(f48735d938e49244ab0a46bafc613d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Cloak_003_DIFF.png using Guid(f48735d938e49244ab0a46bafc613d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10d6140e317b1caf00767a71abb7c752') in 0.013659 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/SpriteMask_Mask.png
-  artifactKey: Guid(eb942ce288aa1654dbf5ed0cad424cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spine Examples/Spine Skeletons/raptor-pro-and-mask/SpriteMask_Mask.png using Guid(eb942ce288aa1654dbf5ed0cad424cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e759c53f7197e82ff8350d40d36c39f9') in 0.021376 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Cloak_100_DIFF.png
-  artifactKey: Guid(8022ab7f93137ad4490817e77d2ad2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Cloak_100_DIFF.png using Guid(8022ab7f93137ad4490817e77d2ad2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85527f8d84414c855bd684a1ff9ed7bb') in 0.019969 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Leg_003_DIFF.png
-  artifactKey: Guid(120084b8ed29f16479270c09dd1e7e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Leg_003_DIFF.png using Guid(120084b8ed29f16479270c09dd1e7e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18ccb3aec63b1ab7c894b5517543729') in 0.029234 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Body_001_MC.png
-  artifactKey: Guid(b059e4ff86f7df54fb9d75b9c58599a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Body_001_MC.png using Guid(b059e4ff86f7df54fb9d75b9c58599a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a486287274b5c35c9fa7450b3f98037') in 0.022764 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Hand_004_MC.png
-  artifactKey: Guid(0ade289c42e76054fa61849ec9eb31ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Hand_004_MC.png using Guid(0ade289c42e76054fa61849ec9eb31ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36702f49309d33d7904d512029a62a01') in 0.024836 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/GunSlinger_Weapon_000A_DIFF.png
-  artifactKey: Guid(008f4fb490073234b88ede36d2dc82bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/GunSlinger_Weapon_000A_DIFF.png using Guid(008f4fb490073234b88ede36d2dc82bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2ad42ea87859b47b6b6817c0f931fc') in 0.015138 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Body_006_NORM.png
-  artifactKey: Guid(141450a749d96f743982faaa81a9e9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Body_006_NORM.png using Guid(141450a749d96f743982faaa81a9e9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02eaae23cee02b769f46eff1f06331a5') in 0.015879 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/8.Animation/Human/V4_Magician/Magician_003/Texture/Gunslinger_Cloak_003_DIFF.png
-  artifactKey: Guid(d8a29911b13ed6e468db121f4fbd0b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Magician/Magician_003/Texture/Gunslinger_Cloak_003_DIFF.png using Guid(d8a29911b13ed6e468db121f4fbd0b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10e8973e9d0cc8e9e4c20c2a8c5f95e') in 0.013952 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/UpdateOutdated.png
-  artifactKey: Guid(cce638be049286c41bcbd0a26c356b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/UpdateOutdated.png using Guid(cce638be049286c41bcbd0a26c356b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b88128b90f84e3419481c2327c5ce7e') in 0.013872 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/WhitePortOutline.png
-  artifactKey: Guid(56277f370fb77a448a152bcd2e3a9077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes/WhitePortOutline.png using Guid(56277f370fb77a448a152bcd2e3a9077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd57a46721ab660a587826c2f15e39465') in 0.014525 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/9996.Textures[구]/Tex_10.png
-  artifactKey: Guid(00073e36cd00e3a48a27545fd1cc8cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9996.Textures[구]/Tex_10.png using Guid(00073e36cd00e3a48a27545fd1cc8cf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b869c767c1544f9f5e7cd318bbb36e') in 0.019093 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/UpdateOFF.png
-  artifactKey: Guid(99d70ac09b4db9742b404c3f92d8564b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/UpdateOFF.png using Guid(99d70ac09b4db9742b404c3f92d8564b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd68e16b3faf392ac5e537e1df06543') in 0.014476 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/8.Animation/Nomal_Obj/Rock/Standard Assets/Effects/ImageEffects/Textures/VignetteMask.png
-  artifactKey: Guid(95ef4804fe0be4c999ddaa383536cde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Nomal_Obj/Rock/Standard Assets/Effects/ImageEffects/Textures/VignetteMask.png using Guid(95ef4804fe0be4c999ddaa383536cde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91bfe2b780e19598400034ad7173c60') in 0.013928 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Spine/Editor/spine-unity/Editor/ImporterPresets/PMAPresetTemplate.png
-  artifactKey: Guid(77f055f38c1115f42a2df16b0428c4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spine/Editor/spine-unity/Editor/ImporterPresets/PMAPresetTemplate.png using Guid(77f055f38c1115f42a2df16b0428c4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f841f726bac831d6de3f8b3f1bca3fe') in 0.015761 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/9996.Textures[구]/Tex_9.png
-  artifactKey: Guid(27da8b10a8ccf764ba9fa62161bc9ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9996.Textures[구]/Tex_9.png using Guid(27da8b10a8ccf764ba9fa62161bc9ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cdd5918917485cf56aece3f6cfc5e42') in 0.018502 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/white.png
-  artifactKey: Guid(37e6f91f3efb0954cbdce254638862ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures/white.png using Guid(37e6f91f3efb0954cbdce254638862ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45fb9c50615315265b96bd039622abba') in 0.012459 seconds
+  Time since last request: 0.939874 seconds.
+  path: Assets/8.Animation/Human/Tera/AbandonedAutomatedGuardian_spec.tga
+  artifactKey: Guid(c097d703498dbef41a8fc1c63158a9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8.Animation/Human/Tera/AbandonedAutomatedGuardian_spec.tga using Guid(c097d703498dbef41a8fc1c63158a9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e6676680fd14b05a5e73b941499b16b') in 0.046380 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/5.Practice/Free_Gun/WarFX/Desktop/Textures/Bullet Holes/WFX_T_BulletHoles Concrete.tga
-  artifactKey: Guid(eca10a393fd9c894fa28b8013cedf3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5.Practice/Free_Gun/WarFX/Desktop/Textures/Bullet Holes/WFX_T_BulletHoles Concrete.tga using Guid(eca10a393fd9c894fa28b8013cedf3cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56341922666f104892abd802cb103386') in 0.016170 seconds
+  Time since last request: 15.554886 seconds.
+  path: Assets/8.Animation/Human/Tera/test.FBX
+  artifactKey: Guid(e1af2230d876b8f4695aad7561a05ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8.Animation/Human/Tera/test.FBX using Guid(e1af2230d876b8f4695aad7561a05ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1280554d1617b965287ca77463142a05') in 0.191604 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Body_100_DIFF.png
-  artifactKey: Guid(99a702cd8761b6844a605190c5702ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Body_100_DIFF.png using Guid(99a702cd8761b6844a605190c5702ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7bbfb4ea84db4080cfaf436b897012') in 0.017840 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/8.Animation/Human/V4_Magician/Magician_005/Texture/Gunslinger_Cloak_005_DIFF.png
-  artifactKey: Guid(fdb9ce35582461a46b2d668872cf7c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Magician/Magician_005/Texture/Gunslinger_Cloak_005_DIFF.png using Guid(fdb9ce35582461a46b2d668872cf7c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca7cc45eaaef241986fe485c74d5899') in 0.013849 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Hand_000A_NORM.png
-  artifactKey: Guid(c7e4863935ea6664fab98286f19d74bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Hand_000A_NORM.png using Guid(c7e4863935ea6664fab98286f19d74bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '676068f8941e8fc79c9d2b1d20e2dd06') in 0.014944 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Hand_005_NORM.png
-  artifactKey: Guid(563ddcbd780dfee4ab2b99e54b97456b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_005/Material/Texture/Gunslinger_Hand_005_NORM.png using Guid(563ddcbd780dfee4ab2b99e54b97456b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f00113767173efac8e5c6adfdffa0dd') in 0.015200 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Hand_002_DIFF.png
-  artifactKey: Guid(f379a9ee3a913df4da6f19ae768bc8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_002/Material/Texture/Gunslinger_Hand_002_DIFF.png using Guid(f379a9ee3a913df4da6f19ae768bc8dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1591d3701e69844d2751d4bbdcd98ff8') in 0.015120 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/SelectionAsTemplate.png
-  artifactKey: Guid(8148796947da07d49906f1201f417a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/SelectionAsTemplate.png using Guid(8148796947da07d49906f1201f417a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12e04b5c1bc49d58bdb203150fc2e822') in 0.013239 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Face_000_DIFF.png
-  artifactKey: Guid(541d33834e2a7f24a96d24c390cb06be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Face_000_DIFF.png using Guid(541d33834e2a7f24a96d24c390cb06be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f8fe7453db44177e5cd96ab31da98c') in 0.016431 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/UpdateUpToDated.png
-  artifactKey: Guid(ce30b12fbb3223746bcfef9ea82effe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons/UpdateUpToDated.png using Guid(ce30b12fbb3223746bcfef9ea82effe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fc899db23e0f8e57ed223161ed12001') in 0.015251 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Body_100_NORM.png
-  artifactKey: Guid(63c6ab2b1aeb8934bad0c4017df83f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Body_100_NORM.png using Guid(63c6ab2b1aeb8934bad0c4017df83f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f3eea75fca7cd21f8e6e85ec0962d32') in 0.015799 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Hand_000A_DIFF.png
-  artifactKey: Guid(cd9cfbeb74bebd34aa2177df5a6f885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Hand_000A_DIFF.png using Guid(cd9cfbeb74bebd34aa2177df5a6f885e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b45b186196359b077542472804631fdc') in 0.015767 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/5.Practice/Toon Projectiles 2/Textures/Gradient15.png
-  artifactKey: Guid(680ed321f94f60744a581c7a50bf07ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5.Practice/Toon Projectiles 2/Textures/Gradient15.png using Guid(680ed321f94f60744a581c7a50bf07ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388c6c2aea0cb1d8cf9bc8110fa04590') in 0.013331 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/5.Practice/Toon Projectiles 2/Textures/Gradient17.png
-  artifactKey: Guid(61e68320eb0a34646ae9e7855bba9d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/5.Practice/Toon Projectiles 2/Textures/Gradient17.png using Guid(61e68320eb0a34646ae9e7855bba9d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534b29113f04635ea326070b02de6cd5') in 0.014222 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Body_000A_DIFF.png
-  artifactKey: Guid(1077ed20e27ae1b41a588374735df8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Body_000A_DIFF.png using Guid(1077ed20e27ae1b41a588374735df8f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a65e2f71c2d8613fd51753eb27bdb5') in 0.015289 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Body_006_MC.png
-  artifactKey: Guid(cbc2e71dfa4cbe94a8c77c1b91ab14c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Body_006_MC.png using Guid(cbc2e71dfa4cbe94a8c77c1b91ab14c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99cf81a85bf7f4782785ea400284ffd2') in 0.017428 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Hand_004_DIFF.png
-  artifactKey: Guid(dfc72bda67316bc49b42304b3e4d99d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_004/Material/Texture/Gunslinger_Hand_004_DIFF.png using Guid(dfc72bda67316bc49b42304b3e4d99d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d42458d94e6507c7e566f3861ff2050') in 0.015537 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Weapon_006_DIFF.png
-  artifactKey: Guid(b6aa4e00ac277ab4da85a03d93bf15c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Weapon_006_DIFF.png using Guid(b6aa4e00ac277ab4da85a03d93bf15c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e3aebe9c355a5ccb18f7563af1f124a') in 0.014998 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/Grid128.png
-  artifactKey: Guid(881c304491028ea48b5027ac6c62cf73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/Grid128.png using Guid(881c304491028ea48b5027ac6c62cf73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca8d4acd4a63b0807e1ebce4a2be71d') in 0.014862 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Hand_001_NORM.png
-  artifactKey: Guid(ddae816c0429b404d9126695b4e7bc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Hand_001_NORM.png using Guid(ddae816c0429b404d9126695b4e7bc1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '537da3d2c9037b3d8af1e0445d395cd8') in 0.015713 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Hand_003_NORM.png
-  artifactKey: Guid(4d04c31f23915cd42935bf994bd8d7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_003/Material/Texture/Gunslinger_Hand_003_NORM.png using Guid(4d04c31f23915cd42935bf994bd8d7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9473eefc55ad4d79663ad6ddf7e1ca8') in 0.016850 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/8.Animation/Human/V4_Axceler/E3D-RenderCore/Texture/BaseTexture/white.png
-  artifactKey: Guid(20e83e902a68ef54290f8341da622008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Axceler/E3D-RenderCore/Texture/BaseTexture/white.png using Guid(20e83e902a68ef54290f8341da622008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d90fff2d2ac9c4d6562a45064a3084') in 0.015653 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Hand_006_DIFF.png
-  artifactKey: Guid(aee86f50bf49ac44da86b64304fd0226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_006/Material/Texture/Gunslinger_Hand_006_DIFF.png using Guid(aee86f50bf49ac44da86b64304fd0226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0cc30de1152165f9b9e0632b42206b') in 0.016133 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/9996.Textures[구]/Tex_8.png
-  artifactKey: Guid(4fee566c44cab664e8cb3fa9b40eb4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9996.Textures[구]/Tex_8.png using Guid(4fee566c44cab664e8cb3fa9b40eb4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aaebbe5959d06c760594e4ce3720930') in 0.018034 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 281
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Body_000A_NORM.png
-  artifactKey: Guid(0a783519783e74849a1e06da54a4d5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_000/Material/Texture/Gunslinger_Body_000A_NORM.png using Guid(0a783519783e74849a1e06da54a4d5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98df240a5d398d52f479592f90607007') in 0.015600 seconds
+  Time since last request: 148.694758 seconds.
+  path: Assets/8.Animation/Human/Tera/test.FBX
+  artifactKey: Guid(e1af2230d876b8f4695aad7561a05ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8.Animation/Human/Tera/test.FBX using Guid(e1af2230d876b8f4695aad7561a05ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9aada42ef8ad3cec883abab9d3e7494') in 0.131578 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/MaterialModeIcon.PNG
-  artifactKey: Guid(5725fa8ee04e1be449af059f5735cd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas/MaterialModeIcon.PNG using Guid(5725fa8ee04e1be449af059f5735cd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '606e405906fc6cbd5360930878d4930a') in 0.014077 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Hand_100_NORM.png
-  artifactKey: Guid(afa0c9ffc6db5b94596cb1904fc6a9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_007/Material/Texture/Gunslinger_Hand_100_NORM.png using Guid(afa0c9ffc6db5b94596cb1904fc6a9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7797cebc39354be8d4c4b4760ab8553') in 0.016016 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Body_001_NORM.png
-  artifactKey: Guid(474805e2dd0f91641a30587e2842ffa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/8.Animation/Human/V4_Gunslinger/Gunslinger_001/Material/Texture/Gunslinger_Body_001_NORM.png using Guid(474805e2dd0f91641a30587e2842ffa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f9fcf400ef00a5db818621078af75e6') in 0.015600 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 31.105536 seconds.
-  path: Assets/KUPAFX/02Week/FXT_Noise02Week 1.png
-  artifactKey: Guid(d1c180a8fd09477499697bddab727866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KUPAFX/02Week/FXT_Noise02Week 1.png using Guid(d1c180a8fd09477499697bddab727866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59bb2222aa4f8428bdcb847ef088143e') in 0.015798 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 8.217519 seconds.
-  path: Assets/2.Textures/EF_Tex_Noise_10.png
-  artifactKey: Guid(d1c180a8fd09477499697bddab727866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2.Textures/EF_Tex_Noise_10.png using Guid(d1c180a8fd09477499697bddab727866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46cfa60bfc6e6af9653dc592568e6963') in 0.015343 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.854631 seconds.
-  path: Assets/2.Textures/EF_Tex_Noise_11.png
-  artifactKey: Guid(d1c180a8fd09477499697bddab727866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2.Textures/EF_Tex_Noise_11.png using Guid(d1c180a8fd09477499697bddab727866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '656515d8a0d9396e4c959e1bba6030a2') in 0.014303 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 42.168649 seconds.
-  path: Assets/9996.Textures[구]/FXT_Noise_18 1.png
-  artifactKey: Guid(31496c9491be4144c9dcfccb8903ffa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/9996.Textures[구]/FXT_Noise_18 1.png using Guid(31496c9491be4144c9dcfccb8903ffa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a11cf0c9bf4dd6ab98e9d2045cb991') in 0.022505 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 282
 ========================================================================
 Received Import Request.
-  Time since last request: 7.264317 seconds.
-  path: Assets/2.Textures/EF_Tex_Noise_11.png
-  artifactKey: Guid(31496c9491be4144c9dcfccb8903ffa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2.Textures/EF_Tex_Noise_11.png using Guid(31496c9491be4144c9dcfccb8903ffa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff051916dc6b60f37d4f3dc7707985d') in 0.017548 seconds
+  Time since last request: 111.521787 seconds.
+  path: Assets/8.Animation/Human/Tera/test.FBX
+  artifactKey: Guid(e1af2230d876b8f4695aad7561a05ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/8.Animation/Human/Tera/test.FBX using Guid(e1af2230d876b8f4695aad7561a05ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c3b970d5227464afe56d773530c867') in 0.355098 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 289

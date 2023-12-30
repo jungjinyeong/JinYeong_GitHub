@@ -1,14 +1,11 @@
 fileFormatVersion: 2
-guid: f55d9418512bd264a941fde8ea3a5135
+guid: 8b020edeb4a727147a6386766bb1e693
 ModelImporter:
-  serializedVersion: 19301
-  internalIDToNameTable:
-  - first:
-      74: 1827226128182048838
-    second: Death
+  serializedVersion: 22200
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -17,9 +14,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -33,36 +29,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Death
-      takeName: Take 001
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 100
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -71,27 +38,35 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -101,17 +76,16 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips:
-  - 899d62c41fb176543a49ced896e7aecd
-  - 89cd4ea6c1e9e4d4aba9f73557ffa04b
-  - d2d4f760daa8223428022b8e91149a95
-  - 22cab7a35227bd44dba561836fe73510
-  - 8fb27d85a7865ab4fba0791cfa60b5b1
-  - 00f0766becdc74d49a792b8914d35f7f
-  - 8701e0123ec031346b71a17fea6d1631
-  - 308a08349131c1f44a8bc2cb1998ece9
-  - 019651363d8062242b6c227db5423da0
-  - fb467340f23468347a9a5451c965bb6b
-  - 410ca1eb7b204b94fafa1ad17bb1290d
+  - f5a56a4f5d8e36947a590af1484aa2a9
+  - 1bbd098683f865a429d5d2f50a07693e
+  - 3375e60e522f22b4dac4546487ff3296
+  - 8f7a5489f723eb644ab0222e020f3662
+  - 12046cca35c207646937ad48e158db5c
+  - 2378ff21125950540a39cf021520d6c2
+  - 17baca0e0f394cb4aa858cc6c2b299ba
+  - 58123d2b54d42124b999d545126cb93d
+  - 3458959a5ef93184facf4ec0b4f29dae
+  - 8f74ecdbbfe095b4a83565f1637327e0
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -134,6 +108,9 @@ ModelImporter:
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

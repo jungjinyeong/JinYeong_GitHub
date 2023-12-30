@@ -1,56 +1,11 @@
 fileFormatVersion: 2
-guid: 31dc5e7e0e6f28c40b6db266d5476414
+guid: f59410f1e91b2ff47ab584881528b0e3
 ModelImporter:
-  serializedVersion: 19301
-  internalIDToNameTable:
-  - first:
-      74: -5772686862334014591
-    second: Avatar_Female_Size02_Unagi_Ani_UI_Detail
-  - first:
-      74: 8070780872352645518
-    second: Avatar_Female_Size02_Unagi_Ani_UI_Equipment
-  - first:
-      74: 1420502682779542139
-    second: Avatar_Female_Size02_Unagi_Ani_UI_Skill_01
-  - first:
-      74: 1106022805061252040
-    second: Avatar_Female_Size02_Unagi_Ani_Idle
-  - first:
-      74: -296316094933667100
-    second: Avatar_Female_Size02_Unagi_Ani_UI_CharacterSelect_01
-  - first:
-      74: -4407457965355703861
-    second: Avatar_Female_Size02_Unagi_Ani_UI_CharacterSelect_02
-  - first:
-      74: -8459277486941201975
-    second: Avatar_Female_Size02_Unagi_Ani_UI_DtoS1
-  - first:
-      74: -3367230332885054335
-    second: Avatar_Female_Size02_Unagi_Ani_UI_S1toE
-  - first:
-      74: -9132459565587001
-    second: Avatar_Female_Size02_Unagi_Ani_UI_EtoD
-  - first:
-      74: 6354619892845716135
-    second: Avatar_Female_Size02_Unagi_Ani_UI_S1toD
-  - first:
-      74: 8363375098698594417
-    second: Avatar_Female_Size02_Unagi_Ani_UI_DtoE
-  - first:
-      74: 4064096857140533643
-    second: Avatar_Female_Size02_Unagi_Ani_UI_EtoS2
-  - first:
-      74: 6017660769178731735
-    second: Avatar_Female_Size02_Unagi_Ani_UI_Skill_02
-  - first:
-      74: 7138138402776383717
-    second: Avatar_Female_Size02_Unagi_Ani_UI_S2toD
-  - first:
-      74: -5546971909494881117
-    second: Avatar_Female_Size02_Unagi_Ani_UI_S2toE
+  serializedVersion: 22200
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -59,9 +14,8 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -84,27 +38,35 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -136,6 +98,9 @@ ModelImporter:
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
