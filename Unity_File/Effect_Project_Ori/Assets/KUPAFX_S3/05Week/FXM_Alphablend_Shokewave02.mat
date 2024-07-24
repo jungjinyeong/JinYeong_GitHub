@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FXM_Alphablend_Shokewave02
+  m_Shader: {fileID: 4800000, guid: 34d183e4812f83347ab16707cf120784, type: 3}
+  m_ShaderKeywords: USE_CUSTOM_ON _MASK_MIRROR_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Diss_Texture:
+        m_Texture: {fileID: 2800000, guid: 145143eb93006454baed654b5669d0c3, type: 3}
+        m_Scale: {x: 2, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _Main_Texture:
+        m_Texture: {fileID: 2800000, guid: 145143eb93006454baed654b5669d0c3, type: 3}
+        m_Scale: {x: 3, y: 0.25}
+        m_Offset: {x: 0, y: 0}
+    - _Mask_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_Texture:
+        m_Texture: {fileID: 2800000, guid: 1dbf1177420b46f47b20959a7c02ae71, type: 3}
+        m_Scale: {x: 1, y: 0.1}
+        m_Offset: {x: 0, y: 0}
+    - _Sub_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex4coord3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Use_Custom: 1
+    - _CullMode: 2
+    - _Diss_Tex_UPanner: 0
+    - _Diss_Tex_VPanner: 0.25
+    - _Dissolve: 1
+    - _Dst: 10
+    - _Fade_Distance: 3.65
+    - _Main_Ins: 1.89
+    - _Main_Pow: 2.9
+    - _Main_UPanner: 0
+    - _Main_VPanner: 0.25
+    - _Mask_1x: 0
+    - _Mask_Mirror: 1
+    - _Mask_Pow: 9.8
+    - _Noise_Str: 0.223
+    - _Noise_Tex_UPanner: 0
+    - _Noise_Tex_VPanner: 0.05
+    - _Opacity: 10
+    - _Src: 5
+    - _SubTex_Ins: 0
+    - _SubTex_Pow: 0
+    - _SubTex_UPanner: 0
+    - _SubTex_VPanner: 0
+    - _Use_AddMulityMask: 0
+    - _Use_MaskTex: 0
+    - __dirty: 0
+    m_Colors:
+    - _SubTex_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _TintColor: {r: 4.3461056, g: 2.0309393, b: 1.1275274, a: 0}
