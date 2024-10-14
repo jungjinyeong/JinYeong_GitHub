@@ -16,6 +16,7 @@ Material:
   - _DISSOLVE_TEXTURE_ONDEFALT_0_ON
   - _MASKDEFALT_ON_ON
   - _NOISE_ONDEFALT_0_ON
+  - _TOON_ONDEFALT_OFF_ON
   - _TRANSITION_ONDEFALT_12_ON
   - _USE_CUSTOM_ON
   m_InvalidKeywords:
@@ -140,14 +141,16 @@ Material:
     - _Noise_V_Panner: 0
     - _Noise_Val: 0
     - _OcclusionStrength: 1
-    - _Opacity_Val: 1
+    - _Opacity_Val: 0.2
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Toon_OnDefalt_Off: 0
+    - _Toon_OnDefalt_Off: 1
     - _Toon_OnDefalt_Off0: 1
+    - _Toon_OnDefalt_Off1: 0
     - _Toon_OnDefalt_Off2: 1
+    - _Toon_On_OpacityDefalt_Off: 0
     - _Toon_Val: 3.5
     - _Transition_Line_Val: 0
     - _Transition_On: 0
